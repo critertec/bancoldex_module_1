@@ -1,0 +1,25 @@
+.selectLevel-container {
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectLevel-container-content {
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectLevel-container-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

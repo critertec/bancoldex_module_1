@@ -1,0 +1,58 @@
+.history-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.history-title-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.history-title-content {
+    width: 20%;
+    min-width: 150px;
+    height: 80%;
+}
+
+.history-content {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.history-personage-container {
+   height: 100%;
+   width: 30%;
+
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+}
+
+.history-personage {
+    width: 90%;
+    height: auto;
+}
+
+.history-box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .history-personage-container {
+      display: none;
+    }
+
+    .history-box {
+        width: 100%;
+        justify-content: center;
+    }
+}

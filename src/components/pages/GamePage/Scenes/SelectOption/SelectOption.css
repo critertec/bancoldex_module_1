@@ -1,0 +1,81 @@
+.selectOption-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.selectOption-title-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.selectOption-title-content {
+    width: 20%;
+    height: 80%;
+}
+
+.selectOption-content-container {
+    width: 100%;
+    height: 90%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.selectOption-content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 95%;
+}
+
+.selectOption-personage-container {
+   height: 100%;
+   width: 30%;
+
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+}
+
+.selectOption-personage {
+    width: 90%;
+    height: auto;
+}
+
+.selectOption-box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .selectOption-personage-container {
+      display: none;
+    }
+
+    .selectOption-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .dialogSelectOption-content {
+        min-height: 80%;
+    }
+
+    .option-container {
+        margin: 15px;
+        height: 100%;
+    }
+
+    .option-letter {
+        width: 50px;
+        height: auto;
+
+        top: -20px;
+        left: -15px;
+    }
+}

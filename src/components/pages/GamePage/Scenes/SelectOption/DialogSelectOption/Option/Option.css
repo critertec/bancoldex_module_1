@@ -1,0 +1,54 @@
+
+.options-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.option-container {
+    position: relative;
+    width: 95%;
+    box-sizing: border-box;
+    margin: 10px;
+    height: 100%;
+
+    background: linear-gradient(180deg, rgb(33, 60, 106) 25%, rgba(82,119,184) 100%);
+    border: 3px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option-container.active {
+    background: linear-gradient(180deg, rgb(57, 130, 242) 25%, rgba(85,151,246) 100%);
+}
+
+.option-content-text {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+
+    font-weight: normal;
+    font-size: .85em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-text {
+    width: 90%;
+    padding-left: 10%;
+}
+
+.option-letter {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+
+    left: -10%;
+
+    display: flex;
+    align-items: center;
+}
