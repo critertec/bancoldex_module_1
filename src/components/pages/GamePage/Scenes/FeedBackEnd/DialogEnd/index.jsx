@@ -5,7 +5,10 @@ import HeaderStars from '../../../../../content/HeaderStars/index'
 import "./DialogEnd.css"
 
 const DialogEnd = ({
-    currentQuestion
+    currentStory,
+    currentQuestion,
+    currentPuntage,
+    onCall
 }) => {
 
     useEffect(()=>{
@@ -14,8 +17,15 @@ const DialogEnd = ({
 
     const TextDesc = () => {
         if (!currentQuestion) return '';
+        let desc = "";
 
-        const desc = currentQuestion?.pages[0]?.desc 
+        if (currentQuestion.pages){
+            desc = currentQuestion?.pages[0]?.desc;
+        }
+
+        if (currentQuestion.feedback){
+            desc = currentQuestion.feedback;
+        }
 
         return (
             <div>
@@ -41,7 +51,10 @@ const DialogEnd = ({
         <div className="dialogEnd-container">
             <div className="dialogEnd-stars-container">
                 <div className="dialogEnd-stars">
-                    <HeaderStars />
+                    <HeaderStars 
+                        story={currentStory}
+                        puntage={currentPuntage}
+                    />
                 </div>
             </div>
 
@@ -57,12 +70,8 @@ const DialogEnd = ({
                     <div className="dialogEnd-footer">
                         <div className="dialogEnd-btn-next">
                             <Button 
-                                type="history 1"
-                            />
-                        </div>
-                        <div className="dialogEnd-btn-next">
-                            <Button 
-                                type="history 2"
+                                type="next"
+                                onClick={onCall}
                             />
                         </div>
                     </div>

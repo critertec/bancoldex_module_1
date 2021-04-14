@@ -4,6 +4,7 @@ const HistoryGloria = {
     cover: 'bg-clothing-1',
     title: 'history 3',
     desc: "Gloria es una gran comerciante. Empezó como vendedora de ropa en un local en el centro de la ciudad hasta que se dio cuenta de que podía tener su propio local.  Después de haber hablado con diferentes proveedores, creó una tienda de ropa en el primer piso de su casa, pero no está segura de cuánto debe cobrarle a sus clientes. ¿Podrás ayudarle?",
+    ptsMax: 9,
     answer: {
         pages: [
             {

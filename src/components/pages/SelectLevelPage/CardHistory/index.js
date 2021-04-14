@@ -14,33 +14,19 @@ import icon_eye_close from '../../../../assets/INTERFACE/ICON_EYE_CLOSE.svg'
 import Button from '../../../content/button'
 import Personage from '../../../personages/personage'
 
-const HeaderStars = ({ score = 0 }) => {
-    const imgStar = () => {
-        switch(score){
-            case 1: return header_start_1;
-            case 2: return header_start_2;
-            case 3: return header_start_3;
-            default:
-                return header_start_0;
-        }
-    } 
-    return (
-        <div className="header-stars">
-            <img 
-                src={imgStar()}
-                alt=""
-            />
-        </div>
-    )
-}
+import HeaderStars from '../../../content/HeaderStars/index'
 
 const CardHistory = ({
-    title,
-    cover,
-    desc,
-    personage,
+    story,
     onCall
 }) => {
+    const {
+        title,
+        cover,
+        desc,
+        personage,
+        score,
+     } = story;
     const [showDesc, setShowDesc] = useState(false);
 
     return (
@@ -58,7 +44,10 @@ const CardHistory = ({
                     </div>
                 </div>
             <div className="cardHistory-stars">
-                <HeaderStars />
+                <HeaderStars 
+                    story={story}
+                    puntage={score}
+                />
             </div>
             <div className="cardHistory-content">
                 <div className={classNames({

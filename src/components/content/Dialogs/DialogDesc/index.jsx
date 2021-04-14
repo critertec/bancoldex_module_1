@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 
-import "./dialog.css"
-import Button from '../button/index'
-import PanoramaPersonage from '../PanoramaPersonage/index'
+import "./DialogDesc.css"
+import Button from '../../button/index'
+import PanoramaPersonage from '../../PanoramaPersonage/index'
 
-const DialogHistory = ({
+const DialogDesc = ({
+    namePersonage,
     Personage,
     currentQuestion,
     nextScene
@@ -20,13 +21,13 @@ const DialogHistory = ({
                         desc.map( (t, index) => (
                             <div 
                                 key={index}
-                                className="dialogHistory-text"
+                                className="dialogDesc-text"
                             >
                                 { t }
                             </div> 
                         ))
                     :
-                    <div className="dialogHistory-text">
+                    <div className="dialogDesc-text">
                         { desc }
                     </div>  
                 }
@@ -38,15 +39,13 @@ const DialogHistory = ({
         const infoPage = currentQuestion?.pages[page];
 
         return (
-            <div className="dialogHistory-boxText">
+            <div className="dialogDesc-boxText">
                     
                 {/* <div className="avatar-mobile-container">
                     <div className="avatar-mobile">
                         <Personage />
                     </div>
                 </div> */}
-                
-                {/* <PanoramaPersonage /> */}
 
                 <TextDesc 
                     desc = {infoPage.desc}
@@ -54,7 +53,7 @@ const DialogHistory = ({
 
                 { (infoPage && infoPage.question ) &&
                     (
-                        <div className="dialogHistory-text-question">
+                        <div className="dialogDesc-text-question">
                             { infoPage.question }
                         </div>
                     )
@@ -65,22 +64,27 @@ const DialogHistory = ({
     }
 
     useEffect(()=> {
-        console.log('DialogHistory', currentQuestion)
+        console.log('dialogDesc', currentQuestion)
     }, [])
 
     return (
-        <div className="dialogHistory-container">
-            <div className="dialogHistory-content">
+        <div className="dialogDesc-container">
+            <div className="container-panorama">
+                <PanoramaPersonage 
+                    name={namePersonage}
+                />
+            </div>
+            <div className="dialogDesc-content">
                 <BoxText />
             </div>
-            <div className="dialogHistory-footer">
-                <div className="dialogHistory-btn-next">
+            <div className="dialogDesc-footer">
+                <div className="dialogDesc-btn-next">
                     { (
                         page >= 0 
                         && page !== (currentQuestion?.pages.length -1)
                       )
                         && (
-                            <div className="dialogHistory-btn-right">
+                            <div className="dialogDesc-btn-right">
                                 <Button 
                                     type="arrow right"
                                     onClick={()=>{
@@ -100,7 +104,7 @@ const DialogHistory = ({
                     }
 
                     { page > 0 &&
-                        <div className="dialogHistory-btn-left">
+                        <div className="dialogDesc-btn-left">
                             <Button 
                                 type="arrow left"
                                 onClick={()=>{
@@ -116,4 +120,4 @@ const DialogHistory = ({
     )
 }
 
-export default DialogHistory;
+export default DialogDesc;

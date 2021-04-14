@@ -1,0 +1,106 @@
+.dialogFeedBack-container {
+    width: 100%;
+    height: 80%;
+    /* min-height: 30vh; */
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    /* padding: 15px; */
+    opacity: 1;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    /* background-color: red; */
+}
+
+.dialogFeedBack-content-container {
+    height: 90%;
+    width: 85%;
+    padding: 20px;
+    background-color: rgba(85, 173, 193, .8);
+    border-radius: 10px;
+
+    /* box-sizing: border-box; */
+}
+
+.dialogFeedBack-content {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px black;
+    opacity: 1;
+}
+
+.dialogFeedBack-content.warning {
+    /* border: 3px solid #e1c27b; */
+    /* outline: 3px solid #d6ab45; */
+    background: linear-gradient(180deg, rgb(195, 134, 37) 60%, rgba(250,197,50) 100%);
+}
+
+.dialogFeedBack-content.success {
+    /* border: 3px solid #7f916a; */
+    /* outline: 3px solid #728345; */
+    background: linear-gradient(180deg, rgb(54, 118, 36) 60%, rgba(93,203,158) 100%); 
+}
+
+.dialogFeedBack-content.danger {
+    /* border: 3px solid rgb(182, 148, 127) ; */
+    /* outline: 3px solid rgb(162, 111, 59); */
+    background: linear-gradient(180deg, rgba(240, 118, 48) 60%, rgb(202, 62, 40) 100%); 
+}
+
+.dialogFeedBack-boxText {
+    width: 80%;
+    font-weight: bold;
+    line-height: 1.2;
+    color: white;
+}
+
+.dialogFeedBack-footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialogFeedBack-btn-next {
+    width: 35%;
+    max-width: 150px;
+}
+
+.dialogFeedBack-text {
+ font-weight: 600;
+ font-size: 1em;
+}
+
+.dialogFeedBack-text-question {
+    margin-top: 20px;
+    font-weight:900;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.dialogFeedBack-btns-container {
+    position: relative;
+}
+
+.dialogFeedBack-btn-right{
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.dialogFeedBack-btn-left{
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}

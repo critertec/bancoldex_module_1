@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
+import classnames from 'classnames';
 
-import Dialog from '../dialog/index'
+import DialogDesc from '../Dialogs/DialogDesc/index'
+import DialogOptions from '../Dialogs/DialogSelectOption/index'
+import DialogFeedBack from '../Dialogs/DialogFeedBack/index'
 import Personage from '../../personages/personage'
 
 import "./scene.css";
@@ -8,27 +11,89 @@ import "./scene.css";
 const Scene = ({
     currentStory,
     currentQuestion,
-    nextScene
+    currentOption,
+    scene,
+    nextScene,
+    selectOption,
+    newQuestion,
+    
 }) => {
-    const side = 'right';
+
+    const side = () => {
+        
+        if (scene === 'game-feedback')
+            return 'left';
+
+        if (selectOption 
+            && (currentQuestion.num % 2) 
+            === 0
+        )
+            return 'left';
+
+        return 'right';
+    }
+
+    const personageActionScene = () => {
+        if (scene === 'game-options'){
+            return 'thinking'
+        }
+
+        if (scene === 'game-speak' && currentQuestion.personageAction){
+            return currentQuestion.personageAction;
+        }
+    }
 
     const CurrentPersonage = () => {
         return (
-            <Personage
-                name="don alfonso"
-            />
+            <div className={classnames({
+                [`personage-${side()}`]: true
+            })}>
+                <Personage
+                    name={  scene === 'game-feedback' ?
+                        'girl'
+                        :
+                        currentStory.personage
+                    }
+                    action={personageActionScene()}
+                />
+            </div>
         )
     }
 
     const DialogBox = () => {
-        return (
+        const DialogCustom = () => {
+            switch(scene){
+                case 'game-feedback':
+                    return (
+                        <DialogFeedBack 
+                            Personage={CurrentPersonage}
+                            currentOption={currentOption}
+                            onCall={newQuestion}
+                        />
+                    )
+                case 'game-options':
+                    return (
+                        <DialogOptions 
+                            currentStory={currentStory}
+                            currentQuestion={currentQuestion}
+                            selectOption={selectOption}
+                        />
+                    )
+                default:
+                    return (
+                        <DialogDesc
+                            namePersonage={currentStory?.personage}
+                            Personage={CurrentPersonage}
+                            currentQuestion={currentQuestion}
+                            nextScene={nextScene}
+                        /> 
+                    )
+            }
+        }
+         return (
             <div className="scene-box">
-                <Dialog
-                    Personage={CurrentPersonage}
-                    currentQuestion={currentQuestion}
-                    nextScene={nextScene}
-                />
-            </div>  
+                <DialogCustom />
+            </div>
         )
     }
 
@@ -48,24 +113,25 @@ const Scene = ({
 
     return (
         <div className="scene-container">
-            <div className={currentStory.cover}>
-                <div className="scene-title-container">
+            <div className={classnames({
+                [currentStory.cover]: true,
+                'bg': true
+            })}>
+                <div className={classnames({
+                    "scene-title-container": true,
+                    "left": scene !== "game-speak-intro"
+                })}>
                     <div className="scene-title-content">
                         <div className="title-history-1"/>
                     </div>
                 </div>
-                        <div className="scene-content">  
-                            <DialogBox /> 
-                            <PersonageBox />
-                        </div>
-                    {/* {side === 'right' ?
-                    :
-                        <div className="history-content">  
-                            <PersonageBox />
-                            <DialogBox /> 
-                        </div>
-
-                    } */}
+                <div className={classnames({
+                    "scene-content": true,
+                    [side()]: true
+                })}>  
+                    <DialogBox /> 
+                    <PersonageBox />
+                </div>
             </div>
         </div>
     )

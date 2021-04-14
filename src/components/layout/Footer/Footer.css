@@ -1,6 +1,6 @@
 .footer-container {
     /* position: absolute; */
-    height: 10vh;
+    height: 100%;
     width: 100%;
 
     display: flex;
@@ -16,3 +16,4 @@
     height: 100%;
     cursor: pointer;
 }
+

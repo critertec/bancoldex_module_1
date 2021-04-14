@@ -1,4 +1,4 @@
-
+import classNames from 'classnames'
 import DialogEnd from './DialogEnd/index'
 import Personage from '../../../../personages/personage'
 import "./FeedBackEnd.css";
@@ -6,7 +6,8 @@ import "./FeedBackEnd.css";
 const SceneFeedBackEnd = ({
     currentStory,
     currentQuestion,
-    newQuestion
+    goToScene,
+    currentPuntage
 }) => {
     // const side = 'left';
 
@@ -16,7 +17,9 @@ const SceneFeedBackEnd = ({
                 <DialogEnd 
                     Personage={()=>(<Personage name="girl"/>)}
                     currentQuestion={currentQuestion}
-                    onCall={newQuestion}
+                    currentStory={currentStory}
+                    currentPuntage={currentPuntage}
+                    onCall={()=>{goToScene('selectLevel')}}
                 />
             </div>  
         )
@@ -27,7 +30,7 @@ const SceneFeedBackEnd = ({
             <div className="feedBackEnd-personage-container">
                 <div className="feedBackEnd-personage">
                     <Personage 
-                        name="girl"
+                        name={currentStory.personage}
                     />
                 </div>
             </div>            

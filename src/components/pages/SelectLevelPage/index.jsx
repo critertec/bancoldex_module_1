@@ -35,10 +35,7 @@ const SelectLevelPage = ({
                     {stories.map( (story) => (
                         <CardHistory
                             key={story.id}
-                            title={story.title}
-                            cover={story.cover}
-                            desc={story.desc}
-                            personage={story.personage}
+                            story={story}
                             onCall={()=>{selectStory(story)}}
                         />    
                     ))}

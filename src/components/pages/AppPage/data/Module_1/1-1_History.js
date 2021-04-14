@@ -4,6 +4,7 @@ const HistoryJose = {
     title: 'history 1',
     cover: 'bg-production-uniform-1',
     desc: "José tiene un negocio de producción de uniformes. Después de mucho trabajo, recibió una invitación para licitar un proyecto que será indispensable para la sostenibilidad de su emprendimiento. Sin embargo, tiene problemas para saber cuánto debe cobrar. ¿Podrás ayudarlo?",
+    ptsMax: 11,
     answer: {
         pages: [
             {

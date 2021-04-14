@@ -22,14 +22,14 @@ const PanoramaPersonage = ({
     }
 
     return (
-        <div className="panorama-personage-container">
+        // <div className="panorama-personage-container">
             <div className="panorama-personage">
                 <img 
                     src={img()}
                     alt=""
                 />
             </div>
-        </div>
+        // </div>
     )
 }
 

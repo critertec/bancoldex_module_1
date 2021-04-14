@@ -61,7 +61,7 @@
     }
 
     .dialogFeedBack-content-container {
-        height: 70%;
+        min-height: 70vh;
     }
 
     .dialogFeedBack-container {

@@ -29,11 +29,38 @@ export default ({
     const fotoPersonage = () => {
         switch(name){
             case 'jose':
-                return JOSE;
+                switch(action){
+                    case "ok":
+                        return JOSE_OKAY;
+                    case "upset":
+                        return JOSE_UPSET;
+                    case "thinking":
+                        return JOSE_THINKING;
+                    default:
+                        return JOSE;
+                }
             case 'don alfonso':
-                return DON_ALFONSO;
+                switch(action){
+                    case "ok":
+                        return DON_ALFONSO_OKAY;
+                    case "upset":
+                        return DON_ALFONSO_UPSET;
+                    case "thinking":
+                        return DON_ALFONSO_THINKING;
+                    default:
+                        return DON_ALFONSO;
+                }
             case 'gloria':
-                return GLORIA;
+                switch(action){
+                    case "ok":
+                        return GLORIA_OKAY;
+                    case "upset":
+                        return GLORIA_UPSET;
+                    case "thinking":
+                        return GLORIA_THINKING;
+                    default:
+                        return GLORIA;
+                }
             default:
                 return GIRL;
         }

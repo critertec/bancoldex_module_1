@@ -1,6 +1,6 @@
-.panorama-personage-container {
+.panorama-personage {
     width: 100%;
-    height: 130px;
+    /* height: 100%; */
 }
 
 .panorama-personage img {

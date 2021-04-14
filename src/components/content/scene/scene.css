@@ -11,6 +11,11 @@
     align-items: flex-end;
 }
 
+.scene-title-container.left {
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
 .scene-title-content {
     width: 20%;
     min-width: 150px;
@@ -23,11 +28,16 @@
 
     display: flex;
     justify-content: center;
+    flex-direction: row;
+}
+
+.scene-content.right {
+    flex-direction: row-reverse;
 }
 
 .scene-personage-container {
    height: 100%;
-   width: 30%;
+   width: 350px;
 
    display: flex;
    align-items: flex-end;
@@ -35,8 +45,9 @@
 }
 
 .scene-personage {
-    width: 90%;
-    height: auto;
+    width: 100%;
+    max-height: 70vh;
+    overflow: hidden;
 }
 
 .scene-box {
@@ -44,6 +55,14 @@
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.personage-left {
+    margin-left: 40px;
+}
+
+.personage-right {
+    margin-right: 40px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -55,4 +74,66 @@
         width: 100%;
         justify-content: center;
     }
+
+    .scene-container {
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding-top: 5vh;
+    }
+
+    .scene-title-container.left {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dialogSelectOption-container {
+        width: 90%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .dialogSelectOption-content {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .option-text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .option-container {
+        height: auto;
+        min-height: 100px;
+    }
+
+    .dialogFeedBack-content {
+        height: auto;
+        min-height: 70vh;
+    }
+
+
+    .dialogDesc-content {
+        height: auto;
+        min-height: 45vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .dialogFeedBack-boxText {
+        padding-bottom: 20px;
+    }
+
+    .dialogFeedBack-content-content {
+        min-height: 70vh;
+        height: auto;
+    }
+
+    .dialogEnd-text-container  {
+        width: 100%;
+    }
+
 }

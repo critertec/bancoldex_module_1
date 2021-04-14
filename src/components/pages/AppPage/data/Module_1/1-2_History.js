@@ -4,6 +4,7 @@ const HistoryDonAlfonso = {
     title: 'history 2',
     personage: "don alfonso",
     desc: "Don Alfonso es dueño de un taller de mecánica hace varios años. Entró al curso de Mis Finanzas Lab para mejorar sus habilidades financieras y le ha servido bastante, pero ahora necesita tu ayuda. Aunque trabaja mucho y gana más de lo que se gasta, al final del mes no ve los excedentes. ¿Le puedes ayudar?",
+    ptsMax: 11,
     answer: {
         pages: [
             {
@@ -28,6 +29,7 @@ const HistoryDonAlfonso = {
         desc: "Don Alfonso, con mucho gusto. Podemos encontrar qué puede estar pasando. Lo primero que podría hacer es organizarse y no sacar la plata del taller para sus gastos personales. Así podremos saber si realmente el taller está generando utilidad o no.",
         feedback: "Tomaste la decisión de bloquear el dinero del taller para los gastos personales. Esta es una gran decisión, sin embargo, sabemos que para lograrlo se requiere de un proceso de tiempo y constancia. Es imporante también incentivar el control de los gastos para saber en que se estaba utilizando el ingreso.",
         answer: {
+            personageAction: 'ok',
             pages: [
                 {
                     desc: "¡Gracias! Con esa nueva metodología para organizarme me di cuenta de que me estaba gastando la plata del taller en bobadas. Desde que me organicé me di cuenta de que tengo un buen negocio y ahora quiero abrir otro taller en otro barrio de la ciudad.",
@@ -159,6 +161,7 @@ const HistoryDonAlfonso = {
                 desc: "Si este negocio le da plata, puede montar otro igualito sin problema. ",
                 feedback: "Decidir duplicar los costos de un taller a otro puede ahorrar bastante trabajo, pero debe hacerse una revisión al detalle. Cada proyecto tiene sus particularidades y deben tenerse en cuenta para analizar los costos directos e indirectos y su punto de equilibrio para poder decidir si hacer o no el negocio.",
                 answer: {
+                    personageAction: 'upset',
                     pages: [{
                         desc: [
                             "No podría montarlo igualito. El nuevo taller será un poco más pequeño que el que tengo actualmente, y seguramente los gastos podrían variar. Tengo proyectada la siguiente tabla de costos: ",
