@@ -213,7 +213,7 @@ const HistoryDonAlfonso = {
                                     pages: [
                                         {
                                             desc: "Sí. $ 500.000 COP suena algo posible y que me ayudará a alcanzar la meta."
-                                        }
+                                        },
                                         {
                                             desc: "Unos meses después: ¡Sumercé, cómo está! Gracias a sus consejos y a las buenas ventas de estos meses logré tener ahorrado lo suficiente para abrir el mega taller. Fui al banco a sacar mis ahorros y el gerente me insistió en que debería asegurar el nuevo taller para estar más tranquilo. Me ofreció un seguro de PYME básico que protege el taller en caso de incendio, explosión o inundación, sin embargo me dice que puedo ampliarlo. ",
                                             question: "¿Qué me recomienda?"

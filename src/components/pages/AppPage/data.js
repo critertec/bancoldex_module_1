@@ -1,7 +1,7 @@
-// Module 1
-import M_1_History_1 from './data/Module_1/1-1_History'
-import M_1_History_2 from './data/Module_1/1-2_History'
-import M_1_History_3 from './data/Module_1/1-3_History'
+// Modules
+import Module_1 from './data/Module_1'
+// import Module_2 from './data/Module_2'
+// import Module_3 from './data/Module_3'
 
 const instructions = {
     title: "¡Hola de nuevo!",
@@ -14,10 +14,6 @@ const instructions = {
     ]
 }
 
-const stories = [
-    M_1_History_1,
-    M_1_History_2,
-    M_1_History_3
-];
+const stories = Module_1;
 
 export { instructions, stories }
