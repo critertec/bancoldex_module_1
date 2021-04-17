@@ -19,6 +19,7 @@ import SoundPtsBad from '../../../assets/SOUNDS/ETC_Sfx_Incorrecto_01.mp3'
 import SoundPts from '../../../assets/SOUNDS/ETC_Sfx_Puntaje_01.mp3'
 
 import ModalHomeConfirm from '../../content/Modals/HomeConfirm/index'
+import ModalHelp from '../../content/Modals/Help/index'
 import "./App.css"
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
   const [currentOption, setCurrentOption]= useState({});
   const [currentPuntage, setCurrentPuntage] = useState(0);
   const [modalHome, setModalHome] = useState(false);
+  const [modalHelp, setModalHelp] = useState(false);
 
   // Sonidos
   const [stateSound, setStateSound] = useState(true);
@@ -311,6 +313,10 @@ function App() {
           setModalHome(true)
         }
       }}
+
+      modalHelp={()=>{
+        setModalHelp(true)
+      }}
     >
         <Scene />
 
@@ -323,6 +329,16 @@ function App() {
             }}
           />
         }
+
+        {modalHelp && 
+          <ModalHelp
+            show={modalHelp}
+            handleChange={setModalHelp}
+            onCall={()=>{
+              setModalHelp(false)
+            }}
+          />
+        } 
     </Layout>
   );
 }

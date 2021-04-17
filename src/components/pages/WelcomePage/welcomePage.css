@@ -101,4 +101,12 @@
         min-height: 300px;
         /* padding: 10px; */
     }
+
+    .welcome-fl-left-container  {
+        display: none;
+    }
+
+    .welcome-fl-bottom-container {
+        display:block;
+    }
 }

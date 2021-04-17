@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import "./DialogWelcome.css";
 import Button from '../../../content/button'
 import Personage from '../../../personages/personage'
@@ -7,7 +8,16 @@ const DialogWelcome = ({
     nextScene
 }) => {
     return (
+        <>
         <div className="welcome-dialog-container">
+            <div className={classNames({
+                "welcome-fl-left-container": true,
+
+            })}>
+                <div className={classNames({ 
+                    "welcome-fl" : true,
+                })}/>
+            </div>
             <div className="welcome-dialog-content">
                 <div className="welcome-dialog-boxText">
                     
@@ -58,7 +68,16 @@ const DialogWelcome = ({
                     </div> */}
                 </div>
             </div>
+            <div className={classNames({
+                    "welcome-fl-bottom-container": true,
+
+                })}>
+                    <div className={classNames({ 
+                        "welcome-fl" : true,
+                    })}/>
+                </div>
         </div>
+        </>
     )
 }
 

@@ -1,4 +1,4 @@
-
+import classNames from 'classnames'
 import DialogWelcome from './DialogWelcome';
 import "./welcomePage.css"
 import Personage from '../../personages/personage'

@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { useState, useEffect } from 'react';
 
 import "./DialogDesc.css"
@@ -5,6 +6,7 @@ import Button from '../../button/index'
 import PanoramaPersonage from '../../PanoramaPersonage/index'
 
 const DialogDesc = ({
+    side,
     namePersonage,
     Personage,
     currentQuestion,
@@ -35,6 +37,22 @@ const DialogDesc = ({
         )
     }
 
+    const ListDesc = ({ list }) => {
+        if (!list) return '';
+        return (
+            <div className="dialogDesc-list">
+                <ul>
+                    { list.map( item => (
+                        <li>
+                            { item }
+                        </li>
+                    ))}
+                </ul>
+
+            </div>
+        )
+    }
+
     const BoxText = () => {
         const infoPage = currentQuestion?.pages[page];
 
@@ -49,7 +67,11 @@ const DialogDesc = ({
 
                 <TextDesc 
                     desc = {infoPage.desc}
-                />     
+                />   
+
+                <ListDesc
+                    list = {infoPage?.list}
+                />  
 
                 { (infoPage && infoPage.question ) &&
                     (
@@ -68,7 +90,12 @@ const DialogDesc = ({
     }, [])
 
     return (
+    <>
         <div className="dialogDesc-container">
+            <div className={classNames({
+                [`fl-container-${side}`]: true
+            })}>
+            </div>
             <div className="container-panorama">
                 <PanoramaPersonage 
                     name={namePersonage}
@@ -117,6 +144,7 @@ const DialogDesc = ({
                 </div>
             </div>
         </div>
+    </>
     )
 }
 

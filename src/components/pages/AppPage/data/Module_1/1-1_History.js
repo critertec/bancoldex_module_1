@@ -63,6 +63,9 @@ const HistoryJose = {
                         {
                             desc: [
                                 "¡Claro! Necesitamos producir todo a más tardar en un mes.",
+                                ""
+                            ],  
+                            list: [
                                 "Telas: $ 1.000.000 COP para 100 unidades",
                                 "Botones: $ 150.000 COP para 100 unidades",
                                 "Mano de obra: $ 6.000.000 COP para 1.000 unidades",
@@ -72,7 +75,7 @@ const HistoryJose = {
                                 "Arriendo: $ 2.000.000 COP mensuales",
                                 "Transporte: $ 100.000 COP ",
                                 "Elementos varios de producción: $ 1.000.000 COP para 1.000 unidades"
-                            ],                                        
+                            ]                                      
                         }
                     ],
                     options: [

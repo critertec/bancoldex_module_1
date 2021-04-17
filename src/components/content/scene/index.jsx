@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import classnames from 'classnames';
 
 import DialogDesc from '../Dialogs/DialogDesc/index'
@@ -18,8 +18,13 @@ const Scene = ({
     newQuestion,
     
 }) => {
+    const [side, setSide] = useState('left')
 
-    const side = () => {
+    useEffect(()=>{
+        setSide(getSide())
+    }, [])
+ 
+    const getSide = () => {
         
         if (scene === 'game-feedback')
             return 'left';
@@ -46,7 +51,7 @@ const Scene = ({
     const CurrentPersonage = () => {
         return (
             <div className={classnames({
-                [`personage-${side()}`]: true
+                [`personage-${side}`]: true
             })}>
                 <Personage
                     name={  scene === 'game-feedback' ?
@@ -66,6 +71,7 @@ const Scene = ({
                 case 'game-feedback':
                     return (
                         <DialogFeedBack 
+                            side={side}
                             Personage={CurrentPersonage}
                             currentOption={currentOption}
                             onCall={newQuestion}
@@ -82,6 +88,7 @@ const Scene = ({
                 default:
                     return (
                         <DialogDesc
+                            side={side}
                             namePersonage={currentStory?.personage}
                             Personage={CurrentPersonage}
                             currentQuestion={currentQuestion}
@@ -127,7 +134,7 @@ const Scene = ({
                 </div>
                 <div className={classnames({
                     "scene-content": true,
-                    [side()]: true
+                    [side]: true
                 })}>  
                     <DialogBox /> 
                     <PersonageBox />

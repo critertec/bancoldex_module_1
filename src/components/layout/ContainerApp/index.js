@@ -14,7 +14,7 @@ const ContainerApp = ({ children, ...rest }) => {
             </div>
 
             <div className="layout-footer">
-                <Footer />
+                <Footer  {...rest} />
             </div>
         </div>
     )

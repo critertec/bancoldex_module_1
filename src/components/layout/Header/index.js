@@ -19,6 +19,7 @@ const Header = ({
     backScene,
     goToScene,
     modalHome,
+    modalHelp,
 
     stateSound,
     setStateSound
@@ -94,6 +95,7 @@ const Header = ({
                         <div className="header-mobile-btn">
                             <Button 
                                 type="help"
+                                onClick={modalHelp}
                             />
                         </div>
                     </div>

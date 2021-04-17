@@ -4,6 +4,7 @@ import "./DialogFeedBack.css"
 import Button from '../../button/index'
 
 const DiaglogFeedBack = ({
+    side,
     Personage,
     currentOption,
     onCall
@@ -15,9 +16,13 @@ const DiaglogFeedBack = ({
 
     return (
         <div className="dialogFeedBack-container">
+
             <div className={classnames({
                 "dialogFeedBack-content-container": true
             })}>
+                <div className={classnames({
+                    [`fl-container-${side}`]: true
+                })} />
                 <div className={classnames({
                     "dialogFeedBack-content": true,
                     'success': currentOption?.type == 'buena',

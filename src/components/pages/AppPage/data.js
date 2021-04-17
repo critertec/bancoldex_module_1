@@ -14,6 +14,11 @@ const instructions = {
     ]
 }
 
+const InfoModalHelp = [ 
+    "Recuerda explorar todas las historias a profundidad.",
+    "Nunca sabes que puedes aprender mientras ayudas a otros"
+];
+
 const stories = Module_1;
 
-export { instructions, stories }
+export { instructions, stories, InfoModalHelp }
