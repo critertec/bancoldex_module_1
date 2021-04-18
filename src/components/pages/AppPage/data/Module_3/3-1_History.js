@@ -146,8 +146,10 @@ const HistoryDonAlfonso = {
                                             question: "¿Qué más tranquilidad que no tener deudas?"
                                         }
                                     ],
-                                    feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
-                                    end: true
+                                    answer: {
+                                        feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
+                                        end: true
+                                    }
                                 }
                          },
                         // 1.1.1.1.2
@@ -162,8 +164,10 @@ const HistoryDonAlfonso = {
                                             desc: "¡Tiene razón! Me permitiría bajar las cuotas mensuales y tener más tranquilidad. Sin contar que pago menos intereses. "
                                         }
                                     ],
-                                    feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
-                                    end: true
+                                    answer: {
+                                        feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
+                                        end: true
+                                    }
                                 }
                             },
                         // 1.1.1.1.3
@@ -178,8 +182,10 @@ const HistoryDonAlfonso = {
                                             desc: "Es una buena opción. Aunque los intereses que pago en el crédito son mucho más altos que los intereses que me genera tener el dinero en la cuenta de ahorros. Creo que prefiero pagar el crédito."
                                         }
                                     ],
-                                    feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
-                                    end: true
+                                    answer: {
+                                        feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
+                                        end: true
+                                    }
                                 }
                             },
                     // 1.1.1.2

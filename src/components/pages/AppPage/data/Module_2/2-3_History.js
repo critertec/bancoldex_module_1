@@ -7,7 +7,7 @@ const HistoryDonAlfonso = {
     answer: {
         pages: [
             {
-                desc: "Don Alfonso: Sumercé, buenas tardes. Otra vez yo. Después de toda su ayuda he logrado organizar mis talleres y ganar plata. Creo que es el momento de seguir creciendo: quisiera poner un mega taller en el centro de la ciudad en 8 meses.",
+                desc: "Sumercé, buenas tardes. Otra vez yo. Después de toda su ayuda he logrado organizar mis talleres y ganar plata. Creo que es el momento de seguir creciendo: quisiera poner un mega taller en el centro de la ciudad en 8 meses.",
                 question: "¿Qué debería hacer?"
             }
         ],
@@ -148,8 +148,10 @@ const HistoryDonAlfonso = {
                                                     desc: "¡Claro! Es mucho más probable un robo que un incendio. Me aseguraré y voy a incluir eso. ¡Muchas gracias!"
                                                 }
                                             ],
-                                            feedback: "Don Alfonso está muy bien y su negocio mejor que nunca. Todo el taller está protegido, dándole tranquilidad cada día.",
-                                            end: true
+                                            answer: {
+                                                feedback: "Don Alfonso está muy bien y su negocio mejor que nunca. Todo el taller está protegido, dándole tranquilidad cada día.",
+                                                end: true
+                                            }
                                         }
                                     },
                                 // 1.2.1.1.1.2
@@ -164,8 +166,10 @@ const HistoryDonAlfonso = {
                                                     desc: "Si usted lo dice…"
                                                 }
                                             ],
-                                            feedback: "Después de unos meses hubo un incendio en el taller, que dañó una máquina que costaba más de $ 15.000.000 COP. Don Alfonso no volverá a caer en ese riesgo otra vez.",
-                                            end: true
+                                            answer: {
+                                                feedback: "Después de unos meses hubo un incendio en el taller, que dañó una máquina que costaba más de $ 15.000.000 COP. Don Alfonso no volverá a caer en ese riesgo otra vez.",
+                                                end: true
+                                            }
                                         }
                                     },
                                 // 1.2.1.1.1.3
@@ -180,8 +184,10 @@ const HistoryDonAlfonso = {
                                                     desc: "Si, lo importante es quedar bien con el banco. Le diré que nos quedemos con el seguro básico. "
                                                 }
                                             ],
-                                            feedback: "Don Alfonso ha hecho crecer su negocio. Hace unos días hubo un incendio pero el seguro cubrió todos los daños y le permitió seguir operando sin problema. Sin embargo, decidió mejorar el seguro con pólizas contra robo al darse cuenta de lo que estaba arriesgando. ",
-                                            end: true
+                                            answer: {
+                                                feedback: "Don Alfonso ha hecho crecer su negocio. Hace unos días hubo un incendio pero el seguro cubrió todos los daños y le permitió seguir operando sin problema. Sin embargo, decidió mejorar el seguro con pólizas contra robo al darse cuenta de lo que estaba arriesgando. ",
+                                                end: true
+                                            }
                                         }
                                     },
                         // 1.2.1.1.2
@@ -241,6 +247,11 @@ const HistoryDonAlfonso = {
                                     desc: "Si he escuchado del famoso CDT. Entiendo que si necesito la plata no la puedo sacar sin una penalización. ¿Cierto? Bueno, esperemos que no la necesite.",
                                     question: "¿Qué CDT saco?"
                                 }
+                            ],
+                            options: [
+                                { option: 'A', id: '1.2.2.1' },
+                                { option: 'B', id: "1.2.2.2" },
+                                { option: 'C', id: "1.2.2.3" },
                             ]
                         }
                     },
