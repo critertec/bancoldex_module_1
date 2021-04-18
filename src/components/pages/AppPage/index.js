@@ -63,16 +63,23 @@ function App() {
 
   const nextScene = () => {
 
-    console.log('nextScene')
+    console.log('nextScene', {scene})
     sound('btn');
     switch(scene){
       case "welcome": {
         setScene('selectLevel');
       }; break;
       case "game-speak-intro":
-      case "game-speak": 
-        setScene('game-options');
-      break;
+      case "game-speak": {
+        if (currentQuestion.options){
+          setScene('game-options');
+        }else {
+          newQuestion({
+            optionSelected: null,
+            withScene: null
+          });
+        }
+      };break;
     }
   }
 
@@ -90,13 +97,12 @@ function App() {
   }
 
   const selectStory = (history) => {
-    console.log('selected', history)
-
+    // console.log('selected', history)
     sound('btn');
+
     setCurrentStory(history);
     setCurrentPuntage(0);
-    formatQuestion(history, history.answer);
-    setScene('game-speak-intro');
+    formatQuestion(history, history.answer, 'game-speak-intro');
 
   }
 
@@ -109,65 +115,214 @@ function App() {
     return pts;
   }
 
-  const formatQuestion = (history, answer, scene) => {
-    sound('btn');
-    
-    if (answer.end){
-      setCurrentQuestion({
-        num: state.questionsAsked,
-        ...answer
-      })
-      setScene('game-feedbackEnd');
-      setState({
-        ...state, 
-        questionsAsked: state.questionsAsked + 1,
-        stories: state.stories.map(story => story.id !== currentStory.id ?
-          story
-          :
-          {
-            ...story,
-            score: calcScore()
-          }  
-        )
-      })
-      console.log("END", answer)
-      console.log('puntaje', currentPuntage)
-      return;
-    }
+  const newQuestion = ({ optionSelected = null, withScene = null }) => {
+    // Esta funcion se ejecuta cuando no hay options
+    let option = optionSelected || currentOption; 
 
-    if (!answer?.options){
-      // return  setCurrentQuestion(answer);
-      return alert('not options')
-    }
+    console.log('newQuestion', {
 
-    if (currentStory){
-        let newAnswer = {
-          ...answer,
-          num: state.questionsAsked,
-          options: answer.options
-            .map(option => ({ 
-                ...option, 
-                ...history.listOptions.find(listOption => listOption.id === option.id)
-            }))
+      option,
+      currentQuestion,
+      currentOption,
+      scene
+    })
+
+    switch (!withScene ? scene: withScene) {
+      case 'game-options': {
+        if (option.answer?.options){
+          formatQuestion(currentStory, option.answer, 'game-speak');
+          // setScene('game-options')
+          return;
         }
 
-        // Verificar error
-        // if (newAnswer.options.every(option => typeof(option) === 'string')){
-        //   alert("No se encontro algun option")
-        // }
-    
-        console.log('newAnswer', newAnswer)
-    
-        setCurrentQuestion(newAnswer);
-        setScene(scene)
-        setState({
-          ...state, 
-          questionsAsked: state.questionsAsked + 1
+        
+        let newAnswer = option.answer;
+
+        if (newAnswer?.end){
+          setCurrentQuestion(newAnswer);
+          setScene('game-feedbackEnd');
+
+          return;
+        }
+        console.log('gameOptions', newAnswer)
+        
+        setCurrentQuestion(newAnswer)
+        setScene('game-speak')
+      
+      }; break;
+
+      case 'game-feedback': {
+        console.log('game-feedback', option)
+        // console.log('game-feed', currentOption)
+        let newAnswer = option.answer; 
+
+        if (newAnswer.options){
+          formatQuestion(currentStory, newAnswer, 'game-speak');
+
+          return;
+        }
+
+        if (newAnswer.answer){
+          setCurrentQuestion(newAnswer);
+          setScene('game-speak')
+          return;
+        }
+
+        if (newAnswer.end){
+          // Final
+          setCurrentQuestion({
+            num: state.questionsAsked,
+            ...newAnswer
+          })
+          endStory();
+          return;
+        }
+
+        return alert('error aui')
+
+
+
+
+
+      }; break;
+
+      case "game-speak-intro":
+      case "game-speak" : {
+        
+        let newAnswer = currentQuestion.answer; 
+  
+        if (newAnswer?.options){
+          
+          return alert('tien optine')
+        } 
+
+        if (!newAnswer)  { 
+
+          return alert('Null newAnswer')
+        };
+        
+        setCurrentQuestion({
+          num: state.questionsAsked,
+          ...newAnswer
         })
+
+        if (newAnswer.end){
+          // Final
+          endStory();
+          return;
+        }
+
+
+        // newAnswer speak
+        setScene('game-speak')
+      };break;
     }
+
+    return;
+
+    // if (currentQuestion.end){
+    //   // Final definitivo
+    //   let answer = currentQuestion;
+
+    //   console.log("End")
+    //     setCurrentQuestion({
+    //       num: state.questionsAsked,
+    //       ...answer
+    //     })
+    //     setScene('game-feedbackEnd');
+    //     setState({
+    //       ...state, 
+    //       questionsAsked: state.questionsAsked + 1,
+    //       stories: state.stories.map(story => story.id !== currentStory.id ?
+    //         story
+    //         :
+    //         {
+    //           ...story,
+    //           score: calcScore()
+    //         }  
+    //         )
+    //       })
+
+    //   return;
+    // }
+
+    console.log('Answer siguente', currentQuestion)
+    let answer = currentQuestion.answer;
+
+    setCurrentQuestion({
+      num: state.questionsAsked,
+      ...answer
+    })
+    setScene('game-speak');
+    
+
+    
+    // formatQuestion(currentStory, currentOption.answer, 'game-speak')
+    // console.log('newQuestion', currentQuestion)
+    // setScene('game-speak')
   }
 
-  const selectOption = (option) => {
+  const endStory = () => {
+    setScene('game-feedbackEnd');
+    setState({
+      ...state, 
+      questionsAsked: state.questionsAsked + 1,
+      stories: state.stories.map(story => story.id !== currentStory.id ?
+        story
+        :
+        {
+          ...story,
+          score: calcScore()
+        }  
+        )
+      })
+  }
+
+  const incrementQuestion = () => {
+    setState({
+      ...state, 
+      questionsAsked: state.questionsAsked + 1
+    })
+    
+  }
+
+  const formatQuestion = (story, question, scene) => {
+    sound('btn');
+
+    
+    let history = story || currentStory;
+    let answer = question || currentQuestion;
+    
+    if (!answer.options) return 'not Option, format';
+    // console.log('formatQuestion', answer)
+
+    let newAnswer = {
+      ...answer,
+      num: state.questionsAsked,
+      options: answer.options
+        .map(option => ({ 
+            ...option, 
+            ...history.listOptions.find(listOption => listOption.id === option.id)
+        }))
+    }
+
+    // Verificar error
+    // if (newAnswer.options.every(option => typeof(option) === 'string')){
+    //   alert("No se encontro algun option")
+    // }
+
+    console.log('newAnswer', newAnswer)
+    incrementQuestion();
+    setCurrentQuestion(newAnswer);
+
+    if (scene){
+      setScene(scene)
+    }
+
+    return newAnswer;
+  }
+
+  const selectOption = ( { option } ) => {
     console.log('selectOption', option)
     setCurrentOption(option);
 
@@ -189,23 +344,20 @@ function App() {
     // Dar feedback
     if (!option.feedback){
       // alert('No hay feedback');
-      formatQuestion(currentStory, option.answer, 'game-speak')
+      // formatQuestion(currentStory, option.answer, 'game-speak')
+      newQuestion({ optionSelected: option });
       return;
     }
-
     setScene("game-feedback")
-  }
-
-  const newQuestion = () => {
-    //newAnswer
-    formatQuestion(currentStory, currentOption.answer, 'game-speak')
-    console.log('newQuestion', currentQuestion)
-    // setScene('game-speak')
   }
 
   const goToScene = (scene) => {
     soundBtn();
     setScene(scene)
+  }
+
+  const onReturn = () => {
+    selectStory(currentStory)
   }
 
   const Scene = () => {
@@ -240,7 +392,14 @@ function App() {
             selectOption={selectOption} 
 
             currentOption={currentOption}
-            newQuestion={newQuestion}
+            newQuestion={()=> {
+              console.log('gameScene newQuestion')
+              // newQuestion
+              newQuestion({
+                optionSelected: null,
+                withScene: null
+              });
+            }}
           />
           // <GameSpeakPage 
           //   currentStory={currentStory}
@@ -271,6 +430,10 @@ function App() {
             currentQuestion={currentQuestion}
             goToScene={goToScene}
             currentPuntage={currentPuntage}
+            onCallNext = {()=>{
+              setScene('selectLevel')
+            }}
+            onCallReturn = {onReturn}
           />
         )
     }

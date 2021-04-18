@@ -9,9 +9,14 @@ const DialogSelectOption = ({
     selectOption
 }) => {
 
-    useEffect(()=>{
-        console.log('selectOptin', currentQuestion)
-    }, [])
+    // useEffect(()=>{
+        // console.log('selectOptin', currentQuestion)
+    // }, [])
+    const onSelected = (option) => {
+        // console.log(option)
+        selectOption({option}) 
+        
+    }
 
     return (
         <div className="dialogSelectOption-container">
@@ -28,8 +33,9 @@ const DialogSelectOption = ({
                             <Option 
                                 key={option.option}
                                 {...option}
-                                onCall={()=>{
-                                    selectOption(option)
+                                onCall={(event)=>{
+                                    // event.stopPropagation();
+                                    onSelected(option)
                                 }}
                             />
                         ))}

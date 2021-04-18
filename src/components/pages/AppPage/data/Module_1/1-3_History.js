@@ -1,5 +1,5 @@
 const HistoryGloria = {
-    id: 3,
+    id: "1-3",
     personage: "gloria",
     cover: 'bg-clothing-1',
     title: 'history 3',
@@ -8,7 +8,7 @@ const HistoryGloria = {
     answer: {
         pages: [
             {
-                desc: "Gloria: ¡Hola, que emoción! Muchas gracias por ayudarme en este gran sueño de montar mi propio negocio. Últimamente he tenido problemas porque no siempre les doy el mismo precio a mis clientes por una misma prenda. Creo que debería empezar a fijar los precios de manera correcta. No quiero cobrar de más, pero tampoco quiero dejar de ganar dinero, porque lo necesito para mantener el negocio y para darles a mis hijas la vida que se merecen. Durante los últimos meses he vendido en promedio 100 camisetas. A veces 80, a veces 120.",
+                desc: "¡Hola, que emoción! Muchas gracias por ayudarme en este gran sueño de montar mi propio negocio. Últimamente he tenido problemas porque no siempre les doy el mismo precio a mis clientes por una misma prenda. Creo que debería empezar a fijar los precios de manera correcta. No quiero cobrar de más, pero tampoco quiero dejar de ganar dinero, porque lo necesito para mantener el negocio y para darles a mis hijas la vida que se merecen. Durante los últimos meses he vendido en promedio 100 camisetas. A veces 80, a veces 120.",
                 question: "¿Qué puedo hacer?"
             }
         ],

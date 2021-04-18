@@ -66,7 +66,7 @@ const DialogDesc = ({
                 </div> */}
 
                 <TextDesc 
-                    desc = {infoPage.desc}
+                    desc = {infoPage?.desc}
                 />   
 
                 <ListDesc

@@ -28,7 +28,7 @@ const HeaderStars = ({
     } 
 
     useEffect(()=>{
-        console.log('inicHeaders')
+        // console.log('inicHeaders')
         if (story){
             let porcentage = 100 / Number(story.ptsMax / puntage)
             setScore(Number(porcentage.toFixed(2)))

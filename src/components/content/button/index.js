@@ -17,6 +17,8 @@ import BTN_HOME from '../../../assets/INTERFACE/BTN_HOME.svg'
 import BTN_MUSIC from '../../../assets/INTERFACE/BTN_MUSIC.svg'
 import BTN_MUSIC_MUTE from '../../../assets/INTERFACE/BTN_MUSIC_MUTE.svg'
 
+import BTN_RETURN from '../../../assets/INTERFACE/BTN_RETURN.svg'
+
 const Button = ({
     type,
     ...rest
@@ -45,6 +47,8 @@ const Button = ({
                     return BTN_BACK;
                 case 'help':
                     return BTN_HELP;
+                case 'return':
+                    return BTN_RETURN;
                 default:
                     return BTN_START;
             }

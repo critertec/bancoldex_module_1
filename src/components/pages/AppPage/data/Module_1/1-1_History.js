@@ -1,14 +1,14 @@
 const HistoryJose = {
-    id: 1,
+    id: "1-1",
     personage: 'jose',
     title: 'history 1',
     cover: 'bg-production-uniform-1',
     desc: "José tiene un negocio de producción de uniformes. Después de mucho trabajo, recibió una invitación para licitar un proyecto que será indispensable para la sostenibilidad de su emprendimiento. Sin embargo, tiene problemas para saber cuánto debe cobrar. ¿Podrás ayudarlo?",
-    ptsMax: 11,
+    ptsMax: 9,
     answer: {
         pages: [
             {
-                desc: "José: ¡Hola! Mucho gusto. Mi nombre es José. He seguido el curso de Finanzas Lab y estoy listo para llevar los aprendizajes al mundo real. Dicen que tu me puedes ayudar con temas específicos.",
+                desc: "¡Hola! Mucho gusto. Mi nombre es José. He seguido el curso de Finanzas Lab y estoy listo para llevar los aprendizajes al mundo real. Dicen que tu me puedes ayudar con temas específicos.",
                 question: "¿Podrías ayudarme con unas preguntas para poder ganarme una licitación?",
             }
         ],
@@ -26,7 +26,11 @@ const HistoryJose = {
             answer: {
                 pages: [
                     {
-                        desc: "Sí, está perfecto. ¡Muchas gracias! Te cuento: me invitaron a participar en una licitación para un gran hospital, para producir 1.000 uniformes marcados y elaborados con material antiadherente. Pero, ¡no sé cuánto cobrar!",
+                        desc: [
+                            "Sí, está perfecto. ¡Muchas gracias!",
+                            "",
+                            "Te cuento: me invitaron a participar en una licitación para un gran hospital, para producir 1.000 uniformes marcados y elaborados con material antiadherente. Pero, ¡no sé cuánto cobrar!",
+                        ],
                         question: "¿Qué debería hacer?"
                     }
                 ],
@@ -49,7 +53,14 @@ const HistoryJose = {
                             desc: "Claro, podría irme con este valor. Espero que no estemos cobrando demasiado, porque están comprando por cantidad."
                         }
                     ],
-                    end: true
+                    answer: {
+                        pages: [
+                            {
+                                desc: "Estábamos por encima del precio de los competidores. Perdimos esta oportunidad por no hacer bien el costeo y la fijación del precio. Será en una próxima oportunidad."
+                            }
+                        ],
+                        end: true
+                    }
                 }
             },
         // 1.2
@@ -119,8 +130,14 @@ const HistoryJose = {
                                     desc: "¡Me tocó! Pero al final sentí que el negocio no dio utilidad."
                                 }
                             ],
-                            feedback: "Gracias a tu ayuda, José logró sacar adelante su primer negocio grande de forma rentable y ya sabe cómo cotizar para futuras oportunidades. Definitivamente, saber cuáles son los costos directos e indirectos es fundamental para tener negocios en crecimiento.",
-                            end: true
+                            answer: {
+                                pages: [
+                                    {
+                                        desc: "Gracias a tu ayuda, José logró sacar adelante su primer negocio grande de forma rentable y ya sabe cómo cotizar para futuras oportunidades. Definitivamente, saber cuáles son los costos directos e indirectos es fundamental para tener negocios en crecimiento."
+                                    }
+                                ],
+                                end: true
+                            }
                         }
                     },
                 // 1.2.1.2
@@ -135,8 +152,14 @@ const HistoryJose = {
                                     desc: "Listo. Logré solucionar lo de los servicios. Ya puedo dedicarme a pensar en nuevos proyectos con estos aprendizajes."
                                 }
                             ],
-                            feedback: "Gracias a tu ayuda, José logró sacar adelante su primer negocio grande de forma rentable y ya sabe cómo cotizar para futuras oportunidades. Definitivamente, saber cuáles son los costos directos e indirectos es fundamental para tener negocios en crecimiento.",
-                            end: true
+                            answer: {
+                                pages: [
+                                    {
+                                        desc: "Gracias a tu ayuda, José logró sacar adelante su primer negocio grande de forma rentable y ya sabe cómo cotizar para futuras oportunidades. Definitivamente, saber cuáles son los costos directos e indirectos es fundamental para tener negocios en crecimiento."
+                                    }
+                                ],
+                                end: true
+                            }
                         }
                     },
                 // 1.2.1.3

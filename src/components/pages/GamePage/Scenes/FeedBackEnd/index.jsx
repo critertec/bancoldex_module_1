@@ -6,7 +6,8 @@ import "./FeedBackEnd.css";
 const SceneFeedBackEnd = ({
     currentStory,
     currentQuestion,
-    goToScene,
+    onCallNext,
+    onCallReturn,
     currentPuntage
 }) => {
     // const side = 'left';
@@ -19,7 +20,8 @@ const SceneFeedBackEnd = ({
                     currentQuestion={currentQuestion}
                     currentStory={currentStory}
                     currentPuntage={currentPuntage}
-                    onCall={()=>{goToScene('selectLevel')}}
+                    onCallNext={onCallNext}
+                    onCallReturn={onCallReturn}
                 />
             </div>  
         )

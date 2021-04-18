@@ -1,5 +1,5 @@
 const HistoryDonAlfonso = {
-    id: 2,
+    id: "1-2",
     cover: 'bg-mechanics-3',
     title: 'history 2',
     personage: "don alfonso",
@@ -51,8 +51,8 @@ const HistoryDonAlfonso = {
             answer: {
                 pages: [
                     {
-                        desc: [
-                            "El taller tiene los siguientes costos:",
+                        desc:  "El taller tiene los siguientes costos:",
+                        list: [
                             "Mano de obra: $ 5.000.000 COP",
                             "Salario gerente: $ 5.000.000 COP",
                             "Materiales y herramientas: $ 2.000.000 COP",
@@ -81,13 +81,15 @@ const HistoryDonAlfonso = {
                         {
                             desc: [
                                 "Haciendo bien los cálculos de los gastos, la tabla de costos quedaría así:",
-                                "- Mano de obra: $ 5.000.000 COP",
-                                "- Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
-                                "- Materiales y herramientas: $ 2.000.000 COP",
-                                "- Alquiler de maquinaria: $ 5.000.000 COP",
-                                "- Servicios: $ 1.000.000 COP",
-                                "- Arriendo: $ 2.500.000 COP",
-                                "- Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. ",
+                            ],
+                            list: [
+                                "Mano de obra: $ 5.000.000 COP",
+                                "Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
+                                "Materiales y herramientas: $ 2.000.000 COP",
+                                "Alquiler de maquinaria: $ 5.000.000 COP",
+                                "Servicios: $ 1.000.000 COP",
+                                "Arriendo: $ 2.500.000 COP",
+                                "Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. ",
                                 "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP."
                             ],
                             question: "¿Debería intentarlo?"
@@ -136,15 +138,19 @@ const HistoryDonAlfonso = {
                         {
                             desc: [
                                 "Haciendo bien los cálculos de los gastos, la tabla de costos quedaría así:",
-                                "- Mano de obra: $ 5.000.000 COP",
-                                "- Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
-                                "- Materiales y herramientas: $ 2.000.000 COP",
-                                "- Alquiler de maquinaria: $ 5.000.000 COP",
-                                "- Servicios: $ 1.000.000 COP",
-                                "- Arriendo: $ 2.500.000 COP",
-                                "- Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. ",
-                                "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP."
                             ],
+                            list: [
+                                "Mano de obra: $ 5.000.000 COP",
+                                "Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
+                                "Materiales y herramientas: $ 2.000.000 COP",
+                                "Alquiler de maquinaria: $ 5.000.000 COP",
+                                "Servicios: $ 1.000.000 COP",
+                                "Arriendo: $ 2.500.000 COP",
+                                "Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. "
+                            ],
+                        },
+                        {
+                            desc: "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP.",
                             question: "¿Debería intentarlo?"
                         }
                     ],
@@ -162,20 +168,27 @@ const HistoryDonAlfonso = {
                 feedback: "Decidir duplicar los costos de un taller a otro puede ahorrar bastante trabajo, pero debe hacerse una revisión al detalle. Cada proyecto tiene sus particularidades y deben tenerse en cuenta para analizar los costos directos e indirectos y su punto de equilibrio para poder decidir si hacer o no el negocio.",
                 answer: {
                     personageAction: 'upset',
-                    pages: [{
-                        desc: [
-                            "No podría montarlo igualito. El nuevo taller será un poco más pequeño que el que tengo actualmente, y seguramente los gastos podrían variar. Tengo proyectada la siguiente tabla de costos: ",
-                            "El taller tiene los siguientes costos: ",
-                            "- Mano de obra: $ 5.000.000 COP",
-                            "- Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
-                            "- Materiales y herramientas: $ 2.000.000 COP",
-                            "- Alquiler de maquinaria: $ 5.000.000 COP",
-                            "- Servicios: $ 1.000.000 COP",
-                            "- Arriendo: $ 2.500.000 COP",
-                            "- Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. ",
-                            "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP."
-                        ],
-                    }],
+                    pages: [
+                        {
+                            desc: [
+                                "No podría montarlo igualito. El nuevo taller será un poco más pequeño que el que tengo actualmente, y seguramente los gastos podrían variar. Tengo proyectada la siguiente tabla de costos: ",
+                            ],
+                            
+                        },
+                        {
+                            list: [
+                                "El taller tiene los siguientes costos: ",
+                                "Mano de obra: $ 5.000.000 COP",
+                                "Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
+                                "Materiales y herramientas: $ 2.000.000 COP",
+                                "Alquiler de maquinaria: $ 5.000.000 COP",
+                                "Servicios: $ 1.000.000 COP",
+                                "Arriendo: $ 2.500.000 COP",
+                                "Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. ",    
+                                ],
+                            question: "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP. ¿debería intentarlo?"
+                        }
+                    ],
                     options: [
                         { option: "A", id: "1.1.1" },
                         { option: "B", id: "1.1.2" }

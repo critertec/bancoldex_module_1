@@ -8,7 +8,8 @@ const DialogEnd = ({
     currentStory,
     currentQuestion,
     currentPuntage,
-    onCall
+    onCallNext,
+    onCallReturn
 }) => {
 
     useEffect(()=>{
@@ -18,9 +19,11 @@ const DialogEnd = ({
     const TextDesc = () => {
         if (!currentQuestion) return '';
         let desc = "";
+        let question;
 
         if (currentQuestion.pages){
             desc = currentQuestion?.pages[0]?.desc;
+            question = currentQuestion?.pages[0]?.question;
         }
 
         if (currentQuestion.feedback){
@@ -42,6 +45,14 @@ const DialogEnd = ({
                     <div className="dialogHistory-text">
                         { desc }
                     </div>  
+                }
+                { question && (
+                    <div className="dialogHistory-text" style={{
+                        textAlign: 'center',
+                        marginTop: '10px'
+                    }}> 
+                        {question } 
+                    </div>)
                 }
             </div>
         )
@@ -71,7 +82,13 @@ const DialogEnd = ({
                         <div className="dialogEnd-btn-next">
                             <Button 
                                 type="next"
-                                onClick={onCall}
+                                onClick={onCallNext}
+                            />
+                        </div>
+                        <div className="dialogEnd-btn-return">
+                            <Button 
+                                type="return"
+                                onClick={onCallReturn}
                             />
                         </div>
                     </div>

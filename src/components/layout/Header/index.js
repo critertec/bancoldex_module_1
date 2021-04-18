@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import BTN_RETURN from '../../../assets/INTERFACE/BTN_RETURN.svg'
+import BTN_BACK from '../../../assets/INTERFACE/BTN_BACK.svg'
 import select_level from '../../../assets/INTERFACE/SELECT_LEVEL.svg'
 import select_level_mobile from '../../../assets/INTERFACE/SELECT_LEVEL_BG_BLUE.svg'
 import MenuHome from '../../content/MenuHome/index'
@@ -40,7 +40,7 @@ const Header = ({
                         onClick={backScene}
                     >
                         <img 
-                            src={BTN_RETURN}
+                            src={BTN_BACK}
                             alt=""
                         />
                     </div>           

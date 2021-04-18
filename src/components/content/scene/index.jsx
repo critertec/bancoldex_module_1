@@ -18,11 +18,6 @@ const Scene = ({
     newQuestion,
     
 }) => {
-    const [side, setSide] = useState('left')
-
-    useEffect(()=>{
-        setSide(getSide())
-    }, [])
  
     const getSide = () => {
         
@@ -30,7 +25,7 @@ const Scene = ({
             return 'left';
 
         if (selectOption 
-            && (currentQuestion.num % 2) 
+            && (currentQuestion?.num % 2) 
             === 0
         )
             return 'left';
@@ -51,7 +46,7 @@ const Scene = ({
     const CurrentPersonage = () => {
         return (
             <div className={classnames({
-                [`personage-${side}`]: true
+                [`personage-${getSide()}`]: true
             })}>
                 <Personage
                     name={  scene === 'game-feedback' ?
@@ -71,7 +66,7 @@ const Scene = ({
                 case 'game-feedback':
                     return (
                         <DialogFeedBack 
-                            side={side}
+                            side={getSide()}
                             Personage={CurrentPersonage}
                             currentOption={currentOption}
                             onCall={newQuestion}
@@ -88,7 +83,7 @@ const Scene = ({
                 default:
                     return (
                         <DialogDesc
-                            side={side}
+                            side={getSide()}
                             namePersonage={currentStory?.personage}
                             Personage={CurrentPersonage}
                             currentQuestion={currentQuestion}
@@ -134,7 +129,7 @@ const Scene = ({
                 </div>
                 <div className={classnames({
                     "scene-content": true,
-                    [side]: true
+                    [getSide()]: true
                 })}>  
                     <DialogBox /> 
                     <PersonageBox />

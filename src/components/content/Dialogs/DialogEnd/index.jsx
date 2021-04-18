@@ -9,7 +9,7 @@ const DialogEnd = ({
 }) => {
 
     useEffect(()=>{
-        console.log('DialogEnd', currentQuestion)
+        // console.log('DialogEnd', currentQuestion)
     }, [])
 
     const TextDesc = () => {

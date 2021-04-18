@@ -49,7 +49,7 @@ const DialogHistory = ({
                 {/* <PanoramaPersonage /> */}
 
                 <TextDesc 
-                    desc = {infoPage.desc}
+                    desc = {infoPage?.desc}
                 />     
 
                 { (infoPage && infoPage.question ) &&
