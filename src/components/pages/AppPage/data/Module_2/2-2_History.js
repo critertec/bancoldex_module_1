@@ -2,12 +2,13 @@ const HistoryGloria = {
     id: 5,
     personage: "gloria",
     cover: 'bg-clothing-1',
-    title: 'history 3',
+    title: 'history 2',
     desc: "Gloria es una gran comerciante. Sabe dónde quedan las mejores fábricas de ropa, consigue muy buenos precios y acaba de montar su local en un sector concurrido. Los primeros meses fueron difíciles y sus ingresos apenas alcanzaban para pagar los gastos y la mercancía. Pero hace tres meses empezó a pagar todos los costos y le quedaban $ 500.000 COP de sobra cada mes. Durante esos meses no se daba cuenta y terminaba gastándoselos, pero después de haber estudiado en Mis Finanzas Lab, sabe que puede hacerlo mucho mejor y que esos excedentes pueden tener un mejor uso.",
+    ptsMax: 12,
     answer: {
         pages: [
             {
-                desc: "Gloria: ¡Hola! Muchas gracias por querer ayudarme. Sé que, si sigo con esta buena racha, pronto podré comprar el local que tengo arrendado. ¿Qué es lo primero que debo hacer? Me están sobrando aproximadamente $ 500.000 COP cada mes."
+                desc: "¡Hola! Muchas gracias por querer ayudarme. Sé que, si sigo con esta buena racha, pronto podré comprar el local que tengo arrendado. ¿Qué es lo primero que debo hacer? Me están sobrando aproximadamente $ 500.000 COP cada mes."
             }
         ],
         options: [
@@ -50,17 +51,17 @@ const HistoryGloria = {
                             desc: "Seguí tu consejo, pero el fin de semana pasado entraron los ladrones y se llevaron la caja fuerte. Creo que definitivamente el banco es más seguro. Iré a abrir una cuenta para guardar la plata que sobra del negocio. "
                         },
                         {
-                            desc: [
-                                "Me ofrecieron un seguro para PYMES que cubre: ",
-                                "- Incendio",
-                                "- Robo",
-                                "- Inundación",
-                                "- Motín",
-                                "- Tsunami",
-                                "- Volcán",
-                                "- Infidelidad de empleados",
-                                "¿Debería tomarlo? Quedé asustada con todo lo que puede pasar. Cuesta $ 8.000.000 COP al año y puedo pagarlo en 12 meses. "
-                            ]
+                            desc: "Me ofrecieron un seguro para PYMES que cubre: ",
+                            list: [
+                                "Incendio",
+                                "Robo",
+                                "Inundación",
+                                "Motín",
+                                "Tsunami",
+                                "Volcán",
+                                "Infidelidad de empleados",
+                            ],
+                             question: "¿Debería tomarlo? Quedé asustada con todo lo que puede pasar. Cuesta $ 8.000.000 COP al año y puedo pagarlo en 12 meses. "
                         }
                     ],
                     options: [
@@ -82,8 +83,10 @@ const HistoryGloria = {
                                 desc: "¡Sí había! Hay uno que cubria robo, incendio e inundación. Eso, creo, es posible que pase."
                             }
                         ],
-                        feedback: "Gloria lleva varios meses ahorrando su dinero en las cuentas del banco. Cada vez su historial financiero se ve mejor, y al haber elegido asegurar su empresa da más tranquilidad para futuros préstamos. ",
-                        end: true
+                        answer: {
+                            feedback: "Gloria lleva varios meses ahorrando su dinero en las cuentas del banco. Cada vez su historial financiero se ve mejor, y al haber elegido asegurar su empresa da más tranquilidad para futuros préstamos. ",
+                            end: true
+                        }
                     }
                 },
             // 1.1.2
@@ -128,17 +131,17 @@ const HistoryGloria = {
                             desc: "Suena bien eso de la cuenta de ahorros. Creo que lo haré como dices. ¡Muchas gracias!"
                         },
                         {
-                            desc: [
-                                "Me ofrecieron un seguro para PYMES que cubre: ",
-                                "- Incendio",
-                                "- Robo",
-                                "- Inundación",
-                                "- Motín",
-                                "- Tsunami",
-                                "- Volcán",
-                                "- Infidelidad de empleados",
-                                "¿Debería tomarlo? Quedé asustada con todo lo que puede pasar. Cuesta $ 8.000.000 COP al año y puedo pagarlo en 12 meses. "
-                            ]
+                            desc: "Me ofrecieron un seguro para PYMES que cubre: ",
+                            list: [
+                                "Incendio",
+                                "Robo",
+                                "Inundación",
+                                "Motín",
+                                "Tsunami",
+                                "Volcán",
+                                "Infidelidad de empleados"
+                            ],
+                            question: "¿Debería tomarlo? Quedé asustada con todo lo que puede pasar. Cuesta $ 8.000.000 COP al año y puedo pagarlo en 12 meses. "
                         }
                     ],
                     options: [
@@ -263,9 +266,10 @@ const HistoryGloria = {
                             answer: {
                                 pages: [
                                     {
-                                        desc: ""
+                                        desc: "PENDIENTE"
                                     }
-                                ]
+                                ],
+                                end: true
                             }
                         },
             // 2.1.2
@@ -282,6 +286,10 @@ const HistoryGloria = {
                             {
                                 desc: "Me ofrecieron un seguro para PYMES que cubre Incendio, Robo o Inundación en mis locales. Tomarlo me cuesta $1.000.000 al año y puedo pagarlo mensualmente. Pero no estoy segura si quiero gastarme esa plata. Nunca me ha pasado nada. "
                             }
+                        ],
+                        options: [
+                            { option: "A", id: "2.1.1.1" },
+                            { option: "B", id: "2.1.1.2" }
                         ]
                     }
                 },
@@ -299,6 +307,10 @@ const HistoryGloria = {
                             {
                                 desc: "Me ofrecieron un seguro para PYMES que cubre Incendio, Robo o Inundación en mis locales. Tomarlo me cuesta $1.000.000 al año y puedo pagarlo mensualmente. Pero no estoy segura si quiero gastarme esa plata. Nunca me ha pasado nada. "
                             }
+                        ],
+                        options: [
+                            { option: "A", id: "2.1.1.1" },
+                            { option: "B", id: "2.1.1.2" }
                         ]
                     }
                 },
@@ -315,9 +327,9 @@ const HistoryGloria = {
                     }
                 ],
                 options: [
-                    { option: "A", id: "1.1.1" },
-                    { option: "B", id: "1.1.2" },
-                    { option: "C", id: "1.1.3" }
+                    { option: "A", id: "1.1" },
+                    { option: "B", id: "1.2" },
+                    { option: "C", id: "1.3" }
                 ]
             }
         }

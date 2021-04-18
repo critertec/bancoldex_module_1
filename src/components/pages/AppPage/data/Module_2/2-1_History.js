@@ -100,8 +100,10 @@ const HistoryJose = {
                                 desc: "Muchas gracias. Sí, debería empezar a mejorar las relaciones con el banco."
                             }
                         ],
-                        feedback: "Gracias a tus consejos, José ha logrado ahorrar lo suficiente para abrir su nuevo centro de producción. Sin embargo, unos meses después de haber comprado el seguro de cobertura básica, los ladrones entraron a la fábrica y se llevaron 5 millones en mercancía. José ahora sabe que elegir bien el seguro es fundamental para evitar alejarse de la meta financiera. ",
-                        end: true
+                        answer: {
+                            feedback: "Gracias a tus consejos, José ha logrado ahorrar lo suficiente para abrir su nuevo centro de producción. Sin embargo, unos meses después de haber comprado el seguro de cobertura básica, los ladrones entraron a la fábrica y se llevaron 5 millones en mercancía. José ahora sabe que elegir bien el seguro es fundamental para evitar alejarse de la meta financiera. ",
+                            end: true
+                        }
                     }
                 },
             // 1.1.1.2
@@ -116,8 +118,10 @@ const HistoryJose = {
                                 desc: "¡Genial! Así lo haré. Muchas gracias por tus consejos. "
                             }
                         ],
-                        feedback: "Gracias a tus consejos, José ha logrado ahorrar lo suficiente para abrir su nuevo centro de producción. Unos meses después de haber comprado el seguro, hubo una inundación que dañó su maquinaria de producción pero, al estar asegurado, pudo conseguir una máquina nueva que funciona mucho mejor que la que tenía antes. ",
-                        end: true
+                        answer: {
+                            feedback: "Gracias a tus consejos, José ha logrado ahorrar lo suficiente para abrir su nuevo centro de producción. Unos meses después de haber comprado el seguro, hubo una inundación que dañó su maquinaria de producción pero, al estar asegurado, pudo conseguir una máquina nueva que funciona mucho mejor que la que tenía antes. ",
+                            end: true
+                        }
                     }
                 },
             // 1.1.1.3
@@ -132,8 +136,10 @@ const HistoryJose = {
                                 desc: "Muchas gracias. Voy a hacerlo tal y como dices. "
                             }
                         ],
-                        feedback: "Gracias a tus consejos, José ha logrado ahorrar lo suficiente para abrir su nuevo centro de producción. Sin embargo, después de varios meses cayó en cuenta que en la ciudad donde vive no hay volcanes y está lejos del mar. No necesita asegurarse por esos desastres, así que podría ahorrar más dinero. ",
-                        end: true
+                        answer: {
+                            feedback: "Gracias a tus consejos, José ha logrado ahorrar lo suficiente para abrir su nuevo centro de producción. Sin embargo, después de varios meses cayó en cuenta que en la ciudad donde vive no hay volcanes y está lejos del mar. No necesita asegurarse por esos desastres, así que podría ahorrar más dinero. ",
+                            end: true
+                        }
                     }
                 },
             // 1.1.1.4
@@ -141,7 +147,6 @@ const HistoryJose = {
                     id: "1.1.1.4",
                     type: "mala",
                     desc: "No te gastes tus utilidades en seguros. Son gastos innecesarios que te alejan de tu meta. ",
-                    feedback: "",
                     answer: {
                         pages: [
                             {
@@ -191,7 +196,11 @@ const HistoryJose = {
             pages: [
                 {
                     desc: "Gracias por tu consejo. Pero me acabo de acordar de lo que le pasó a mi primo Luis, que tenía bastante dinero ahorrado en efectivo, pero se entraron los ladrones a la casa y se lo llevaron todo. No había a quien reclamarle. Creo que mejor lo guardaré en el banco.",
+                },
+                {
                     desc: "Fui al banco y ya abrí la cuenta. Pero antes de irme, me recomendaron tener un seguro para la empresa y no sé cuál elegir.",
+                },
+                {
                     desc: [
                         "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
                         "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
@@ -369,6 +378,13 @@ const HistoryJose = {
                             },
                             {
                                 desc: "¡Me siento genial! Me siento mucho más tranquilo con mis ahorros en el CDT, seguros y creciendo. Pero, antes de irme del banco, me ofrecieron unos seguros para la empresa y no sé cuál debería elegir."
+                            },
+                            {
+                                desc: [
+                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
+                                    "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
+                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
+                                ]
                             }
                         ],
                         options: [

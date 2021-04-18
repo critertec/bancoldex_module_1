@@ -1,6 +1,8 @@
 const HistoryDonAlfonso = {
     id: 6,
     personage: 'don alfonso',
+    cover: 'bg-mechanics-3',
+    title: 'history 3',
     desc: "Don Alfonso tiene dos talleres en la ciudad. Le ha ido bien y cree que es el momento de hacer una expansión más grande. Ha tratado de pedir prestado pero no ha tenido buenos resultados y no tiene la plata para hacerlo por su cuenta. ¿Qué puede hacer?",
     answer: {
         pages: [
@@ -15,6 +17,7 @@ const HistoryDonAlfonso = {
             { option: "C", id: "3" }
         ]
     },
+    ptsMax: 12,
     listOptions: [
     // 1
         {
