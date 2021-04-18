@@ -2,7 +2,7 @@ const HistoryDonAlfonso = {
     id: 7,
     personage: "don alfonso",
     cover: 'bg-mechanics-3',
-    title: 'history 2',
+    title: 'history 1',
     desc: "El banco llamó a Don Alfonso a informarle que su taller 'Entre ruedas' había recibido un crédito pre-aprobado para libre inversión. Es la primera vez que Don Alfonso tiene acceso a un crédito y no sabe bien cómo aprovecharlo o si debería tomarlo. ¿Podrías ayudarlo?",
     ptsMax: 14,
     answer: {

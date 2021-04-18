@@ -1,7 +1,7 @@
 // Modules
 // import Module_1 from './data/Module_1'
-import Module_2 from './data/Module_2'
-// import Module_3 from './data/Module_3'
+// import Module_2 from './data/Module_2'
+import Module_3 from './data/Module_3'
 
 const instructions = {
     title: "¡Hola de nuevo!",
@@ -19,6 +19,6 @@ const InfoModalHelp = [
     "Nunca sabes que puedes aprender mientras ayudas a otros"
 ];
 
-const stories = Module_2;
+const stories = Module_3;
 
 export { instructions, stories, InfoModalHelp }

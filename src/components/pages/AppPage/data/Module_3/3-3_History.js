@@ -1,7 +1,7 @@
 const HistoryJose = {
     id: 9,
     personage: 'jose',
-    title: 'history 1',
+    title: 'history 3',
     cover: 'bg-production-uniform-1',
     desc: "José quiere hacer crecer su fábrica de uniformes a otras ciudades del país. Con lo aprendido en el curso, ha logrado hacer un plan de negocio y sabe que para la primera fase de expansión requiere $ 200.000.000 COP, y que podrá recuperarlos en menos de 12 meses si todo sale bien. Es un alto riesgo y sabe que deberá trabajar mucho más para sacar el proyecto adelante. ¿Debería hacerlo? ",
     ptsMax: 11,
@@ -136,7 +136,7 @@ const HistoryJose = {
                                     {
                                         desc: "La empresa de José está muy bien, y los créditos se están pagando fácilmente. Sin embargo, José piensa recurrentemente si dejó pasar una oportunidad al no haber abierto otra ciudad. Nunca lo sabrá pero, al menos, sabe que no perdió todo por tomar decisiones aceleradas sin información. "
                                     }
-                                ]
+                                ], end: true
                             }
                         },
                     // 1.1.1.3
@@ -149,7 +149,8 @@ const HistoryJose = {
                                     {
                                         desc: "Después de haber hecho un análisis de sus ingresos y gastos, José se dio cuenta de que podía pagar el crédito inicial en la mitad del tiempo que había proyectado inicialmente, y eso fue exactamente lo que hizo. Ahora abrió una nueva ciudad con los números claros y los riesgos bajos. ¡José está imparable!"
                                     }
-                                ]
+                                ],
+                                end: true
                             }
                         },
                 // 1.1.2
@@ -201,6 +202,11 @@ const HistoryJose = {
                         {
                             desc: "¡Me aprobaron el crédito! Sin embargo, tengo un problema. Se me dañó mi carro y no tenía seguro. Necesito comprar uno nuevo para poderme transportar entre ciudades. ¿Podría usar parte del crédito para eso? Las tasas están más bajas frente a las que me ofrecen por comprar un vehículo como persona natural."
                         }
+                    ],
+                    options: [
+                        { option: "A", id: "1.1.1" },
+                        { option: "B", id: "1.1.2" },
+                        { option: "C", id: "1.1.3" }
                     ]
                 }
             },
@@ -217,6 +223,11 @@ const HistoryJose = {
                         {
                             desc: "¡Me aprobaron el crédito! Sin embargo, tengo un problema. Se me dañó mi carro y no tenía seguro. Necesito comprar uno nuevo para poderme transportar entre ciudades. ¿Podría usar parte del crédito para eso? Las tasas están más bajas frente a las que me ofrecen por comprar un vehículo como persona natural."
                         }
+                    ],
+                    options: [
+                        { option: "A", id: "1.1.1" },
+                        { option: "B", id: "1.1.2" },
+                        { option: "C", id: "1.1.3" }
                     ]
                 }
             },

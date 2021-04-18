@@ -2,7 +2,7 @@ const HistoryGloria = {
     id: 8,
     personage: "gloria",
     cover: 'bg-clothing-1',
-    title: 'history 3',
+    title: 'history 2',
     desc: "Gloria ha logrado organizarse financieramente. Sus locales de ropa cada vez van mejor y ahora considera que podría solicitar un crédito con su banco. ¿Será una buena idea?",
     ptsMax: 12,
     answer: {
@@ -310,7 +310,7 @@ const HistoryGloria = {
         },
     // 3
         {
-            id: 3,
+            id: "3",
             type: "mala",
             desc: "Nunca te metas en créditos. Sólo sirven para cobrarte intereses. Si la empresa está bien, ahorra y pagas de contado lo que necesites. No hay necesidad de pagar de más.",
             answer: {
@@ -319,8 +319,10 @@ const HistoryGloria = {
                         desc: "Nunca te metas en créditos. Sólo sirven para cobrarte intereses. Si la empresa está bien, ahorra y pagas de contado lo que necesites. No hay necesidad de pagar de más. "
                     },
                 ],
-                feedback: 'Tienes razón. Mejor sigo como voy. (Gloria perdió la oportunidad de apalancar su negocio y acelerar su crecimiento. Los créditos bien ejecutados son una gran opción para aprovechar oportunidades que se presenten para negociar mejores precios, hacer crecer los puntos de venta, traer maquinaria nueva y muchas más opciones que permitirían reducir costos o incrementar la demanda. ',
-                end: true
+                answer: {
+                    feedback: 'Tienes razón. Mejor sigo como voy. (Gloria perdió la oportunidad de apalancar su negocio y acelerar su crecimiento. Los créditos bien ejecutados son una gran opción para aprovechar oportunidades que se presenten para negociar mejores precios, hacer crecer los puntos de venta, traer maquinaria nueva y muchas más opciones que permitirían reducir costos o incrementar la demanda. ',
+                    end: true
+                }
             }
         }
     ]
