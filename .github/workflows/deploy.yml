@@ -24,7 +24,7 @@ jobs:
       run: npm install
 
     - name: Build
-      run: npm run build
+      run: CI= npm run build
 
     - name: Deploy to gh-pages
       run: |
@@ -33,7 +33,6 @@ jobs:
         git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
       env:
-        CI: ''
         user_name: 'github_actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
