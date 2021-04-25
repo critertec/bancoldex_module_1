@@ -16,15 +16,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
 
 }
 
 .dialogDesc-boxText {
     width: 80%;
-    /* height: 100%; */
-    font-weight: bold;
+    max-height: 85%;
+    /* font-weight: bold; */
     line-height: 1.2;
     color: white;
+    font-size: 1.5vw;
 }
 
 .dialogDesc-footer {
@@ -42,8 +44,8 @@
 }
 
 .dialogDesc-text {
- font-weight: 600;
- font-size: 1em;
+ /* font-weight: 400; */
+ /* font-size: 1.5rem; */
 }
 
 .dialogDesc-text-question {
@@ -86,6 +88,34 @@
     /* background-color: red; */
 }
 
+.title-table {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.container-table {
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+.table th {
+    text-transform: capitalize;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.table td {
+    font-weight: normal;
+    border: 1px solid white;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 650px) {
     .container-panorama {
         display: block;
@@ -124,5 +154,13 @@
         right: 10px;
         width: 50px;
         height: 50px;
+    }
+
+    .dialogDesc-text {
+        font-size: 12px;
+    }
+
+    .dialogDesc-text-question {
+        font-size: 12px;
     }
 }

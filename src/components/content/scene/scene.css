@@ -36,8 +36,9 @@
 }
 
 .scene-personage-container {
-   height: 100%;
-   width: 350px;
+   /* height: 100vh; */
+   width: auto;
+   /* min-width: 30%; */
 
    display: flex;
    align-items: flex-end;
@@ -45,8 +46,9 @@
 }
 
 .scene-personage {
-    width: 100%;
-    max-height: 70vh;
+    width: 30vw;
+    min-width: 350px;
+    max-height: 80vh;
     overflow: hidden;
 }
 
@@ -69,7 +71,7 @@
     position: absolute;
     width: 0; 
     height: 0; 
-    top: 60px;
+    top: 160px;
     left: -70px;
 
     border-left: 35px solid transparent;
@@ -82,7 +84,7 @@
     position: absolute;
     width: 0; 
     height: 0; 
-    top: 60px;
+    top: 160px;
     /* left: -70px; */
     right: -70px;
 

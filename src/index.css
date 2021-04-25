@@ -12,6 +12,18 @@
   font-family: 'AvenirNextLtPro';
   src: local('AvenirNextLtPro'), url(./assets//Fonts/AvenirNextLTPro-Bold.otf)
 }
+@font-face {
+  font-family: 'AvenirNextLtProMedium';
+  src: local('AvenirNextLtProMedium'), url(./assets//Fonts/AvenirNextLTPro-MediumCn.otf)
+}
+@font-face {
+  font-family: 'AvenirNextLtProLight';
+  src: local('AvenirNextLtProMedium'), url(./assets//Fonts/avenirnextltpro-light.woff.ttf)
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'), url(./assets//Fonts/Calibri\ 400.ttf)
+}
 
 #root {
   min-height: 100vh;
@@ -45,15 +57,15 @@ body {
 }
 
 
-.bg-mechanics-1 {
+.bg-mechanics {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/FONDOS/BG_MECHANICS_1.svg');
+  background-image: url('./assets/FONDOS/BG_MECHANICS.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bg-mechanics-2 {
+/* .bg-mechanics-2 {
   width: 100%;
   height: 100%;
   background-image: url('./assets/FONDOS/BG_MECHANICS_2.svg');
@@ -67,17 +79,17 @@ body {
   background-image: url('./assets/FONDOS/BG_MECHANICS_3.svg');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
-.bg-clothing-1 {
+.bg-clothing {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/FONDOS/BG_ CLOTHING_1.svg');
+  background-image: url('./assets/FONDOS/BG_CLOTHING.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bg-clothing-2 {
+/* .bg-clothing-2 {
   width: 100%;
   height: 100%;
   background-image: url('./assets/FONDOS/BG_ CLOTHING_2.svg');
@@ -91,17 +103,17 @@ body {
   background-image: url('./assets/FONDOS/BG_ CLOTHING_3.svg');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
-.bg-production-uniform-1 {
+.bg-production-uniform {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/FONDOS/BG_PRODUCTIOIN_UNIFORM_1.svg');
+  background-image: url('./assets/FONDOS/BG_PRODUCTIOIN_UNIFORM.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bg-production-uniform-2 {
+/* .bg-production-uniform-2 {
   width: 100%;
   height: 100%;
   background-image: url('./assets/FONDOS/BG_PRODUCTIOIN_UNIFORM_2.svg');
@@ -115,7 +127,7 @@ body {
   background-image: url('./assets/FONDOS/BG_PRODUCTIOIN_UNIFORM_3.svg');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 @media only screen and (max-width: 650px) {
   .avatar-mobile-container {
@@ -126,4 +138,7 @@ body {
     background: none;
   }
   
+  .dialogFeedBack-text {
+    font-size: 15px;
+  }
 }

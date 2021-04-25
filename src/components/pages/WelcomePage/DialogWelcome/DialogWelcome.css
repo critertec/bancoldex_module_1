@@ -19,12 +19,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
 }
 
 .welcome-dialog-boxText {
     width: 80%;
-    /* height: 100%; */
-    font-weight: bold;
+    max-height: 100%;
+    font-weight: normal;
+    /* font-size: 1.5rem; */
+    font-size: 1.5vw;
     line-height: 1.2;
     color: white;
 }
@@ -32,7 +35,7 @@
 .welcome-dialog-footer {
     position: relative;
     width: 100%;
-    height: calc(20% - 10px);
+    height: calc(20% - 20px);
     /* margin-top: 20px; */
     display: flex;
     justify-content: center;
@@ -42,33 +45,31 @@
 
 
 .welcome-dialog-btn-next {
-    width: 30%;
-    max-width: 200px;
-    /* height: 80%; */
+    width: auto;
+    height: 70%;
 }
 
 .welcome-dialog-content-text {
     min-height: 80%;
-    font-size: 1em;
 }
 
 .welcome-dialog-title {
     font-weight: bold;
     text-align: center;
-    line-height: 1.2;
-    font-size: 20px;
+    line-height: 2;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .welcome-dialog-text {
-    font-weight: normal;
-    margin-bottom: 10px;
+    font-family: 'AvenirNextLtProLight';
+    margin-bottom: 20px;
 }
 
 .welcome-dialog-text-question {
     margin-top: 20px;
     font-weight:900;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -123,7 +124,7 @@
     position: absolute;
     width: 0; 
     height: 0; 
-    bottom: -50px;
+    bottom: -60px;
     /* top: 50px; */
     left: 30px;
 

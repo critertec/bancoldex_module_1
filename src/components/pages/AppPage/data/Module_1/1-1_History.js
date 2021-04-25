@@ -1,8 +1,8 @@
 const HistoryJose = {
     id: "1-1",
     personage: 'jose',
-    title: 'history 1',
-    cover: 'bg-production-uniform-1',
+    title: 'history-1',
+    cover: 'bg-production-uniform',
     desc: "José tiene un negocio de producción de uniformes. Después de mucho trabajo, recibió una invitación para licitar un proyecto que será indispensable para la sostenibilidad de su emprendimiento. Sin embargo, tiene problemas para saber cuánto debe cobrar. ¿Podrás ayudarlo?",
     ptsMax: 9,
     answer: {
@@ -72,21 +72,51 @@ const HistoryJose = {
                 answer: {
                     pages: [
                         {
-                            desc: [
-                                "¡Claro! Necesitamos producir todo a más tardar en un mes.",
-                                ""
-                            ],  
-                            list: [
-                                "Telas: $ 1.000.000 COP para 100 unidades",
-                                "Botones: $ 150.000 COP para 100 unidades",
-                                "Mano de obra: $ 6.000.000 COP para 1.000 unidades",
-                                "Alquiler de máquinas: $ 9.000.000 COP para 1.000 unidades",
-                                "Mercado de mi familia: $ 500.000 COP mensuales ",
-                                "Servicios: $ 1.100.000 COP mensuales",
-                                "Arriendo: $ 2.000.000 COP mensuales",
-                                "Transporte: $ 100.000 COP ",
-                                "Elementos varios de producción: $ 1.000.000 COP para 1.000 unidades"
-                            ]                                      
+                            table: {
+                                title: "¡Claro! Necesitamos producir todo a más tardar en un mes",
+                                columns: [
+                                    { key: 'description', label: 'descripción' },
+                                    { key: 'value', label: 'valor' }
+                                ],
+                                values: [
+                                    {
+                                        description: 'Telas',
+                                        value: '$1.000.000 COP para 100 unidades'                     
+                                    },
+                                    {
+                                        description: 'Botones',
+                                        value: '$150.000 COP para 100 unidades'                     
+                                    },
+                                    {
+                                        description: 'Mano de obra',
+                                        value: '$6.000.000 COP para 1.000 unidades'                     
+                                    },
+                                    {
+                                        description: 'Alquiler de máquinas',
+                                        value: '$9.000.000 COP para 1.000 unidades'                     
+                                    },
+                                    {
+                                        description: 'Mercado de mi familia',
+                                        value: '$500.000 COP mensuales'                     
+                                    },
+                                    {
+                                        description: 'Servicios',
+                                        value: '$1.100.000 COP mensuales'                     
+                                    },
+                                    {
+                                        description: 'Arriendo',
+                                        value: '$2.000.000 COP mensuales'                     
+                                    },
+                                    {
+                                        description: 'Transporte',
+                                        value: '$100.000 COP '                     
+                                    },
+                                    {
+                                        description: 'Elementos varios de producción',
+                                        value: '$1.000.000 COP para 1.000 unidades'                     
+                                    }
+                                ]   
+                            }                                    
                         }
                     ],
                     options: [

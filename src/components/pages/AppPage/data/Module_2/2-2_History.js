@@ -165,13 +165,13 @@ const HistoryGloria = {
                         {
                             desc: [
                                 "Me ofrecieron un seguro para PYMES que cubre: ",
-                                "- Incendio",
-                                "- Robo",
-                                "- Inundación",
-                                "- Motín",
-                                "- Tsunami",
-                                "- Volcán",
-                                "- Infidelidad de empleados",
+                                "Incendio",
+                                "Robo",
+                                "Inundación",
+                                "Motín",
+                                "Tsunami",
+                                "Volcán",
+                                "Infidelidad de empleados",
                                 "¿Debería tomarlo? Quedé asustada con todo lo que puede pasar. Cuesta $ 8.000.000 COP al año y puedo pagarlo en 12 meses. "
                             ]
                         }

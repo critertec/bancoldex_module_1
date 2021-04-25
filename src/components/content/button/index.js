@@ -31,11 +31,11 @@ const Button = ({
                     return BTN_ARROW_RIGHT;
                 case 'arrow left':
                     return BTN_ARROW_LEFT;
-                case 'history 1':
+                case 'history-1':
                     return BTN_HISTORY_1;
-                case 'history 2':
+                case 'history-2':
                     return BTN_HISTORY_2;
-                case 'history 3':
+                case 'history-3':
                     return BTN_HISTORY_3;
                 case 'home':
                     return BTN_HOME;

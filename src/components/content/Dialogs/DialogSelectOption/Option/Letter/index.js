@@ -9,6 +9,9 @@ import LETTER_B_ACTIVE from '../../../../../../assets/INTERFACE/LETTER_B_ACTIVE.
 import LETTER_C from '../../../../../../assets/INTERFACE/LETTER_C.svg'
 import LETTER_C_ACTIVE from '../../../../../../assets/INTERFACE/LETTER_C_ACTIVE.svg'
 
+import LETTER_D from '../../../../../../assets/INTERFACE/LETTER_D.svg'
+import LETTER_D_ACTIVE from '../../../../../../assets/INTERFACE/LETTER_D_ACTIVE.svg'
+
 const Letter = ({
     option = "A",
     active
@@ -23,6 +26,8 @@ const Letter = ({
                 return active ? LETTER_B_ACTIVE : LETTER_B;
             case "C":
                 return active ? LETTER_C_ACTIVE : LETTER_C;
+            case 'D':
+                return active ? LETTER_D_ACTIVE : LETTER_D;
         }
     }
 

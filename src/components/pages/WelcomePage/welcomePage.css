@@ -14,8 +14,8 @@
 }
 
 .welcome-container-content {
-    width: 100%;
-    max-width: 800px;
+    width: 90%;
+    /* max-width: 800px; */
     height: 100%;
 
     display: flex;
@@ -42,7 +42,7 @@
 
 .welcome-personage {
     position: absolute;
-    bottom: 0px;
+    bottom: -10px;
     width: 100%;
 
     display: flex;
@@ -55,11 +55,17 @@
 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1000px) {
+    .welcome-dialog-text {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
     .welcome-dialog-container{
-        margin-top: 40px;
+        margin-top: 50px;
         min-width: 360px;
-        height: auto;
+        height: 60vh;
+        width: 90%;
+        padding: 10px;
     }
 
     .welcome-container-content {
@@ -91,7 +97,7 @@
     }
 
     .welcome-dialog-boxText {
-        font-size: 12px;
+        /* font-size: .7rem; */
         width: 90%;
     }
 
@@ -108,5 +114,9 @@
 
     .welcome-fl-bottom-container {
         display:block;
+    }
+
+    .welcome-dialog-footer {
+        height: calc(20% - 10px);
     }
 }

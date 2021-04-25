@@ -94,4 +94,7 @@
         top: 0;
     }
 
+    .dialogHistory-text {
+        font-size: 15px;
+    }
 }

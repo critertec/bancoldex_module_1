@@ -53,6 +53,44 @@ const DialogDesc = ({
         )
     }
 
+    const Table = ({ data }) => {
+        if (!data) return '';
+        const { title, columns, values } = data;
+        const keys = columns
+            ?.reduce( (acc, newAcc) => ([...acc, newAcc.key]), [])
+
+        return (
+            <div className="container-table">
+                <div className="title-table">
+                    { title }
+                </div>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            { columns.map( column => (
+                                <th>
+                                    { column.label }
+                                </th>
+                            )) }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        { values.map( (value, i) => (
+                            <tr key={i}>
+                                {keys.map(k => (
+                                    <td key={k}>
+                                        { value[k] }
+                                    </td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+
+            </div>
+        )
+    }
+
     const BoxText = () => {
         const infoPage = currentQuestion?.pages[page];
 
@@ -69,9 +107,12 @@ const DialogDesc = ({
                     desc = {infoPage?.desc}
                 />   
 
-                <ListDesc
+                {/* <ListDesc
                     list = {infoPage?.list}
-                />  
+                />   */}
+                <Table 
+                    data = {infoPage?.table}
+                />
 
                 { (infoPage && infoPage.question ) &&
                     (

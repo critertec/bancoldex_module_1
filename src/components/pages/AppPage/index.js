@@ -17,6 +17,7 @@ import SoundBtn from '../../../assets/SOUNDS/ETC_Sfx_Swipe_01.mp3'
 import SoundPtsOk from '../../../assets/SOUNDS/ETC_Sfx_Correcto_01.mp3'
 import SoundPtsBad from '../../../assets/SOUNDS/ETC_Sfx_Incorrecto_01.mp3'
 import SoundPts from '../../../assets/SOUNDS/ETC_Sfx_Puntaje_01.mp3'
+import SoundGame from '../../../assets/SOUNDS/bensound-memories.mp3'
 
 import ModalHomeConfirm from '../../content/Modals/HomeConfirm/index'
 import ModalHelp from '../../content/Modals/Help/index'
@@ -43,10 +44,12 @@ function App() {
   const [soundPtsOk] = useSound(SoundPtsOk)
   const [soundPtsBad] = useSound(SoundPtsBad)
   const [soundPts] = useSound(SoundPts)
+  const [soundGame] = useSound(SoundGame)
 
   const sound = (type) => {
-    if (!stateSound)
+    if (!stateSound){
       return ;
+    }
 
     switch (type) {
       case 'btn':
@@ -54,10 +57,16 @@ function App() {
         break;
       case "good":
         soundPtsOk();
+        break;
       case "good":
         soundPts();
+        break;
       case 'bad':
         soundPtsBad();
+        break;
+      case 'game':
+        soundGame();
+        break;
     }
   }
 
@@ -180,10 +189,6 @@ function App() {
 
         return alert('error aui')
 
-
-
-
-
       }; break;
 
       case "game-speak-intro":
@@ -220,46 +225,6 @@ function App() {
 
     return;
 
-    // if (currentQuestion.end){
-    //   // Final definitivo
-    //   let answer = currentQuestion;
-
-    //   console.log("End")
-    //     setCurrentQuestion({
-    //       num: state.questionsAsked,
-    //       ...answer
-    //     })
-    //     setScene('game-feedbackEnd');
-    //     setState({
-    //       ...state, 
-    //       questionsAsked: state.questionsAsked + 1,
-    //       stories: state.stories.map(story => story.id !== currentStory.id ?
-    //         story
-    //         :
-    //         {
-    //           ...story,
-    //           score: calcScore()
-    //         }  
-    //         )
-    //       })
-
-    //   return;
-    // }
-
-    console.log('Answer siguente', currentQuestion)
-    let answer = currentQuestion.answer;
-
-    setCurrentQuestion({
-      num: state.questionsAsked,
-      ...answer
-    })
-    setScene('game-speak');
-    
-
-    
-    // formatQuestion(currentStory, currentOption.answer, 'game-speak')
-    // console.log('newQuestion', currentQuestion)
-    // setScene('game-speak')
   }
 
   const endStory = () => {
@@ -401,28 +366,7 @@ function App() {
               });
             }}
           />
-          // <GameSpeakPage 
-          //   currentStory={currentStory}
-          //   currentQuestion={currentQuestion}
-          //   nextScene={nextScene}
-          // />
         );
-      // case 'game-options':
-      //   return (
-      //     <GameOptionsPage 
-      //       currentStory={currentStory}
-      //       currentQuestion={currentQuestion}
-      //       selectOption={selectOption}
-      //     />
-      //   )
-      // case 'game-feedback':
-      //   return (
-      //     <GameFeedBackPage 
-      //       currentStory={currentStory}
-      //       currentOption={currentOption}
-      //       newQuestion={newQuestion}
-      //     />
-      //   )
       case "game-feedbackEnd":
         return (
           <GameFeedBackEndPage 
@@ -440,6 +384,7 @@ function App() {
   }
 
   const init = () => {
+
     // Almacenar Data
     console.log(stories)
 
@@ -452,7 +397,7 @@ function App() {
       }))
 
     })
-    // setStoriesDate(stories.map())
+    sound('game');
   }
 
   useEffect(()=>{

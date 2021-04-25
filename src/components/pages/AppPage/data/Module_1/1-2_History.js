@@ -1,7 +1,7 @@
 const HistoryDonAlfonso = {
     id: "1-2",
-    cover: 'bg-mechanics-3',
-    title: 'history 2',
+    cover: 'bg-mechanics',
+    title: 'history-2',
     personage: "don alfonso",
     desc: "Don Alfonso es dueño de un taller de mecánica hace varios años. Entró al curso de Mis Finanzas Lab para mejorar sus habilidades financieras y le ha servido bastante, pero ahora necesita tu ayuda. Aunque trabaja mucho y gana más de lo que se gasta, al final del mes no ve los excedentes. ¿Le puedes ayudar?",
     ptsMax: 11,
@@ -51,13 +51,31 @@ const HistoryDonAlfonso = {
             answer: {
                 pages: [
                     {
-                        desc:  "El taller tiene los siguientes costos:",
-                        list: [
-                            "Mano de obra: $ 5.000.000 COP",
-                            "Salario gerente: $ 5.000.000 COP",
-                            "Materiales y herramientas: $ 2.000.000 COP",
-                            "Alquiler de maquinaria: $ 5.000.000 COP"
-                        ]
+                        table: {
+                            title: 'El taller tiene los siguientes costos',
+                            columns: [
+                                { key: 'description', label: 'descripción' },
+                                { key: 'value', label: 'valor' }
+                            ],
+                            values: [
+                                {
+                                   description: 'Mano de Obra',
+                                   value: '$5.000.000'
+                                },
+                                {
+                                    description: 'Salario Gerente',
+                                    value: '$5.000.000'
+                                },
+                                {
+                                    description: 'Materiales y Herramientas',
+                                    value: '$2.000.000'
+                                },
+                                {
+                                    description: 'Alquiler de Maquinaria',
+                                    value: '$5.000.000'
+                                }
+                            ]
+                        },
                     }
                 ],
                 options: [
@@ -79,19 +97,46 @@ const HistoryDonAlfonso = {
                             question: "¿Cierto?"
                         },
                         {
-                            desc: [
-                                "Haciendo bien los cálculos de los gastos, la tabla de costos quedaría así:",
-                            ],
-                            list: [
-                                "Mano de obra: $ 5.000.000 COP",
-                                "Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
-                                "Materiales y herramientas: $ 2.000.000 COP",
-                                "Alquiler de maquinaria: $ 5.000.000 COP",
-                                "Servicios: $ 1.000.000 COP",
-                                "Arriendo: $ 2.500.000 COP",
-                                "Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. ",
-                                "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP."
-                            ],
+                            table: {
+                                title: 'Haciendo bien los cálculos de los gastos, la tabla de costos quedaría así',
+                                columns: [
+                                    { key: 'description', label: 'descripción' },
+                                    { key: 'value', label: 'valor' }
+                                ],
+                                values: [
+                                    {
+                                       description: 'Mano de Obra',
+                                       value: '$5.000.000'
+                                    },
+                                    {
+                                        description: 'Salario Gerente 50%',
+                                        value: '$3.500.000 (El otro local paga el otro 50%)'
+                                    },
+                                    {
+                                        description: 'Materiales y Herramientas',
+                                        value: '$2.000.000'
+                                    },
+                                    {
+                                        description: 'Alquiler de Maquinaria',
+                                        value: '$5.000.000'
+                                    },
+                                    {
+                                        description: 'Servicios',
+                                        value: '$1.000.000'
+                                    },
+                                    {
+                                        description: 'Arriendo',
+                                        value: '$2.500.000'
+                                    },
+                                    {
+                                        description: 'Adecuación Inicial, una sola vez.',
+                                        value: '$4.000.000'
+                                    },
+                                ]
+                            }
+                        },
+                        {
+                            desc: "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP.",
                             question: "¿Debería intentarlo?"
                         }
                     ],
@@ -136,18 +181,43 @@ const HistoryDonAlfonso = {
                             question: "¡Casi tomo una decisión acelerada!"
                         },
                         {
-                            desc: [
-                                "Haciendo bien los cálculos de los gastos, la tabla de costos quedaría así:",
-                            ],
-                            list: [
-                                "Mano de obra: $ 5.000.000 COP",
-                                "Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
-                                "Materiales y herramientas: $ 2.000.000 COP",
-                                "Alquiler de maquinaria: $ 5.000.000 COP",
-                                "Servicios: $ 1.000.000 COP",
-                                "Arriendo: $ 2.500.000 COP",
-                                "Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. "
-                            ],
+                            table: {
+                                title: 'Haciendo bien los cálculos de los gastos, la tabla de costos quedaría así',
+                                columns: [
+                                    { key: 'description', label: 'descripción' },
+                                    { key: 'value', label: 'valor' }
+                                ],
+                                values: [
+                                    {
+                                       description: 'Mano de obra',
+                                       value: '$5.000.000'
+                                    },
+                                    {
+                                        description: 'Salario gerente 50%',
+                                        value: '$ 3.500.000 COP (El otro local paga el otro 50%)'
+                                    },
+                                    {
+                                        description: 'Materiales y herramientas',
+                                        value: '$2.000.000'
+                                    },
+                                    {
+                                        description: 'Alquiler de maquinaria',
+                                        value: '$5.000.000'
+                                    },
+                                    {
+                                        description: 'Servicios',
+                                        value: '$1.000.000'
+                                    },
+                                    {
+                                        description: 'Arriendo',
+                                        value: '$2.500.000'
+                                    },
+                                    {
+                                        description: 'Adecuación Inicial',
+                                        value: '$4.000.000, una sola vez.'
+                                    },
+                                ]
+                            }
                         },
                         {
                             desc: "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP.",
@@ -176,16 +246,46 @@ const HistoryDonAlfonso = {
                             
                         },
                         {
-                            list: [
-                                "El taller tiene los siguientes costos: ",
-                                "Mano de obra: $ 5.000.000 COP",
-                                "Salario gerente 50%: $ 3.500.000 COP (El otro local paga el otro 50%)",
-                                "Materiales y herramientas: $ 2.000.000 COP",
-                                "Alquiler de maquinaria: $ 5.000.000 COP",
-                                "Servicios: $ 1.000.000 COP",
-                                "Arriendo: $ 2.500.000 COP",
-                                "Adecuación Inicial: $ 4.000.000 000 COP, una sola vez. ",    
-                                ],
+                            table: {
+                                title: 'El taller tiene los siguientes costos',
+                                columns: [
+                                    { key: 'description', label: 'descripción' },
+                                    { key: 'value', label: 'valor' }
+                                ],  
+                                values: [
+                                    {
+                                       description: 'Mano de obra',
+                                       value: '$5.000.000'
+                                    },
+                                    {
+                                        description: 'Salario gerente 50%',
+                                        value: '$3.500.000, (El otro local paga el otro 50%)'                                        
+                                    },
+                                    {
+                                        description: "Materiales y herramientas",
+                                        value: "$2.000.000"
+                                    },
+                                    {
+                                        description: "Alquiler de maquinaria",
+                                        value: "$5.000.000"
+                                    },
+
+                                    {
+                                        description: "Servicios",
+                                        value: "$1.000.000"
+                                    },
+                                    {
+                                        description: "Arriendo",
+                                        value: "$2.500.000"
+                                    },
+                                    {
+                                        description: "Adecuación Inicial",
+                                        value: "$4.000.000 000 COP, una sola vez. "
+                                    }
+                                ]                              
+                            }
+                        },
+                        {
                             question: "Estimamos estar vendiendo un mínimo de $ 21.000.000 COP mensuales y un promedio de $ 23.000.000 COP. ¿debería intentarlo?"
                         }
                     ],
@@ -296,3 +396,24 @@ const HistoryDonAlfonso = {
 
 
 export default HistoryDonAlfonso;
+
+
+// {
+//     table: {
+//         title: '',
+//         columns: [
+//             { key: 'description', label: 'descripción' },
+//             { key: 'value', label: 'valor' }
+//         ],
+//         values: [
+//             {
+//                description: '',
+//                value: ''
+//             },
+//             {
+//                 description: '',
+//                 value: ''
+//             },
+//         ]
+//     }
+// },
