@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/bancoldex_module_1/static/css/main.f88c4408.chunk.css",
-    "main.js": "/bancoldex_module_1/static/js/main.c95fa35b.chunk.js",
-    "main.js.map": "/bancoldex_module_1/static/js/main.c95fa35b.chunk.js.map",
-    "runtime-main.js": "/bancoldex_module_1/static/js/runtime-main.20aeaf25.js",
-    "runtime-main.js.map": "/bancoldex_module_1/static/js/runtime-main.20aeaf25.js.map",
-    "static/js/2.a3213822.chunk.js": "/bancoldex_module_1/static/js/2.a3213822.chunk.js",
-    "static/js/2.a3213822.chunk.js.map": "/bancoldex_module_1/static/js/2.a3213822.chunk.js.map",
-    "static/js/3.57c795e8.chunk.js": "/bancoldex_module_1/static/js/3.57c795e8.chunk.js",
-    "static/js/3.57c795e8.chunk.js.map": "/bancoldex_module_1/static/js/3.57c795e8.chunk.js.map",
+    "main.js": "/bancoldex_module_1/static/js/main.a18d7dcc.chunk.js",
+    "main.js.map": "/bancoldex_module_1/static/js/main.a18d7dcc.chunk.js.map",
+    "runtime-main.js": "/bancoldex_module_1/static/js/runtime-main.0b94246e.js",
+    "runtime-main.js.map": "/bancoldex_module_1/static/js/runtime-main.0b94246e.js.map",
+    "static/js/2.35b8f5e9.chunk.js": "/bancoldex_module_1/static/js/2.35b8f5e9.chunk.js",
+    "static/js/2.35b8f5e9.chunk.js.map": "/bancoldex_module_1/static/js/2.35b8f5e9.chunk.js.map",
+    "static/js/3.8a1c983e.chunk.js": "/bancoldex_module_1/static/js/3.8a1c983e.chunk.js",
+    "static/js/3.8a1c983e.chunk.js.map": "/bancoldex_module_1/static/js/3.8a1c983e.chunk.js.map",
     "index.html": "/bancoldex_module_1/index.html",
     "static/css/main.f88c4408.chunk.css.map": "/bancoldex_module_1/static/css/main.f88c4408.chunk.css.map",
-    "static/js/2.a3213822.chunk.js.LICENSE.txt": "/bancoldex_module_1/static/js/2.a3213822.chunk.js.LICENSE.txt",
-    "static/js/3.57c795e8.chunk.js.LICENSE.txt": "/bancoldex_module_1/static/js/3.57c795e8.chunk.js.LICENSE.txt",
+    "static/js/2.35b8f5e9.chunk.js.LICENSE.txt": "/bancoldex_module_1/static/js/2.35b8f5e9.chunk.js.LICENSE.txt",
+    "static/js/3.8a1c983e.chunk.js.LICENSE.txt": "/bancoldex_module_1/static/js/3.8a1c983e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/bancoldex_module_1/static/media/avenirnextltpro-light.woff.e55fd97e.ttf",
     "static/media/MenuHome.css": "/bancoldex_module_1/static/media/BG_BTNS_MENU.306fa2fb.svg",
     "static/media/BG_DON_ALFONSO_P.e6ef8eab.svg": "/bancoldex_module_1/static/media/BG_DON_ALFONSO_P.e6ef8eab.svg",
@@ -71,9 +71,9 @@
     "static/media/bensound-memories.7c478301.mp3": "/bancoldex_module_1/static/media/bensound-memories.7c478301.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.20aeaf25.js",
-    "static/js/2.a3213822.chunk.js",
+    "static/js/runtime-main.0b94246e.js",
+    "static/js/2.35b8f5e9.chunk.js",
     "static/css/main.f88c4408.chunk.css",
-    "static/js/main.c95fa35b.chunk.js"
+    "static/js/main.a18d7dcc.chunk.js"
   ]
 }
