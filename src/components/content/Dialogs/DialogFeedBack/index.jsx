@@ -37,9 +37,20 @@ const DiaglogFeedBack = ({
                             </div>
                         </div>
 
-                        <div className="dialogFeedBack-text">
-                            {currentOption.feedback}
-                        </div>
+                            { Array.isArray(currentOption?.feedback) ? 
+                                    currentOption.feedback.map( (t, index) => (
+                                        <div 
+                                            key={index}
+                                            className="dialogFeedBack-text"
+                                        >
+                                            { t }
+                                        </div> 
+                                    ))
+                                :
+                                <div className="dialogFeedBack-text">
+                                    { currentOption.feedback }
+                                </div>  
+                            }
                         {/* <div className="dialogFeedBack-text-question">
                             ?Lorem ipsum dolor sit amet consectetur adipisicing elit ?
                         </div> */}

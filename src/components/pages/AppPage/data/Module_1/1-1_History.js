@@ -64,7 +64,7 @@ const HistoryJose = {
                 desc: "Revisando en internet veo que el precio promedio de uniformes similares está entre  $100.000 y  $150.000 cuando se compra por unidad. Podrías cobrar  $125.000.",
                 feedback: [
                         "Si bien es importante analizar el mercado, si determinas un precio solo con factores externos es posible que vendas por debajo de los costos, lo que podría llevarte a dar pérdida.",
-                        "     ‎.",
+                        "    ‎",
                         "También podrías basarte en un precio alto que no tiene en cuenta los costos menores de producción masiva, lo que te haría menos competitivo en precio.",
                         ],
                 answer: {
@@ -93,8 +93,12 @@ const HistoryJose = {
                 id: '1.2',
                 type: 'buena',
                 desc: "¿Me podrías compartir el listado de costos?",
-                feedback: "¡Muy bien! Cada negocio tiene sus particularidades y requerimientos, por eso es imporante siempre revisar el detalle para asegurar que el precio fijado cumpla con los costos y la utilidad esperada.",
-                answer: {
+                feedback: [
+                    "¡Muy bien!",
+                    "    ‎",
+                    "Cada negocio tiene sus particularidades y requerimientos, por eso es imporante siempre revisar el detalle para asegurar que el precio fijado cumpla con los costos y la utilidad esperada.",
+                ],
+                    answer: {
                     pages: [
                         {
                             table: {

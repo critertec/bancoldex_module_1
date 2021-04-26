@@ -76,8 +76,9 @@
 }
 
 .dialogFeedBack-text {
- font-weight: 600;
- font-size: 1.2vw;
+ font-weight: 300;
+ font-size: 1rem;
+ font-family: 'AvenirNextLtProLight';
 }
 
 .dialogFeedBack-text-question {
