@@ -35,7 +35,11 @@ const HistoryDonAlfonso = {
         id: "1",
         type: "neutral",
         desc: "Don Alfonso, lo primero que podría hacer es organizarse y no sacar la plata del taller para sus gastos personales. Así podremos saber si realmente el taller está generando utilidad o no.",
-        feedback: "Has tomado una decisión lógica, sin embargo, sabemos que para lograrlo se requiere de un proceso de tiempo y constancia. También es importante incentivar el control de los gastos para saber como se usan los ingresos.",
+        feedback: [
+                "Has tomado una decisión lógica, sin embargo, sabemos que para lograrlo se requiere de un proceso de tiempo y constancia.",
+                "    ‎",
+                "También es importante incentivar el control de los gastos para saber como se usan los ingresos.",
+            ],
         answer: {
             personageAction: 'ok',
             pages: [
@@ -59,7 +63,13 @@ const HistoryDonAlfonso = {
             id: "1.1",
             type: "buena",
             desc: "Primero, revisemos la estructura de costos del negocio actual.",
-            feedback: "¡Muy bien! Analizar el detalle del negocio te permitirá encontrar opciones de optimización, o identificar variaciones en los costos que podrían cambiar las proyecciones de ventas esperadas. Cada negocio tiene sus particularidades y como tal, no podemos tomar decisiones desde las generalidades.",
+            feedback: [
+                    "¡Muy bien!",
+                    "    ‎",
+                    "Analizar el detalle del negocio te permitirá encontrar opciones de optimización, o identificar variaciones en los costos que podrían cambiar las proyecciones de ventas esperadas.",
+                    "    ‎",
+                    "Cada negocio tiene sus particularidades y como tal, no podemos tomar decisiones desde las generalidades.",
+                    ],
             answer: {
                 pages: [
                     {
@@ -101,7 +111,11 @@ const HistoryDonAlfonso = {
                 id: "1.1.1",
                 type: "mala",
                 desc: "Lo veo bien. Si cree que puede prestar servicios por más de $17.000.000 mensuales, debería abrir otro local.",
-                feedback: "Hay que revisar con cuidado los costos de cada proyecto. Existen costos ocultos que no se tienen en cuenta. En este caso no se tomó en cuenta que se debe pagar un arriendo para el nuevo local, lo que hace que los $17.000.000 de ventas no sean suficientes para pagar los costos.",
+                feedback: [
+                        "Hay que revisar con cuidado los costos de cada proyecto.",
+                        "    ‎",
+                        "Existen costos ocultos que no se tienen en cuenta. En este caso no se tomó en cuenta que se debe pagar un arriendo para el nuevo local, lo que hace que los $17.000.000 de ventas no sean suficientes para pagar los costos.",
+                ],
                 answer: {
                     pages: [
                         {
@@ -170,7 +184,13 @@ const HistoryDonAlfonso = {
                     id: "1.1.1.1",
                     type: "mala",
                     desc: "No. Sus gastos son $23.000.000, si presta servicios por $21.000.000 mensuales iría a pérdida.",
-                    feedback: "La adecuación del local es un gasto de una sola vez. Los gastos mensuales son en promedio $19.000.000, y la proyección mínima de ventas es de $21.000.000. Por no tener claridad en los gastos podemos estar perdiendo oportunidades de negocio o adentrarnos en negocios poco rentables.",
+                    feedback: [
+                        "La adecuación del local es un gasto de una sola vez.",
+                        "    ‎",
+                        "Los gastos mensuales son en promedio $19.000.000, y la proyección mínima de ventas es de $21.000.000.",
+                        "    ‎",
+                        "Por no tener claridad en los gastos podemos estar perdiendo oportunidades de negocio o adentrarnos en negocios poco rentables.",
+                    ],
                     answer: {
                         feedback: [
                             "Don Alfonso decidió seguir tu consejo y no invertir en su nuevo taller.",
@@ -186,7 +206,11 @@ const HistoryDonAlfonso = {
                     id: "1.1.1.2",
                     type: "buena",
                     desc: "¡Sí! Los números dan. Tenga en cuenta que será mucho trabajo, pero esa es la forma de alcanzar el éxito.",
-                    feedback: "Los costos directos e indirectos son de $19.000.000 y las proyecciones muestran un mínimo de facturación de $21.000.000. Esto significa que el negocio podría generar utilidad. El objetivo es encontrar negocios con utilidades altas que puedan absorver los imprevistos o meses de poca facturación.",
+                    feedback: [
+                            "Los costos directos e indirectos son de $19.000.000 y las proyecciones muestran un mínimo de facturación de $21.000.000.",
+                            "    ‎",
+                            "Esto significa que el negocio podría generar utilidad. El objetivo es encontrar negocios con utilidades altas que puedan absorver los imprevistos o meses de poca facturación.",
+                    ],
                     answer: {
                         feedback: [
                             "Gracias a tus consejos, Don Alfonso está mejor que nunca.", 
@@ -203,7 +227,11 @@ const HistoryDonAlfonso = {
                 id: "1.1.2",
                 type: "buena",
                 desc: "¿Está seguro que son todos los costos que debe tener el nuevo taller?. Podríamos revisar a más profundidad. Cada local tiene sus particularidades.",
-                feedback: "Identificar que cada local, o cada proyecto debe revisarse al detalle es vital para no tomar una decisión desfaborable. En este caso no se está tomando en cuenta el costo del alquiler del local, lo que puede hacer entender que los costos de operación son solo de 17 millones cuando realmente serían más altos.",
+                feedback: [
+                        "Identificar que cada local, o cada proyecto debe revisarse al detalle es vital para no tomar una decisión desfaborable.",
+                        "    ‎",
+                        "En este caso no se está tomando en cuenta el costo del alquiler del local, lo que puede hacer entender que los costos de operación son solo de $17.000.000 cuando realmente serían más altos.",
+                        ],
                 answer: {
                     pages: [
                         {
@@ -269,7 +297,11 @@ const HistoryDonAlfonso = {
                 id: "1.2",
                 type: "neutral",
                 desc: "Si este negocio le da plata, puede montar otro igualito sin problema. ",
-                feedback: "Decidir duplicar los costos de un taller a otro puede ahorrar bastante trabajo, pero debe hacerse una revisión al detalle. Cada proyecto tiene sus particularidades y deben tenerse en cuenta para analizar los costos directos e indirectos y su punto de equilibrio para poder decidir si hacer o no el negocio.",
+                feedback: [
+                    "Decidir utilizar los valores históricos de un taller al otro puede ahorrar trabajo, pero debe revisarse al detalle.",
+                    "    ‎",
+                    "Cada proyecto tiene sus particularidades y deben tenerse en cuenta para analizar los costos directos e indirectos y su punto de equilibrio para poder decidir si hacer o no el negocio.",
+                ],
                 answer: {
                     personageAction: 'upset',
                     pages: [
@@ -338,7 +370,13 @@ const HistoryDonAlfonso = {
         id: "2",
         type: "neutral",
         desc: "Montar un sistema de ingresos y gastos en el computador le dará tranquilidad al saber cuánto dinero entró y cuánto salió en el día. Además, ingresar el dinero en una cuenta de ahorros permitirá tener mejor control de la salida de efectivo.",
-        feedback: "¡Bien! Es imporante tener registrado todos los ingresos y todos los gastos, en lo posible, de forma diaria para que sea fácil de analizar la información. Se puede hacer de forma manual, en computador o al estar bancarizado, se podría hacer de forma automática con los extractos y movimientos.",
+        feedback: [
+                    "¡Muy bien!",
+                    "    ‎",
+                    "Es imporante tener registrado todos los ingresos y todos los gastos, en lo posible, de forma diaria para que sea fácil de analizar la información.",
+                    "    ‎",
+                    "Se puede hacer de forma manual, en computador o al estar bancarizado, se podría hacer de forma automática con los extractos y movimientos.",
+                    ],
         answer: {
             pages: [
                 {
@@ -362,7 +400,12 @@ const HistoryDonAlfonso = {
             id: '2.1',
             type: "mala",
             desc: "Una sola cuenta para usted y el negocio para ahorrar en gastos financieros.",
-            feedback: "Elegir ahorrar en gastos financieros uniendo las cuentas personales y empresariales no es un buen consejo. Los costos bancarios son mínimos en comparación del desgaste operativo que generan las cuentas compartidas.",
+            feedback: [
+                    "Elegir ahorrar en gastos financieros uniendo las cuentas personales y empresariales no es un buen consejo.",
+                    "    ‎",
+                    "Los costos bancarios son mínimos en comparación del desgaste operativo que generan las cuentas compartidas.",
+                    ],
+
             answer: {
                 pages: [
                     {
@@ -384,7 +427,11 @@ const HistoryDonAlfonso = {
             id: '2.2',
             type: "neutral",
             desc: "Abra una cuenta de ahorros para manejar el dinero del taller y solicite un datáfono para recibir pagos electrónicos.",
-            feedback: "Los datáfonos y las cuentas de ahorro permitirán tener un control automático de los ingresos recibidos, y con los extractos podrá identificar la fecha y la cantidad del dinero utilizado. Es importante combinar este sistema con un registro de gastos diario.",
+            feedback: [
+                "Los datáfonos y las cuentas de ahorro permitirán tener un control automático de los ingresos recibidos, y con los extractos podrá identificar la fecha y la cantidad del dinero utilizado.",
+                "    ‎",
+                "Es importante combinar este sistema con un registro de gastos diario.",
+                ],
             answer: {
                 pages: [
                     {
@@ -407,8 +454,12 @@ const HistoryDonAlfonso = {
             id: '2.3',
             type: "neutral",
             desc: "Abra una cuenta para usted y otra para el taller. Sí, puede costar más, pero es mejor no revolver cuentas. También pida un datáfono para recibir pagos electrónicos.",
-            feedback: "Los datáfonos y las cuentas de ahorro permitirán tener un control automático de los ingresos recibidos, y con los extractos podrá identificar la fecha y la cantidad del dinero utilizado. Es importante combinar este sistema con un registro de gastos diario.",
-            answer: {
+            feedback: [
+                    "Los datáfonos y las cuentas de ahorro permitirán tener un control automático de los ingresos recibidos, y con los extractos podrá identificar la fecha y la cantidad del dinero utilizado.",
+                    "    ‎",
+                    "Es importante combinar este sistema con un registro de gastos diario.",
+                    ],
+                    answer: {
                 pages: [
                     {
                         desc: "¡Gracias! Con esa nueva metodología para organizarme me di cuenta de que me estaba gastando la plata del taller en bobadas. Desde que me organicé me di cuenta de que tengo un buen negocio y ahora quiero abrir otro taller en otro barrio de la ciudad.",
@@ -426,7 +477,12 @@ const HistoryDonAlfonso = {
         id: "3",
         type: "neutral",
         desc: "Don Alfonso, ha llegado la hora de empezar a recibir tarjeta débito y realizar transferencias. Es más fácil seguir los ingresos y gastos si están en formato digital.",
-        feedback: "La transformación digital será siempre una buena opción, pero todo es un proceso. La naturaleza del negocio te permite utilizar efectivo y pagos digitales, y se debe tener un sistema de control que combine ambas opciones.",
+        feedback: [
+                "La transformación digital será siempre una buena opción, pero todo es un proceso.", 
+                "    ‎",
+                "La naturaleza del negocio te permite utilizar efectivo y pagos digitales, y se debe tener un sistema de control que combine ambas opciones.",
+                ],
+
         answer: {
             pages: [
                 {

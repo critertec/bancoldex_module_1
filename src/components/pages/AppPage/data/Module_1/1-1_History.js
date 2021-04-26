@@ -160,7 +160,11 @@ const HistoryJose = {
                     id: '1.2.1',
                     type: "mala",
                     desc: "Podrías cobrar $30.750 por uniforme, ya que te compran por volumen.",
-                    feedback: "Llegaste a este valor sumando los costos directos e indirectos, sin embargo, no tuviste en cuenta la utilidad esperada. Si no tienes en cuenta la utilidad en tu fijación de precio nunca podrás hacer crecer tu negocio ni tener disponibilidad para responder a imprevistos.",
+                    feedback: [
+                            "Llegaste a este valor sumando los costos directos e indirectos, sin embargo, no tuviste en cuenta la utilidad esperada.", 
+                            "    ‎",
+                            "Si no tienes en cuenta la utilidad en tu fijación de precio nunca podrás hacer crecer tu negocio ni tener disponibilidad para responder a imprevistos.",
+                    ],
                     answer: {
                         pages: [
                             {

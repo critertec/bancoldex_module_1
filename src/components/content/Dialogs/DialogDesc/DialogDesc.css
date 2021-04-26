@@ -54,8 +54,9 @@
     margin-top: 20px;
     text-align: center;
 
-    font-size: 32px;
+    font-size: 32PX;
     font-family: 'AvenirNextLtPro';
+
 }
 
 .dialogDesc-btns-container {
@@ -111,14 +112,14 @@
     text-transform: capitalize;
     border: 1px solid white;
     padding: 4px;
-    font-size: 10px;
+    font-size: 22px;
 }
 
 .table td {
     font-weight: normal;
     border: 1px solid white;
-    padding: 4px;
-    font-size: 10px;
+    padding: 8px;
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 650px) {

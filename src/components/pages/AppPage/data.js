@@ -5,7 +5,8 @@ import data from './data/Module_1/index'
 
 const InfoModalHelp = [ 
     "Recuerda explorar todas las historias a profundidad.",
-    "Nunca sabes que puedes aprender mientras ayudas a otros"
+    "Es posible que requieras lápiz y papel para calcular algunas respuestas",
+    "Buena suerte.",
 ];
 
 const stories = data.stories;
