@@ -96,11 +96,14 @@
 .title-table {
     text-align: center;
     margin: 10px;
-    font-size: 32px;
+    font-size: calc(1.2rem + 1vw);
+    font-family: 'Calibri';
 }
 
 .container-table {
     height: 100%;
+    max-height: 45vh;
+    overflow-y: auto;
     padding-bottom: 20px;
 }
 
@@ -112,14 +115,17 @@
     text-transform: capitalize;
     border: 1px solid white;
     padding: 4px;
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: calc(.8rem + 1vw);
+    font-family: 'Calibri';
 }
 
 .table td {
     font-weight: normal;
     border: 1px solid white;
     padding: 8px;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: calc(.5rem + 1vw);
 }
 
 @media only screen and (max-width: 650px) {

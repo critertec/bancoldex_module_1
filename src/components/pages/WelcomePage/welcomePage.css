@@ -58,7 +58,7 @@
 @media only screen and (max-width: 1000px) {
     .welcome-dialog-text {
         margin-bottom: 10px;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
     .welcome-dialog-container{
         margin-top: 50px;

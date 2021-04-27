@@ -141,7 +141,6 @@ function App({}) {
           return;
         }
 
-        
         let newAnswer = option.answer;
 
         if (newAnswer?.end){
@@ -413,12 +412,14 @@ function App({}) {
       setStateSound={setStateSound}
 
       modalHome={()=>{
-        if (scene.startsWith('game')){
+        if (scene.startsWith('game') && ['game-speak', 'game-options'].includes(scene)){
           setModalHome(true)
+        }else {
+          setScene('selectLevel')
         }
       }}
 
-      modalHelp={()=>{
+      modalHelp={()=>{ 
         setModalHelp(true)
       }}
     >
