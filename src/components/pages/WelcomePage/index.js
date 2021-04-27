@@ -14,6 +14,15 @@ export default (props) => {
                 </div>
                 <DialogWelcome {...props} />
             </div>
+                <div className="welcome-footer">
+                    <div className='welcome-footer-text'>
+                        Music: {' '} 
+                        <a href="https://www.bensound.com/"         styles={{ cursor: 'pointer'}}
+                        >
+                            https://www.bensound.com/
+                        </a> 
+                    </div>
+                </div>
         </div>
     )
 }
