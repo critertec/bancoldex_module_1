@@ -4,9 +4,9 @@ import data from './data/Module_1/index'
 // import Module_3 from './data/Module_3'
 
 const InfoModalHelp = [ 
-    "Recuerda explorar todas las historias a profundidad.",
-    "Es posible que requieras lápiz y papel para calcular algunas respuestas",
-    "Buena suerte.",
+    "Prueba tus conocimientos ayudando a otras personas a alcanzar sus sueños",
+    "Entre mejores consejos des, más estrellas recibirás.",
+    "Da click en el icono del ojo para ver la descripción de cada historia",
 ];
 
 const stories = data.stories;
