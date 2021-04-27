@@ -72,7 +72,6 @@
     padding: 10px;
     color: white;
     font-size: calc(.3rem + 1vw);
-    text-align:justify;
     overflow-y: auto;
     overflow-x: hidden;
     font-family: 'AvenirNextLtProLight';
