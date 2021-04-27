@@ -56,12 +56,15 @@
     box-sizing: border-box;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    overflow-y: scroll;
     /* background-color: red; */
 }
 
 .dialogEnd-footer {
+    width: 100%;
     position: relative;
     z-index: 10;
     display: flex;
@@ -70,9 +73,9 @@
 }
 
 .dialogEnd-btn-next {
-    width: 25%;
+    width: 18vw;
     min-width: 120px;
-    height: 80px;
+    height: auto;
     cursor: pointer;
 
     display: flex;
@@ -80,9 +83,9 @@
 }
 
 .dialogEnd-btn-return {
-    width: 25%;
+    width: 18vw;
     min-width: 120px;
-    height: 50px;
+    height: auto;
     cursor: pointer;
 
     display: flex;
@@ -119,4 +122,10 @@
     left: 10px;
     width: 40px;
     height: 40px;
+}
+
+.dialogEnd-footer-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
 }

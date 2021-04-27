@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import Layout from '../../layout/ContainerApp/index'
 import WelcomePage from '../WelcomePage'
 import SelectLevelPage from '../SelectLevelPage/'
-import GameSpeakPage from '../GamePage/Scenes/Speak/index'
-import GameOptionsPage from '../GamePage/Scenes/SelectOption/index'
-import GameFeedBackPage from '../GamePage/Scenes/FeedBack/index.jsx'
+// import GameSpeakPage from '../GamePage/Scenes/Speak/index'
+// import GameOptionsPage from '../GamePage/Scenes/SelectOption/index'
+// import GameFeedBackPage from '../GamePage/Scenes/FeedBack/index.jsx'
 import GameFeedBackEndPage from '../GamePage/Scenes/FeedBackEnd/index'
 
 import GameScene from '../../content/scene/index'
@@ -17,18 +17,18 @@ import SoundBtn from '../../../assets/SOUNDS/ETC_Sfx_Swipe_01.mp3'
 import SoundPtsOk from '../../../assets/SOUNDS/ETC_Sfx_Correcto_01.mp3'
 import SoundPtsBad from '../../../assets/SOUNDS/ETC_Sfx_Incorrecto_01.mp3'
 import SoundPts from '../../../assets/SOUNDS/ETC_Sfx_Puntaje_01.mp3'
-import SoundGame from '../../../assets/SOUNDS/bensound-memories.mp3'
 
 import ModalHomeConfirm from '../../content/Modals/HomeConfirm/index'
 import ModalHelp from '../../content/Modals/Help/index'
+
 import "./App.css"
 
-function App() {
+function App({}) {
   const [state, setState] = useState({
     questionsAsked: 0,
     stories: []
   });
-  const [storiesData, setStoriesDate ] = useState([])
+
   const [scene, setScene ] = useState('welcome');
   const [currentStory, setCurrentStory] = useState({});
   const [currentQuestion, setCurrentQuestion] = useState({});
@@ -44,7 +44,6 @@ function App() {
   const [soundPtsOk] = useSound(SoundPtsOk)
   const [soundPtsBad] = useSound(SoundPtsBad)
   const [soundPts] = useSound(SoundPts)
-  const [soundGame] = useSound(SoundGame)
 
   const sound = (type) => {
     if (!stateSound){
@@ -61,12 +60,9 @@ function App() {
       case "good":
         soundPts();
         break;
-      case 'bad':
+      case 'bad': {
         soundPtsBad();
-        break;
-      case 'game':
-        soundGame();
-        break;
+      }; break;
     }
   }
 
@@ -317,7 +313,7 @@ function App() {
   }
 
   const goToScene = (scene) => {
-    soundBtn();
+    sound('btn');
     setScene(scene)
   }
 
@@ -383,11 +379,11 @@ function App() {
     }
   }
 
-  const init = () => {
-
+  const init = async() => {
+     
     // Almacenar Data
     console.log(stories)
-
+    
     setScene('welcome');
     setState({
       ...state,
@@ -395,9 +391,8 @@ function App() {
         ...story,
         score: 0
       }))
-
+      
     })
-    sound('game');
   }
 
   useEffect(()=>{

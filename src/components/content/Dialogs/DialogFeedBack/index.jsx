@@ -1,4 +1,3 @@
-import { useEffect} from 'react'
 import classnames from 'classnames'
 import "./DialogFeedBack.css"
 import Button from '../../button/index'

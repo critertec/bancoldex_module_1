@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import DialogEnd from './DialogEnd/index'
 import Personage from '../../../../personages/personage'
 import "./FeedBackEnd.css";

@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import classnames from 'classnames';
 
 import DialogDesc from '../Dialogs/DialogDesc/index'

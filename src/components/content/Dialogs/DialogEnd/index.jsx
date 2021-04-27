@@ -1,5 +1,4 @@
 import {  useEffect } from 'react'
-import classnames from 'classnames'
 import Button from '../../../../../content/button'
 import HeaderStars from '../../../../../content/HeaderStars/index'
 import "./DialogEnd.css"
