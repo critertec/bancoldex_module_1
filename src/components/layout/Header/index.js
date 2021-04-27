@@ -9,7 +9,7 @@ import Button from '../../content/button/index'
 import "./header.css"
 
 const showBtn = {
-    "back": ['selectLevel', 'game-speak-intro'],
+    "back": ['welcome', 'selectLevel', 'game-speak-intro'],
     "select-level": ['welcome', 'selectLevel']
 };
 

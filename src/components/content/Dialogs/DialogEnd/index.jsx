@@ -47,7 +47,6 @@ const DialogEnd = ({
             <div className="dialogEnd-content-container">
                 <div className="dialogEnd-content">
                     <div className="dialogEnd-text-container">
-                        {/* <div className="dialogEnd-text-content"> */}
                         <div>
                             <TextDesc />
                         </div>

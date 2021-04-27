@@ -56,13 +56,14 @@ function App({}) {
         break;
       case "good":
         soundPtsOk();
-        break;
-      case "good":
-        soundPts();
-        break;
-      case 'bad': {
+        // break;
+      case 'bad': 
         soundPtsBad();
-      }; break;
+        break;
+      
+      default:
+        soundPts(); 
+      
     }
   }
 
@@ -84,7 +85,7 @@ function App({}) {
             withScene: null
           });
         }
-      };break;
+      };
     }
   }
 

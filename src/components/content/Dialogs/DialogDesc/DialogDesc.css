@@ -27,7 +27,7 @@
     line-height: 1.2;
     color: white;
     font-weight: 300;
-    font-size: 32px;
+    font-size: calc(.7rem + 1vw);
     font-family: 'AvenirNextLtProLight';
 }
 
@@ -54,7 +54,7 @@
     margin-top: 20px;
     text-align: center;
 
-    font-size: 32px;
+    font-size: calc(1rem + 1vw);
     font-family: 'AvenirNextLtPro';
 
 }
@@ -91,7 +91,6 @@
 
 .dialogDesc-list {
     width: 100%;
-    /* background-color: red; */
 }
 
 .title-table {
@@ -107,7 +106,6 @@
 
 .table {
     width: 100%;
-    /* border: 1px solid white; */
 }
 
 .table th {
@@ -164,10 +162,16 @@
         height: 50px;
     }
 
+    .dialogDesc-btn-left {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
     .dialogDesc-text {
-        font-size: 12px;
         font-weight: 300;
-        font-size: 1rem;
         font-family: 'AvenirNextLtProLight';
     }
 

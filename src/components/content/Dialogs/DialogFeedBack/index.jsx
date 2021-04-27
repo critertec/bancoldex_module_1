@@ -24,7 +24,7 @@ const DiaglogFeedBack = ({
                 })} />
                 <div className={classnames({
                     "dialogFeedBack-content": true,
-                    'success': currentOption?.type == 'buena',
+                    'success': currentOption?.type === 'buena',
                     'warning': currentOption?.type === 'neutral',
                     'danger': currentOption?.type === 'mala'
                 })}>
