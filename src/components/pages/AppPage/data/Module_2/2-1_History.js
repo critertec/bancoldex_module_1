@@ -24,7 +24,9 @@ const HistoryJose = {
         id: "1",
         type: "mala",
         desc: [
-            "¡Hola José! Que buenas noticias. ¿Has considerado que después de 10 años deberías tomar unas vacaciones?. Con esa plata podrías llevar a tu familia a Europa. ¡Te lo mereces!",
+            "¡Hola José!",
+            "Que buenas noticias. ¿Has considerado que después de 10 años deberías tomar unas vacaciones?.",
+            "Con esa plata podrías llevar a tu familia a Europa. ¡Te lo mereces!",
             "Para mejorar la productividad es importante el descanso. Deberías pensar en unas vacaciones aprovechando todo el trabajo que has hecho bien este año. ¡Te lo mereces!"
         ],
         feedback: "Todo se basa en los objetivos que tengas como empresario. Si bien es cierto que después de tanto trabajar, descansar y disfrutar los rendimientos del negocio puede ser una buena opción, es importante analizar cuales son tus metas a corto y mediano plazo y tratar que las decisiones que tomes te acerquen a ellas. Si quieres tener una empresa más grande y sólida para tener tranquilidad financiera, deberías pensar en invertir y no en gastar. Al menos una parte considerable.",

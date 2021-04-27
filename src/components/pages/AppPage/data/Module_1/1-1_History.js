@@ -23,7 +23,6 @@ const HistoryJose = {
         ],
         options: [ 
             { option: "A", id: '1'},
-            { option: "B", id: '2'}
         ]
     },
     listOptions: [
@@ -63,6 +62,8 @@ const HistoryJose = {
                 type: "neutral",
                 desc: "Revisando en internet veo que el precio promedio de uniformes similares está entre  $100.000 y  $150.000 cuando se compra por unidad. Podrías cobrar  $125.000.",
                 feedback: [
+                        "¡Ten cuidado!",
+                        "    ‎",
                         "Si bien es importante analizar el mercado, si determinas un precio solo con factores externos es posible que vendas por debajo de los costos, lo que podría llevarte a dar pérdida.",
                         "    ‎",
                         "También podrías basarte en un precio alto que no tiene en cuenta los costos menores de producción masiva, lo que te haría menos competitivo en precio.",
@@ -70,7 +71,11 @@ const HistoryJose = {
                 answer: {
                     pages: [
                         {
-                            desc: "Claro, podría irme con este valor. Espero que no estemos cobrando demasiado, porque están comprando por cantidad."
+                            desc: [
+                                    "Me voy a arriesgar poniendo ese valor.",
+                                    "    ‎",
+                                    "Espero que no estemos cobrando demasiado, porque están comprando por cantidad.",
+                            ],
                         }
                     ],
                     answer: {
@@ -96,7 +101,7 @@ const HistoryJose = {
                 feedback: [
                     "¡Muy bien!",
                     "    ‎",
-                    "Cada negocio tiene sus particularidades y requerimientos, por eso es imporante siempre revisar el detalle para asegurar que el precio fijado cumpla con los costos y la utilidad esperada.",
+                    "Cada negocio tiene sus particularidades, por eso es importante revisar los costos de lo que nos cuesta producir un bien para poder fijar su precio incluyendo una utilidad al momento de vender.",
                 ],
                     answer: {
                     pages: [
@@ -195,13 +200,13 @@ const HistoryJose = {
                         feedback: [
                             "Al elegir utilizar el dinero de los anticipos para gastos personales o para otros proyectos puedes desorganizar las finanzas y no podrás identificar si el negocio realmente fue rentable o no.",
                             "    ‎",
-                            "Recuerda siempre anotar todo y usar el dinero exclusivamente para la operación, a menos que sea una emergencia, para lo cual debes tener una utilidad lo suficientemente alta para asegurar que no afectará la operación del negocio.",
+                            "Recuerda siempre anotar y usar el dinero exclusivamente para la operación de tu negocio, a menos que sea una emergencia, para lo cual debes tener una utilidad lo suficientemente alta para no afectar tus cuentas.",
                         ],
                         answer: {
                             pages: [
                                 {
                                     desc: [
-                                        "Era una emergencia y tenia que hacerlo.", 
+                                        "Era una emergencia y tenía que hacerlo.", 
                                         "    ‎",
                                         "Menos mal había cotizado el proyecto con suficiente utilidad y no hubo imprevistos.",
                                         "¡Evitaré repetirlo!",
@@ -215,7 +220,7 @@ const HistoryJose = {
                                         desc: [
                                             "Gracias a tu ayuda, José logró sacar adelante su primer negocio grande de forma rentable y ya sabe cómo cotizar para futuras oportunidades.",
                                             "    ‎",
-                                            "Definitivamente, saber cuáles son los costos directos e indirectos es fundamental para tener negocios en crecimiento.",
+                                            "Definitivamente, saber cuáles son los costos directos e indirectos y tener en cuenta el margen de utilidad que espero ganar, es fundamental para fijar los precios y tener negocios en crecimiento.",
                                         ],
                                     }
                                 ],
@@ -231,7 +236,13 @@ const HistoryJose = {
                             "Podrías utilizar el anticipo y anotar en tus cuentas del negocio para qué lo utilizaste.",
                             " Apenas recibas tu sueldo, lo devuelves para no afectar el proyecto.",
                         ],
-                        feedback: "Trabajas para tener el estilo de vida que te mereces. En lo posible, procura no utilizar el dinero de operación para gastos personales y esperar a finalizar el proyecto para utilizar la utilidad. Sin embargo, en situaciones de emergencia puedes disponer del dinero dejando todo anotado y devolviéndolo cuando sea posible. Así podrás evaluar la rentabilidad del proyecto y determinar si es bueno o no replicarlo en el futuro.",
+                        feedback: [
+                                    "Recuerda no utilizar el dinero que requieres para mantener la continuidad de tu negocio para gastos personales, además, espera a que hayas recibido tus ganancias para gastarlas.",
+                                    "    ‎",
+                                    "Sin embargo, en situaciones de emergencia puedes disponer del dinero dejando todo anotado y devolviéndolo cuando sea posible.",
+                                    "    ‎",
+                                    "Así podrás evaluar la rentabilidad del proyecto y determinar si es bueno o no replicarlo en el futuro.",
+                                    ],
                         answer: {
                             pages: [
                                 {
@@ -244,7 +255,7 @@ const HistoryJose = {
                                         desc: [
                                             "Gracias a tu ayuda, José logró sacar adelante su primer negocio grande de forma rentable y ya sabe cómo cotizar para futuras oportunidades.",
                                             "    ‎",
-                                            "Definitivamente, saber cuáles son los costos directos e indirectos es fundamental para tener negocios en crecimiento.",
+                                            "Definitivamente, saber cuáles son los costos directos e indirectos y tener en cuenta el margen de utilidad que espero ganar, es fundamental para fijar los precios y tener negocios en crecimiento.",
                                         ],
                                     }
                                 ],
@@ -257,7 +268,14 @@ const HistoryJose = {
                         id: '1.2.1.3',
                         type: "neutral",
                         desc: "No. Pide prestado por otro lado, pero no cruces cuentas personales con las del trabajo.",
-                        feedback: "La utilidad de un negocio bien presupuestado debe poder cubrir imprevistos y tus gastos personales. Recuerda que has creado empresa para tener autonomía y crear el proyecto de vida que quieres. Si requieres utilizar el dinero anticipadamente y estás seguro que no afectará la operación del negocio, podrías disponer del dinero dejándolo anotado como utilidad anticipada.",
+                        feedback: [
+                                    "¡No tienes que pedir prestado por otro lado!",
+                                    "    ‎",
+                                    "Puedes auto prestarte teniendo presente que debes reponer rápidamente ese dinero para mantener la continuidad del negocio y para que no se olvide, déjalo anotado.",
+                                    "    ‎",
+                                    "Por otro lado, recuerda que las utilidades de un negocio deben servir para cubrir emergencias y gastos personales.",
+                                 ],
+
                         answer: {
                             pages: [
                                 {
@@ -272,7 +290,13 @@ const HistoryJose = {
                     id: '1.2.2',
                     type: "neutral",
                     desc: "Podrías cobrar $60.000 por uniforme.",
-                    feedback: "Al identificar los costos directos e indirectos puedes saber que un uniforme te cuesta $30.750 y que a esto debes sumarle la utilidad esperada. La utilidad debe ser tan alta que te permita crecer y responder a imprevistos, pero no tanto para que tus precios sigan siendo competitivos.",
+                    feedback: [
+                                "Al identificar los costos directos e indirectos puedes saber que un uniforme te cuesta $30.750 y que a esto debes sumarle la utilidad esperada.",
+                                "    ‎",
+                                "La utilidad debe ser tan alta que te permita crecer y responder a imprevistos, pero no tanto para que tus precios sigan siendo competitivos.",
+                                "    ‎",
+                                "Ten presente que la ganancia la fijas tu, no hay una regla que diga qué porcentaje debería ser.",
+                            ],
                     answer: {
                         pages: [
                             {
@@ -319,7 +343,12 @@ const HistoryJose = {
                 id: "1.3",
                 type: 'mala',
                 desc: "Si quieres ganarte el negocio, pregúntale al cliente los valores máximos que están estimando recibir y cotiza sobre esa información.  ",
-                feedback: "Elegiste que el cliente determinara el precio del producto. Si bien, para comenzar muchas veces el porcentaje de utilidad puede verse reducido mientras se fortalece una nueva marca, dejar que sean los factores externos los que determinan el precio puede hacerte vender por debajo de los costos, haciéndote peder dinero.",
+                feedback: [
+                            "Saber cuánto es lo máximo que está dispuesto a pagar el cliente es útil, pero es más importante saber cuánto te cuesta producir un bien para fijar un precio que incluya una ganancia.",
+                            "    ‎",
+                            "De esta manera, aseguras que no estás vendiendo por debajo de los costos de producción, ni muy por encima perdiendo competitividad.",
+                        ],
+
                 answer: {
                     pages: [
                         {
