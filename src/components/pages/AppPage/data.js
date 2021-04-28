@@ -6,7 +6,7 @@ import data from './data/Module_1/index'
 const InfoModalHelp = [ 
     "Prueba tus conocimientos ayudando a otras personas a alcanzar sus sueños",
     "Entre mejores consejos des, más estrellas recibirás.",
-    "Da click en el icono del ojo para ver la descripción de cada historia",
+    "Da clic en el ícono del ojo para ver la descripción de cada historia",
 ];
 
 const stories = data.stories;

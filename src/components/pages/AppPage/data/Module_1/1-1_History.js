@@ -101,7 +101,7 @@ const HistoryJose = {
                 feedback: [
                     "¡Muy bien!",
                     "    ‎",
-                    "Cada negocio tiene sus particularidades, por eso es importante revisar los costos de lo que nos cuesta producir un bien para poder fijar su precio incluyendo una utilidad al momento de vender.",
+                    "Cada negocio tiene sus particularidades, por eso es importante revisar cuánto nos cuesta producir un bien para fijar su precio, sin olvidar que se debe agregar una utilidad.",
                 ],
                     answer: {
                     pages: [
@@ -237,7 +237,9 @@ const HistoryJose = {
                             " Apenas recibas tu sueldo, lo devuelves para no afectar el proyecto.",
                         ],
                         feedback: [
-                                    "Recuerda no utilizar el dinero que requieres para mantener la continuidad de tu negocio para gastos personales, además, espera a que hayas recibido tus ganancias para gastarlas.",
+                                    "¡Muy bien!",
+                                    "    ‎",
+                                    "Sabes que no es bueno utilizar el dinero que necesitas para mantener la continuidad del negocio en gastos personales y que es mejor esperar a recibir tu sueldo para ajustar el presupuesto personal.",
                                     "    ‎",
                                     "Sin embargo, en situaciones de emergencia puedes disponer del dinero dejando todo anotado y devolviéndolo cuando sea posible.",
                                     "    ‎",
@@ -288,9 +290,11 @@ const HistoryJose = {
             // 1.2.2
                 {
                     id: '1.2.2',
-                    type: "neutral",
+                    type: "buena",
                     desc: "Podrías cobrar $60.000 por uniforme.",
                     feedback: [
+                                "¡Muy bien!",
+                                "    ‎",
                                 "Al identificar los costos directos e indirectos puedes saber que un uniforme te cuesta $30.750 y que a esto debes sumarle la utilidad esperada.",
                                 "    ‎",
                                 "La utilidad debe ser tan alta que te permita crecer y responder a imprevistos, pero no tanto para que tus precios sigan siendo competitivos.",
@@ -328,8 +332,12 @@ const HistoryJose = {
                     id: '1.2.3',
                     type: "mala",
                     desc: "Cobra $125.000, que es el precio que pagarían si lo compran en un supermercado.",
-                    feedback: "Elegiste cobrar 4 veces el valor del producto. Si bien no existe una fórmula exacta para determinar la utilidad esperada, si debemos buscar ser competitivos, ya sea en el precio o en el valor agregado que ofreces con tus productos o servicios.",
-                    answer: {
+                    feedback: [
+                                "¡Ten cuidado!",
+                                "    ‎",
+                                "Elegiste cobrar 4 veces el valor del producto. Si bien no existe una fórmula exacta para determinar la utilidad esperada, si debemos buscar ser competitivos, ya sea en el precio o en el valor agregado que ofreces con tus productos o servicios.",
+                            ],
+                        answer: {
                         pages: [
                             {
                                 desc: "Estábamos por encima del precio de los competidores. Perdimos esta oportunidad por no hacer bien el costeo y la fijación del precio. Será en una próxima oportunidad."
