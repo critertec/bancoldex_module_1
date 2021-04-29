@@ -33,9 +33,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'AvenirNextLtPro';
+}
 
-  /* scrollbar-color: var(--thumbBG) var(--scrollbarBG); */
-  
+::-webkit-scrollbar-track {
+  display: none;
 }
 
 .center-abs {
