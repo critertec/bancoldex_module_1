@@ -412,7 +412,7 @@ function App({}) {
       setStateSound={setStateSound}
 
       modalHome={()=>{
-        if (scene.startsWith('game') && ['game-speak', 'game-options'].includes(scene)){
+        if (scene.startsWith('game') && scene !== 'game-feedbackEnd'){
           setModalHome(true)
         }else {
           setScene('selectLevel')
