@@ -90,7 +90,7 @@ const HistoryGloria = {
                     pages: [
                         {
                             desc: [
-                                "No me está funcionando esta metodología.",
+                                "¡No me está funcionando el precio que puse!",
                                 "    ‎",
                                 "Al empezar a cobrar tanto, mis clientes dejaron de comprar y ahora solo vendo unas 10 camisetas al mes.", 
                                 "    ‎",
@@ -116,7 +116,14 @@ const HistoryGloria = {
                 answer: {
                     pages: [
                         {
-                            desc: "Estoy vendiendo mucho más que antes, pero no sé a dónde se va la plata. Se suponía que tendría utilidades del 10%, pero después de pagar la gasolina, los servicios y el arriendo, no me queda nada. ¡Creo que no es tan buen negocio!"
+                            desc: [
+                                "Estoy vendiendo mucho más que antes, pero no sé a dónde se va la plata.",
+                                "    ‎",
+                                "Se suponía que tendría utilidades del 10%, pero después de pagar la gasolina, los servicios y el arriendo, no me queda nada.",
+                                "¡Creo que no es tan buen negocio!",
+                                "    ‎",
+                                "Definitivamente se debe hacer costeo antes de fijar el precio.",
+                            ],
                         }
                     ],
                     end: true
@@ -140,9 +147,9 @@ const HistoryGloria = {
                             desc: [
                                 "Creo que puede servir.", 
                                 "    ‎",
-                                "Aún no tengo claro cómo llegaste a ese valor, pero las ventas se han mantenido y me queda algo de dinero al final del mes.",
+                                "Voy a revisar cómo se sacan los costos directos e indirectos de mi negocio y la utilidad que estoy ganando.",
                                 "    ‎",
-                                "Seguramente debe haber una explicación para que pueda replicarlo en el futuro",
+                                "Así podré estar segura que el precio que puse es el mejor para mi negocio.",
                             ],
                         }
                     ],
