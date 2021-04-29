@@ -56,9 +56,9 @@ const HistoryGloria = {
             type: "mala",
             desc: "Listo. Ya sabiendo el costo la materia prima, solamente debemos sumar la utilidad que quieras ganar.",
             feedback: [
-                        "El precio de la materia prima, o la mercancía es solo el costo directo",
+                        "El precio de la materia prima o la mercancía es solo el costo directo",
                         "    ‎",
-                        "Recuerda que una empresa requiere pagar servicios, arriendo, salarios, y solo después de esto podemos sacar utilidad para el crecimiento de la empresa.",
+                        "Recuerda que un negocio requiere pagar servicios, arriendo, salarios, y solo después de esto podemos sacar utilidad para el crecimiento de la empresa.",
             ],
             answer: {
                 pages: [
@@ -79,10 +79,11 @@ const HistoryGloria = {
                 type: "mala",
                 desc: "Si valen $25.000 y las vendes en $100.000 sería un gran negocio.",
                 feedback: [
-                            "Para determinar el valor que debes incrementar, ten en cuenta los costos directos e indirectos, y tus expectativas reales de ganancias.",
-                            "Poco a poco verás si el mercado está dispuesto a pagar el precio propuesto, e ir ajustando sobre la marcha",
+                            "Estás vendiendo las camisetas más de 3 veces de lo que te cuestan, de pronto no estas siendo competitivo.",
                             "    ‎",
-                            "Recuerda que una utilidad baja no te permitirá responder a imprevistos o crecer tu negocio, y una muy alta te hará menos competitivo",
+                            "Antes de fijar el precio debes sacar todos los costos y agregar la utilidad que deseas ganar.",
+                            "    ‎",
+                            "Aunque en este caso te alcanzaría para pagar tus costos y tener ganancia, es posible que tus ventas se vean disminuidas porque los clientes prefieran comprar en otra parte",
                             ],
 
                             answer: {
@@ -106,10 +107,11 @@ const HistoryGloria = {
                 type: "neutral",
                 desc: "Si cobras 10% más, ya es ganancia. Es plata con la que no contabas, y vender barato te hace vender más. Si cobramos mucho, los clientes se van con la competencia. ",
                 feedback: [
-                            "Para determinar el valor que debes incrementar, ten en cuenta los costos directos e indirectos, y tus expectativas reales de ganancias.",
-                            "Poco a poco verás si el mercado está dispuesto a pagar el precio propuesto, e ir ajustando sobre la marcha",
+                            "¡Puedes hacerlo mejor!",
                             "    ‎",
-                            "Recuerda que una utilidad baja no te permitirá responder a imprevistos o crecer tu negocio, y una muy alta te hará menos competitivo",
+                            "Parece que no has sacado todos los costos de tu negocio y que tus ganancias están un poco bajas.",
+                            "    ‎",
+                            "Recuerda que antes de fijar los precios debes revisar cuánto te cuesta mantener un negocio, además, una utilidad muy baja no te permitirá responder a imprevistos o hacer crecer tu negocio.",
                             ],
                 answer: {
                     pages: [
@@ -126,12 +128,11 @@ const HistoryGloria = {
                 type: "neutral",
                 desc: "Creo que cobrar $60.000 podría ser una buena opción.",
                 feedback: [
-                    "No existe una fórmula mágica que diga cual es el valor que se debe incrementar.",
+                    "Entre las opciones propuestas has escogido la mejor, sin embargo, recuerda que el precio se fija después de haber revisado los costos directos e indirectos así como la utilidad deseada.",
                     "    ‎",
-                    "Para lograrlo de una forma óptima debes tener en cuenta los costos directos e indirectos, y tus expectativas reales de ganancias.",
-                    "Poco a poco verás si el mercado está dispuesto a pagar el precio propuesto, más o menos y así podrás ajustar el precio.",
+                    "¡No olvides!",
                     "    ‎",
-                    "Cada negocio tiene sus particularidades, pero recuerda que una utilidad muy baja no te permitirá responder a imprevistos o crecer la compañía, y una utilidad muy grande hará que el precio sea poco competitivo disminuyendo las ventas.",
+                    "Una utilidad muy baja no te permitirá responder a imprevistos o hacer crecer tu negocio, y una muy alta, hará que el precio no sea atractivo frente a tu competencia y posiblemente hará que tus ventas disminuyan.",
                     ],
                 answer: {
                     pages: [
@@ -154,9 +155,9 @@ const HistoryGloria = {
             type: "buena",
             desc: "Me acabas de dar los costos directos. Recuerda que también existen los costos indirectos, como el transporte o tu salario como gerente.",
             feedback: [
-                "El precio de la materia prima, o la mercancía es solo el costo directo",
+                "El precio de la materia prima o la mercancía es solo el costo directo",
                 "    ‎",
-                "Recuerda que una empresa requiere pagar servicios, arriendo, salarios, y solo después de esto podemos sacar utilidad para el crecimiento de la empresa.",
+                "Recuerda que un negocio requiere pagar servicios, arriendo, salarios, y solo después de esto podemos sacar utilidad para el crecimiento de la empresa.",
     ],
             answer: {
                 pages: [
@@ -233,7 +234,13 @@ const HistoryGloria = {
                         answer: {
                 pages: [
                     {
-                        desc: "Ahora todo tiene sentido. Si con ese valor tengo cubiertos mis costos y mi salario, ahora el valor adicional entra como utilidad."
+                        desc: [
+                                "¡Iba muy bien!",
+                                "    ‎",
+                                "Pero se me olvidó sacar los costos directos de mi negocio y fijé un precio que estaba muy por encima de mis competidores...",
+                                "    ‎",
+                                "Ahora ya no vendo lo suficiente y creo que debo cerrar mi negocio",
+                            ],  
                     }
                 ],
                 end: true
@@ -272,7 +279,7 @@ const HistoryGloria = {
         feedback: [
                     "Comprar barato y vender caro es una forma simple de hacer negocios.",
                     "    ‎",
-                    "Al revisar los costos podremos entender realmente cuanto necesitan de utilidad para asumir todos los costos directos e indirectos siendo competitivos.",
+                    "Es mejor si sacas lo costos directos e indirectos y luego fijas cuánto podrías poner de utilidad, siempre siendo competitivos.",
         ],
         answer: {
             pages: [
@@ -293,14 +300,14 @@ const HistoryGloria = {
         type: "mala",
         desc: "Lo más fácil es buscar en Google y poner el precio promedio de lo que veas similar. No te preocupes por calidad, al final todo es lo mismo. ",
         feedback: [
-                    "Cada negocio tiene particularidades y necesidades específicas.",
+                    "Basarse en los precios base del mercado es una buena opción para entender qué rangos se están manejando, pero si no se complementa con una revisión de los costos directos e indirectos de tu negocio, podrías estar vendiendo por debajo de los costos de producción, o definiendo un precio poco competitivo.",
                     "    ‎",
-                    "Basarse en precios base del mercado es una opción que te permitirá entender el rango de precios que el mercado está dispuesto a pagar, pero si no se hace la revisión de costos es posible que vendas por debajo de los costos lo que te llevaría a la quiebra, o vender por encima del precio competitivo, lo que te haría perder ventas.",
+                    "Esto podría llevarte a la quiebra o a perder ventas.",
         ],
         answer: {
             pages: [
                 {
-                    desc: "Es una gran idea. Yo compro las camisetas en $25.000 y he logrado venderlas hasta en $100.000."
+                    desc: "Es una gran idea. Yo compro las camisetas en $25.000 y he logrado venderlas hasta en $80.000."
                 }
             ],
             options: [
