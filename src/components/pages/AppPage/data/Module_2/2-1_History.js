@@ -1,5 +1,5 @@
 const HistoryJose = {
-    id: 4,
+    id: "2-1",
     personage: 'jose',
     title: 'history 1',
     cover: 'bg-production-uniform',

@@ -50,10 +50,14 @@
 }
 
 .dialogFeedBack-boxText {
-    width: 80%;
+    width: 90%;
+    padding: 0 5px;
+    max-height: 90%;
     font-weight: bold;
     line-height: 1.2;
     color: white;
+    overflow-y: auto;
+
 }
 
 .dialogFeedBack-footer {

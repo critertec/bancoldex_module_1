@@ -1,6 +1,6 @@
 .modalHome {
     padding: calc( 1rem + 1vw );
-    height: 60%;
+    height: 70%;
     box-sizing: border-box;
 }
 
@@ -12,9 +12,10 @@
     font-size: calc( .8rem + 1vw);
     color: #223E67;
     margin: calc( 1rem + 1vw );
+    font-family: 'AvenirNextLtProLight';
 }
 .modalHome-text {
-    width: 80%;
+    width: 90%;
 }
 
 .modalHome-btn-container {

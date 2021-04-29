@@ -10,10 +10,14 @@ import SoundBG from '../../../assets/SOUNDS/bensound-memories.mp3'
 const ContainerApp = (props) => {
     const { stateSound, children } = props;
 
-    const [soundBg, soundBgOptions] = useSound(SoundBG);
+    const [soundBg, soundBgOptions] = useSound(SoundBG, {
+        volume: '0.15',
+        interrupt: true,
+        soundEnabled: true
+    });
 
     useEffect(()=>{
-        // console.log('soundBgOptions', soundBgOptions);
+        console.log('soundBgOptions', soundBgOptions);
         if (!stateSound){
           soundBgOptions.stop();
           return;
@@ -21,11 +25,10 @@ const ContainerApp = (props) => {
     
         if (soundBgOptions.sound && !soundBgOptions.isPlaying){
           soundBg();
-          soundBgOptions.interrupt = true;
         //   console.log('playyy')
         }
         
-      }, [!soundBgOptions.sound, !stateSound])
+      }, [!soundBgOptions.sound, !stateSound, !soundBgOptions.isPlaying])
 
     return (
         <div className="layout-container">
@@ -37,11 +40,14 @@ const ContainerApp = (props) => {
                 { children }
             </div>
 
-            <div className="layout-footer">
-                <Footer  
-                    {...props} 
-                />
-            </div>
+            {props.scene === 'selectLevel' &&
+                <div className="layout-footer">
+                    <Footer  
+                        {...props} 
+                    />
+                </div> 
+            }
+
         </div>
     )
 }

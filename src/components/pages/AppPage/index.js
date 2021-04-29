@@ -9,7 +9,7 @@ import GameFeedBackEndPage from '../GamePage/Scenes/FeedBackEnd/index'
 
 import GameScene from '../../content/scene/index'
 
-import { instructions, stories } from './data'
+import { instructions, stories, titleModule } from './data'
 
 import useSound from 'use-sound';
 
@@ -40,10 +40,18 @@ function App({}) {
   // Sonidos
   const [stateSound, setStateSound] = useState(true);
 
-  const [soundBtn] = useSound(SoundBtn)
-  const [soundPtsOk] = useSound(SoundPtsOk)
-  const [soundPtsBad] = useSound(SoundPtsBad)
-  const [soundPts] = useSound(SoundPts)
+  const [soundBtn] = useSound(SoundBtn, {
+    volume: '0.15'
+  })
+  const [soundPtsOk] = useSound(SoundPtsOk, {
+      volume: '0.15'
+  })
+  const [soundPtsBad] = useSound(SoundPtsBad, {
+    volume: '0.15'
+  })
+  const [soundPts] = useSound(SoundPts, {
+    volume: '0.15'
+  })
 
   const sound = (type) => {
     if (!stateSound){
@@ -401,6 +409,7 @@ function App({}) {
 
   return (
     <Layout
+      titleModule={titleModule}
       state={state}
       currentStory={currentStory}
 

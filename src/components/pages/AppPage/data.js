@@ -1,7 +1,5 @@
 // Modules
-import data from './data/Module_2/index'
-// import Module_2 from './data/Module_2'
-// import Module_3 from './data/Module_3'
+import data from './data/Module_1/index'
 
 const InfoModalHelp = [ 
     "Prueba tus conocimientos ayudando a otras personas a alcanzar sus sueños",
@@ -11,5 +9,6 @@ const InfoModalHelp = [
 
 const stories = data.stories;
 const instructions = data.instructions;
+const titleModule = data.module;
 
-export { instructions, stories, InfoModalHelp }
+export { instructions, stories, InfoModalHelp, titleModule }

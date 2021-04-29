@@ -123,7 +123,7 @@ const Scene = ({
                     "left": scene !== "game-speak-intro"
                 })}>
                     <div className="scene-title-content">
-                        <div className={`title-${currentStory.title}`}/>
+                        <div className={`title-module-${currentStory.id}`}/>
                     </div>
                 </div>
                 <div className={classnames({

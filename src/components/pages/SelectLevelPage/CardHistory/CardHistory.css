@@ -78,24 +78,72 @@
     
 }
 
-.title-history-1 {
+/* Title Module 1 */
+
+.title-module-1-1 {
     width: 100%;
     height: 100%;
-    background-image: url('../../../../assets/INTERFACE/TITLE_HISTORY_1.svg');
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_1-1.svg');
     background-repeat: no-repeat;
 }
 
-.title-history-2 {
+.title-module-1-2 {
     width: 100%;
     height: 100%;
-    background-image: url('../../../../assets/INTERFACE/TITLE_HISTORY_2.svg');
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_1-2.svg');
     background-repeat: no-repeat;
 }
 
-.title-history-3 {
+.title-module-1-3 {
     width: 100%;
     height: 100%;
-    background-image: url('../../../../assets/INTERFACE/TITLE_HISTORY_3.svg');
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_1-3.svg');
+    background-repeat: no-repeat;
+}
+
+/* Title Module 2 */
+
+.title-module-2-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_2-1.svg');
+    background-repeat: no-repeat;
+}
+
+.title-module-2-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_2-2.svg');
+    background-repeat: no-repeat;
+}
+
+.title-module-2-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_2-3.svg');
+    background-repeat: no-repeat;
+}
+
+/* Title Module 3 */
+
+.title-module-3-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_3-1.svg');
+    background-repeat: no-repeat;
+}
+
+.title-module-3-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_3-2.svg');
+    background-repeat: no-repeat;
+}
+
+.title-module-3-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_3-3.svg');
     background-repeat: no-repeat;
 }
 

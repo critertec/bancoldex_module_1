@@ -1,5 +1,5 @@
 const HistoryDonAlfonso = {
-    id: 7,
+    id: "3-1",
     personage: "don alfonso",
     cover: 'bg-mechanics',
     title: 'history 1',
