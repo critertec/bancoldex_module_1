@@ -116,9 +116,9 @@ const HistoryDonAlfonso = {
                 type: "mala",
                 desc: "Si cree que puede prestar servicios por más de $17.000.000 mensuales, debería abrir otro local.",
                 feedback: [
-                        "Hay que revisar con cuidado los costos de cada proyecto.",
+                        "Hay que revisar con cuidado cada proyecto. A veces nos falta tener en cuenta algunos costos. ",
                         "    ‎",
-                        "Existen costos ocultos que no se tienen en cuenta. En este caso no se tomó en cuenta que se debe pagar un arriendo para el nuevo local, lo que hace que los $17.000.000 de ventas no sean suficientes para pagar los costos.",
+                        "En este caso, no se tomó en cuenta que se debe pagar un arriendo para el nuevo local, lo que hace que los $17.000.000 de ventas no sean suficientes para pagar los costos.",
                 ],
                 answer: {
                     pages: [
@@ -232,6 +232,8 @@ const HistoryDonAlfonso = {
                 type: "buena",
                 desc: "Que estos sean los costos del taller actualmente no significa que el otro taller sea igual. Hagamos un análisis detallado",
                 feedback: [
+                        "¡Muy bien!",
+                        "    ‎",
                         "Identificar que cada local, o cada proyecto debe revisarse al detalle es vital para no tomar una decisión desfaborable.",
                         "    ‎",
                         "En este caso no se está tomando en cuenta el costo del alquiler del local, lo que puede hacer entender que los costos de operación son solo de $17.000.000 cuando realmente serían más altos.",
@@ -302,9 +304,10 @@ const HistoryDonAlfonso = {
                 type: "neutral",
                 desc: "Si este negocio le da plata, puede montar otro igualito sin problema. ",
                 feedback: [
-                    "Utilizar los valores históricos del taller para sacar las cuentas de uno nuevo no te ahorrará trabajo, pues cada uno tiene sus particularidades, las cuales deben revisarse en detalle.",
+                    "Utilizar los valores históricos del taller para sacar las cuentas de uno nuevo no te ahorrará trabajo.",
                     "    ‎",
-                    "Cada proyecto tiene sus particularidades y deben tenerse en cuenta para analizar los costos directos e indirectos y su punto de equilibrio para poder decidir si hacer o no el negocio.",
+                    "Cada negocio tiene sus particularidades, las cuales debes revisar en detalle para no proyectar costos erróneos.",
+             
                 ],
                 answer: {
                     personageAction: 'upset',
@@ -314,7 +317,7 @@ const HistoryDonAlfonso = {
                                 "No podría montarlo igualito.", 
                                 "    ‎",
                                 "El nuevo taller será un poco más pequeño que el que tengo actualmente, seguramente los gastos van variar.",
-                                "Por ejemplo, debo cotizar la adecuación inicial del taller y subir mi salario para que cada taller pague una parte del mismo.",
+                                "Por ejemplo, debo cotizar la adecuación inicial del taller y subir mi salario, así, cada local pagará una parte del mismo",
                                 "    ‎",
                                 "Tengo proyectada la siguiente tabla de costos: ",
                             ],
@@ -490,9 +493,9 @@ const HistoryDonAlfonso = {
         type: "neutral",
         desc: "Don Alfonso, ha llegado la hora de empezar a recibir tarjeta débito. Es más fácil seguir los ingresos y gastos si están en formato digital.",
         feedback: [
-                "La transformación digital será siempre una buena opción, pero todo es un proceso.", 
+                "Efectivamente tu negocio te permite recibir efectivo y pagos digitales, que los empieces a usar habla muy bien del mismo", 
                 "    ‎",
-                "La naturaleza del negocio te permite utilizar efectivo y pagos digitales, y se debe tener un sistema de control que combine ambas opciones.",
+                "Pero no olvides, se debe llevar un registro de las cuentas.",
                 ],
 
         answer: {
