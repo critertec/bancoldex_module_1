@@ -3,13 +3,17 @@ const HistoryJose = {
     personage: 'jose',
     title: 'history 1',
     cover: 'bg-production-uniform',
-    desc: "Después de haber ganado la licitación con la que José creó su empresa, ha trabajado fuertemente y se ha posicionado en la ciudad por su calidad y servicio. Distribuye a algunos hospitales, colegios y fábricas del sector. “Uniformes Geniales S.A.S” ha tenido un crecimiento durante el último año y, por primera vez desde su constitución, ha dejado utilidades de $ 20.000.000 COP. Después de haber escuchado a Karem, José sabe que existen diferentes formas para aprovechar estos excedentes de forma responsable y está buscando consejos para hacerlo bien.",
+    desc: "Después de haber ganado la licitación con la que José creó su empresa, ha trabajado fuertemente y se ha posicionado en la ciudad por su calidad y servicio. Distribuye a algunos hospitales, colegios y fábricas del sector. “Uniformes Geniales S.A.S” ha tenido un crecimiento durante el último año y, por primera vez desde su constitución, ha dejado utilidades de $20.000.000. Después de haber escuchado a Karem, José sabe que existen diferentes formas para aprovechar estos excedentes de forma responsable y está buscando consejos para hacerlo bien.",
     ptsMax: 12,
     answer: {
         pages: [
             {
-                desc: "¡Hola! Gracias por ayudarme. Después de tanto trabajo, por fin logré tener utilidades. Trabajé como nunca, pero lo he logrado.",
-                question: "¿Qué debería hacer con estos $20.000.000?"
+                desc: [
+                    "¡Hola!",
+                    "     ‎",
+                    "Después de tanto trabajo, por fin logré tener utilidades. Trabajé como nunca, pero lo he logrado.",
+                ],
+                question: "¿Qué debería hacer con estos $20.000.000 que tengo guardados?"
             }
         ],
         options: [
@@ -24,16 +28,29 @@ const HistoryJose = {
         id: "1",
         type: "mala",
         desc: [
-            "¡Hola José!",
-            "Que buenas noticias. ¿Has considerado que después de 10 años deberías tomar unas vacaciones?.",
-            "Con esa plata podrías llevar a tu familia a Europa. ¡Te lo mereces!",
-            "Para mejorar la productividad es importante el descanso. Deberías pensar en unas vacaciones aprovechando todo el trabajo que has hecho bien este año. ¡Te lo mereces!"
+            "¿Has considerado que después de 10 años deberías tomar unas vacaciones? ",
+            "Con esa plata podrías llevar a tu familia a Europa. ¡Te lo mereces! ",
+            "Para mejorar la productividad es importante el descanso",
         ],
-        feedback: "Todo se basa en los objetivos que tengas como empresario. Si bien es cierto que después de tanto trabajar, descansar y disfrutar los rendimientos del negocio puede ser una buena opción, es importante analizar cuales son tus metas a corto y mediano plazo y tratar que las decisiones que tomes te acerquen a ellas. Si quieres tener una empresa más grande y sólida para tener tranquilidad financiera, deberías pensar en invertir y no en gastar. Al menos una parte considerable.",
+        feedback: [
+                    "¡No tan rápido!",
+                    "     ‎",
+                    "Si bien es cierto que después de tanto trabajar, descansar y disfrutar los rendimientos del negocio puede ser una buena opción, es importante analizar cuales son tus metas a corto y mediano plazo y tratar que las decisiones que tomes te acerquen a ellas.",
+                    "     ‎",
+                    "Para alcanzar la sostenibilidad de tu empresa y tranquilidad en tu vida, deberías pensar en invertir y no en gastar. Al menos una parte considerable.",
+        ],
         answer: {
             pages: [
                 {
-                    desc: "Siempre he querido viajar y conocer. Pero no puedo asegurar que este año sea tan bueno como el anterior y quisiera estar tranquilo y tener la plata disponible.  Debería empezar a hacer mi fondo de emergencia."
+                    desc: [
+                        "Siempre he querido viajar y conocer.",
+                        "     ‎",
+                        "Pero no puedo asegurar que este año sea tan bueno como el anterior y quisiera estar tranquilo y tener la plata disponible.",
+                        "Prefiero empezar a crear mi fondo de emergencia.",
+                        "     ‎",
+                    ],
+
+                    question: "¿Qué debería hacer primero?"
                 }
             ],
             options: [
@@ -51,7 +68,11 @@ const HistoryJose = {
             answer: {
                 pages: [
                     {
-                        desc: "Me da miedo ir al banco y que me ofrezcan cosas que no necesito. ¿Por qué servicio, que creas me dé mayor valor, debería preguntar? "
+                        desc: [
+                                "Me da miedo ir al banco y que me ofrezcan cosas que no necesito.",
+                                "     ‎",
+                        ],
+                        question: "¿Por qué servicio, que creas me dé mayor valor, debería preguntar?"
                     }
                 ],
                 options: [
@@ -64,30 +85,75 @@ const HistoryJose = {
             {
                 id: "1.1.1",
                 type: "buena",
-                desc: "Podrías abrir un CDT para que te generen intereses, y así esos $ 20.000.000 sean mucho más en un año.",
-                feedback: "Todo depende de los objetivos, los proyectos que tengas y la disponibilidad de efectivo que requieras. Si tienes un gran proyecto donde requieras cumplir rápidamente una meta de ahorro, seguramente querrás tener poca disponibilidad para no caer en la tentación de gastarlo, y que te permita generar rendimientos financieros.",
-                answer: {
+                desc: "Podrías abrir un CDT para que te generen intereses, y así esos $20.000.000 sean mucho más en un año.",
+                feedback: [
+                    "¡Muy bien!",
+                    "     ‎",
+                    "Todo depende de los objetivos, los proyectos que tengas y la disponibilidad de efectivo que requieras.",
+                    "     ‎",
+                    "Si tienes un gran proyecto donde requieras cumplir rápidamente una meta de ahorro, seguramente querrás tener poca disponibilidad para no caer en la tentación de gastarlo, y que te permita generar rendimientos financieros.",
+                ],
+                    answer: {
                     pages: [
                         {
-                            desc: "Fui al banco y abrí un CDT. Me asesoraron y me informaron que es una buena opción para que mi dinero no pierda valor en el tiempo y, al mismo tiempo, mantener mis ahorros lejos de la tentación de retirarlos. Me ofrecieron varias opciones: un mes, tres meses, seis meses o un año. Escogí la opción de seis meses, porque es posible que requiera ese dinero para un pedido grande.",
-                        },
-                        {
-                            desc: "¡Me siento genial! Me siento mucho más tranquilo con mis ahorros en el CDT, seguros y creciendo. Pero, antes de irme del banco, me ofrecieron unos seguros para la empresa y no sé cuál debería elegir. "
-                        },
+                            desc: [
+                                "Fui al banco y abrí un CDT.",
+                                "     ‎",
+                                "Me asesoraron y me informaron que es una buena opción para que mi dinero no pierda valor en el tiempo y, al mismo tiempo, mantener mis ahorros lejos de la tentación de retirarlos.",
+                                "     ‎",
+                                "Me ofrecieron varias opciones: un mes, tres meses, seis meses o un año.",
+                                "     ‎",
+                                "Escogí la opción de seis meses, porque es posible que requiera ese dinero para un pedido grande en esas fechas.",
+                            ],
+                            },
                         {
                             desc: [
-                                "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
-                                "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
-                                "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
-                            ]
+                                "¡Me siento genial!",
+                                "     ‎",
+                                "Estoy tranquilo con mis ahorros en el CDT, seguros y creciendo.",
+                                "     ‎",
+                                "Pero, antes de irme del banco, me ofrecieron unos seguros para la empresa y no sé cuál debería elegir. "
+                            ],
+                        },
+                        {
+                            table: {
+                                title: [
+                                        'Estas fueron las opciones:',
+                                        "    ‎",
+                                        ],
+    
+                                columns: [
+                                    { key: 'description', label: 'Cobertura' },
+                                    { key: 'value', label: 'Valor' }
+                                ],
+                                values: [
+                                    {
+                                       description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
+                                       value: '$800.000'
+                                    },
+                                    {
+                                        description: 'Cobertura básica + cobertura adicional de robo.',
+                                        value: '$1.000.000'
+                                    },
+                                    {
+                                        description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
+                                        value: '$1.100.000'
+                                    },
+                                   
+                                         ],
+                            }
+                                
+                         
+                                    
                         }
                     ],
+                    
                     options: [
                         { option: "A", id: "1.1.1.1" },
                         { option: "B", id: "1.1.1.2" },
                         { option: "C", id: "1.1.1.3" },
                         { option: "D", id: "1.1.1.4" }
-                    ]
+                    ],
                 }
             },
             // 1.1.1.1
@@ -152,7 +218,7 @@ const HistoryJose = {
                     answer: {
                         pages: [
                             {
-                                desc: "Después de unos meses hubo una inundación y se dañó una de las máquinas de producción que vale $20.000.000 COP. El ahorro en los seguros no alcanzó a cubrir la pérdida de los activos."
+                                desc: "Después de unos meses hubo una inundación y se dañó una de las máquinas de producción que vale $20.000.000. El ahorro en los seguros no alcanzó a cubrir la pérdida de los activos."
                             }
                         ],
                         end: true
@@ -173,11 +239,35 @@ const HistoryJose = {
                             desc: "Fui al banco y ya abrí la cuenta. Pero antes de irme, me recomendaron tener un seguro para la empresa y no sé cuál elegir. "
                         },
                         {
-                            desc: [
-                                "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
-                                "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
-                                "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
-                            ]
+                            table: {
+                                title: [
+                                        'Estas fueron las opciones:',
+                                        "    ‎",
+                                        ],
+    
+                                columns: [
+                                    { key: 'description', label: 'Cobertura' },
+                                    { key: 'value', label: 'Valor' }
+                                ],
+                                values: [
+                                    {
+                                       description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
+                                       value: '$800.000'
+                                    },
+                                    {
+                                        description: 'Cobertura básica + cobertura adicional de robo.',
+                                        value: '$1.000.000'
+                                    },
+                                    {
+                                        description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
+                                        value: '$1.100.000'
+                                    },
+                                   
+                                         ],
+                            }
+                                
+                         
+                                    
                         }
                     ],
                     options: [
@@ -203,11 +293,35 @@ const HistoryJose = {
                     desc: "Fui al banco y ya abrí la cuenta. Pero antes de irme, me recomendaron tener un seguro para la empresa y no sé cuál elegir.",
                 },
                 {
-                    desc: [
-                        "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
-                        "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
-                        "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
-                    ]
+                    table: {
+                        title: [
+                                'Estas fueron las opciones:',
+                                "    ‎",
+                                ],
+
+                        columns: [
+                            { key: 'description', label: 'Cobertura' },
+                            { key: 'value', label: 'Valor' }
+                        ],
+                        values: [
+                            {
+                               description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
+                               value: '$800.000'
+                            },
+                            {
+                                description: 'Cobertura básica + cobertura adicional de robo.',
+                                value: '$1.000.000'
+                            },
+                            {
+                                description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
+                                value: '$1.100.000'
+                            },
+                           
+                                 ],
+                    }
+                        
+                 
+                            
                 }
             ],
             options: [
@@ -242,11 +356,16 @@ const HistoryJose = {
         id: "3",
         type: "buena",
         desc: "¿No tienes algún plan para ese dinero? ¿Algo que haga que la empresa crezca y puedas ganar más en el futuro? ",
-        feedback: "",
+        feedback: [
+                    "¡Muy bien!",
+                    "     ‎",
+                    "Si tienes excedentes de efectivo puedes iniciar nuevos planes para crecer. Puedes negociar con tus proveedores pagos anticipados, mejorar tu infraestrctura o puedes guardarla para cuando tengas una oportunidad",
+                ],
+
         answer: {
             pages: [
                 {
-                    desc: "Últimamente me han pedido más uniformes de los que somos capaces de producir. Pero una máquina nueva me puede costar hasta $ 40.000.000 COP. En 6 meses recibiré otros $ 20.000.000 COP de un pedido que se demoró en pagar, eso podría invertirlo en la maquinaria nueva.",
+                    desc: "Últimamente me han pedido más uniformes de los que somos capaces de producir. Pero una máquina nueva me puede costar hasta $40.000.000. En 6 meses recibiré otros $20.000.000 de un pedido que se demoró en pagar, eso podría invertirlo en la maquinaria nueva.",
                     question: "¿Qué opinas?"
                 }
             ],
@@ -272,11 +391,35 @@ const HistoryJose = {
                         desc: "Fui al banco y ya abrí la cuenta. Pero antes de irme, me recomendaron tener un seguro para la empresa y no sé cuál elegir."
                     },
                     {
-                        desc: [
-                            "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
-                            "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
-                            "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
-                        ]
+                        table: {
+                            title: [
+                                    'Estas fueron las opciones:',
+                                    "    ‎",
+                                    ],
+
+                            columns: [
+                                { key: 'description', label: 'Cobertura' },
+                                { key: 'value', label: 'Valor' }
+                            ],
+                            values: [
+                                {
+                                   description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
+                                   value: '$800.000'
+                                },
+                                {
+                                    description: 'Cobertura básica + cobertura adicional de robo.',
+                                    value: '$1.000.000'
+                                },
+                                {
+                                    description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
+                                    value: '$1.100.000'
+                                },
+                               
+                                     ],
+                        }
+                            
+                     
+                                
                     }
                 ],
                 options: [
@@ -323,9 +466,9 @@ const HistoryJose = {
                             },
                             {
                                 desc: [
-                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
-                                    "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
-                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
+                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $800.000",
+                                    "Cobertura básica + cobertura adicional de robo. Valor: $1.000.000",
+                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $1.100.000"
                                 ]
                             }
                         ],
@@ -353,9 +496,9 @@ const HistoryJose = {
                             },
                             {
                                 desc: [
-                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
-                                    "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
-                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
+                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $800.000",
+                                    "Cobertura básica + cobertura adicional de robo. Valor: $1.000.000",
+                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $1.100.000"
                                 ]
                             }
                         ],
@@ -383,9 +526,9 @@ const HistoryJose = {
                             },
                             {
                                 desc: [
-                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
-                                    "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
-                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
+                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $800.000",
+                                    "Cobertura básica + cobertura adicional de robo. Valor: $1.000.000",
+                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $1.100.000"
                                 ]
                             }
                         ],
@@ -412,11 +555,35 @@ const HistoryJose = {
                             desc: "Fui al banco y ya abrí la cuenta. Pero antes de irme, me recomendaron tener un seguro para la empresa y no sé cuál elegir."
                         },
                         {
-                            desc: [
-                                "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $ 800.000 COP",
-                                "Cobertura básica + cobertura adicional de robo. Valor: $ 1.000.000 COP",
-                                "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $ 1.100.000 COP"
-                            ]
+                            table: {
+                                title: [
+                                        'Estas fueron las opciones:',
+                                        "    ‎",
+                                        ],
+    
+                                columns: [
+                                    { key: 'description', label: 'Cobertura' },
+                                    { key: 'value', label: 'Valor' }
+                                ],
+                                values: [
+                                    {
+                                       description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
+                                       value: '$800.000'
+                                    },
+                                    {
+                                        description: 'Cobertura básica + cobertura adicional de robo.',
+                                        value: '$1.000.000'
+                                    },
+                                    {
+                                        description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
+                                        value: '$1.100.000'
+                                    },
+                                   
+                                         ],
+                            }
+                                
+                         
+                                    
                         }
                     ],
                     options: [
