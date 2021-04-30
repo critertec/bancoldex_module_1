@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bancoldex_module_1/static/css/main.26243474.chunk.css",
-    "main.js": "/bancoldex_module_1/static/js/main.9e1c7468.chunk.js",
-    "main.js.map": "/bancoldex_module_1/static/js/main.9e1c7468.chunk.js.map",
+    "main.js": "/bancoldex_module_1/static/js/main.de19ddd4.chunk.js",
+    "main.js.map": "/bancoldex_module_1/static/js/main.de19ddd4.chunk.js.map",
     "runtime-main.js": "/bancoldex_module_1/static/js/runtime-main.51e33e0a.js",
     "runtime-main.js.map": "/bancoldex_module_1/static/js/runtime-main.51e33e0a.js.map",
     "static/js/2.b0f1d843.chunk.js": "/bancoldex_module_1/static/js/2.b0f1d843.chunk.js",
@@ -80,6 +80,6 @@
     "static/js/runtime-main.51e33e0a.js",
     "static/js/2.b0f1d843.chunk.js",
     "static/css/main.26243474.chunk.css",
-    "static/js/main.9e1c7468.chunk.js"
+    "static/js/main.de19ddd4.chunk.js"
   ]
 }
