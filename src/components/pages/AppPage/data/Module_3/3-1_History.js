@@ -30,7 +30,7 @@ const HistoryDonAlfonso = {
                         desc: "Si, tengo dos opciones para utilizar ese dinero. ¿Cuál cree que debería ser el mejor uso?"
                     },
                     {
-                        desc: "He alquilado un nuevo local y tengo tanta clientela que podría comprar otra máquina para atenderlos más rápido y a más personas. La máquina y sus elementos adicionales me valen $ 70.000.000 COP, pero estoy seguro que podría pagarlo rápidamente si las ventas siguen como van."
+                        desc: "He alquilado un nuevo local y tengo tanta clientela que podría comprar otra máquina para atenderlos más rápido y a más personas. La máquina y sus elementos adicionales me valen $70.000.000, pero estoy seguro que podría pagarlo rápidamente si las ventas siguen como van."
                     },
                     {
                         desc: "Me dicen que la pintura del local viejo está desgastada. Entonces quiero aprovechar para volver a pintar todo el local, remodelar las oficinas para que sientan más modernas, igual es donde paso la mayor parte del día y debería sentirme a gusto. ¿no? Si estoy a gusto en mi trabajo, podré ser más productivo."
@@ -73,7 +73,7 @@ const HistoryDonAlfonso = {
                     {
                         id: '1.1.1',
                         type: "neutral",
-                        desc: "Don Alfonso, tranquilo. Usted dice que esta bajada de ventas es temporal. Con que deba una cuota y se ponga al día en la siguiente no pasa nada. A veces ni cuenta se dan, lo importante es no quedar en mora en dos cuotas. Así que métale ganas y pague ambas cuotas cuanto las ventas mejoren.",
+                        desc: "Usted dice que esta bajada de ventas es temporal. Con que deba una cuota y se ponga al día en la siguiente no pasa nada. A veces ni cuenta se dan, lo importante es no quedar en mora en dos cuotas. Así que métale ganas y pague ambas cuotas cuanto las ventas mejoren.",
                         feedback: "Los negocios son variables y puede que haya periodos malos. Es importante siempre hablar de forma proactiva con las entidades financieras y exponer la situación para encontrar las mejores opciones que no afecten el historial crediticio.",
                         answer: {
                             pages: [
@@ -121,7 +121,7 @@ const HistoryDonAlfonso = {
                                     {
                                         desc: [
                                             "Unos meses después: ",
-                                            "Don Alfonso: Pasaba a saludar. Después de nuestra última conversación todo ha ido mucho mejor. Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
+                                            "Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
                                         ],
                                         question: "¿Qué podría hacer con esos excedentes?"
                                     }
@@ -202,7 +202,8 @@ const HistoryDonAlfonso = {
                                     {
                                         desc: [
                                             "Unos meses después: ",
-                                            "Don Alfonso: Pasaba a saludar. Después de nuestra última conversación todo ha ido mucho mejor. Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
+                                            "    ‎",
+                                            "Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
                                         ],
                                         question: "¿Qué podría hacer con esos excedentes?"
                                     }
@@ -228,7 +229,7 @@ const HistoryDonAlfonso = {
                                     {
                                         desc: [
                                             "Unos meses después: ",
-                                            "Don Alfonso: Pasaba a saludar. Después de nuestra última conversación todo ha ido mucho mejor. Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
+                                            "Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
                                         ],
                                         question: "¿Qué podría hacer con esos excedentes?"
                                     }
@@ -302,7 +303,7 @@ const HistoryDonAlfonso = {
                 answer: {
                     pages: [
                         {
-                            desc: "Si lo había pensado. Sin embargo, en el curso de Mis Finanzas Lab siempre fueron enfáticos en que las deudas deben servir para apalancar el negocio y no estoy seguro de que vaya a vender más si pinto las oficinas. Creo que invertiré en la máquinaria y más bien, con los excedentes de las nuevas ventas, pinto las oficinas. "
+                            desc: "Si lo había pensado. Sin embargo, en el curso de Educación Financiera para MiPymes siempre fueron enfáticos en que las deudas deben servir para apalancar el negocio y no estoy seguro de que vaya a vender más si pinto las oficinas. Creo que invertiré en la máquinaria y más bien, con los excedentes de las nuevas ventas, pinto las oficinas. "
                         },
                         {
                             desc: [
@@ -334,7 +335,7 @@ const HistoryDonAlfonso = {
                     question: "¿En cuál cree que debería enfocarme?"
                 },
                 {
-                    desc: "He alquilado un nuevo local y tengo tanta clientela que podría comprar otra máquina para atenderlos más rápido y a más personas. La máquina y sus elementos adicionales me valen $ 70.000.000 COP, pero estoy seguro que podría pagarlo rápidamente si las ventas siguen como van."
+                    desc: "He alquilado un nuevo local y tengo tanta clientela que podría comprar otra máquina para atenderlos más rápido y a más personas. La máquina y sus elementos adicionales me valen $70.000.000, pero estoy seguro que podría pagarlo rápidamente si las ventas siguen como van."
                 },
                 {
                     desc: "Me dicen que la pintura del local viejo está desgastada. Entonces quiero aprovechar para volver a pintar todo el local, remodelar las oficinas para que sientan más modernas, igual es donde paso la mayor parte del día y debería sentirme a gusto. ¿no? Si estoy a gusto en mi trabajo, podré ser más productivo."

@@ -3,7 +3,7 @@ const HistoryJose = {
     personage: 'jose',
     title: 'history 3',
     cover: 'bg-production-uniform',
-    desc: "José quiere hacer crecer su fábrica de uniformes a otras ciudades del país. Con lo aprendido en el curso, ha logrado hacer un plan de negocio y sabe que para la primera fase de expansión requiere $ 200.000.000 COP, y que podrá recuperarlos en menos de 12 meses si todo sale bien. Es un alto riesgo y sabe que deberá trabajar mucho más para sacar el proyecto adelante. ¿Debería hacerlo? ",
+    desc: "José quiere hacer crecer su fábrica de uniformes a otras ciudades del país. Con lo aprendido en el curso, ha logrado hacer un plan de negocio y sabe que para la primera fase de expansión requiere $200.000.000, y que podrá recuperarlos en menos de 12 meses si todo sale bien. Es un alto riesgo y sabe que deberá trabajar mucho más para sacar el proyecto adelante. ¿Debería hacerlo? ",
     ptsMax: 11,
     answer: {
         pages: [
@@ -38,21 +38,21 @@ const HistoryJose = {
                     },
                     {
                         desc: [
-                            'Crédito rotativo de $ 100.000.000 COP',
+                            'Crédito rotativo de $100.000.000',
                             'Tasa de 1,8 % mensual',
                            ' Tiempo: 12 meses'
                         ]
                     },
                     {
                         desc: [
-                            'Crédito de Capital de trabajo de $ 200.000.000 COP',
+                            'Crédito de Capital de trabajo de $200.000.000',
                             'Tasa de 1,6 % mensual',
                             'Tiempo: 60 meses'
                         ]
                     },
                     {
                         desc: [
-                            "Crédito de $ 400.000.000 COP",
+                            "Crédito de $400.000.000",
                             "Tasa del 1 %",
                             "Tiempo: 24 meses"
                         ]
@@ -73,7 +73,7 @@ const HistoryJose = {
                 answer: {
                     pages: [
                         {
-                            desc: "¡Gracias! Pero para hacer la obra necesito los $ 200.000.000 COP de inmediato, no puedo hacerlo con la mitad. Creo que pediré los $ 200.000.000 COP de una vez y proyecto mi flujo de caja como me enseñaron. "
+                            desc: "¡Gracias! Pero para hacer la obra necesito los $200.000.000 de inmediato, no puedo hacerlo con la mitad. Creo que pediré los $200.000.000 de una vez y proyecto mi flujo de caja como me enseñaron. "
                         },
                         {
                             desc: "¡Me aprobaron el crédito! Sin embargo, tengo un problema. Se me dañó mi carro y no tenía seguro. Necesito comprar uno nuevo para poderme transportar entre ciudades. ¿Podría usar parte del crédito para eso? Las tasas están más bajas frente a las que me ofrecen por comprar un vehículo como persona natural."
@@ -99,7 +99,7 @@ const HistoryJose = {
                                 {
                                     desc: [
                                         'Unos meses después:', 
-                                        'José: Haber hecho crecer mi negocio con el apalancamiento del banco fue la mejor decisión que pude haber tomado. Si lo hubiese hecho solo, me habría tomado muchos años de ahorro. ',
+                                        'Haber hecho crecer mi negocio con el apalancamiento del banco fue la mejor decisión que pude haber tomado. Si lo hubiese hecho solo, me habría tomado muchos años de ahorro. ',
 '                                        Ahora, con la facturación actual creo que quiero seguir expandiéndome.'
                                     ],
                                     question: "¿Crees que es una buena idea? "
@@ -214,11 +214,11 @@ const HistoryJose = {
             {
                 id: "1.3",
                 type: "neutral",
-                desc: "¡$ 400.000.000 al 1% es una oportunidad que no podemos desaprovechar!",
+                desc: "¡$400.000.000 al 1% es una oportunidad que no podemos desaprovechar!",
                 answer: {
                     pages: [
                         {
-                            desc: "La tasa se ve muy atractiva, pero en el curso me enseñaron que no debería endeudarme si no tengo un proyecto puntual para hacer crecer el negocio. Creo que empezaré con los $ 200.000.000 COP, así la tasa esté más alta. "
+                            desc: "La tasa se ve muy atractiva, pero en el curso me enseñaron que no debería endeudarme si no tengo un proyecto puntual para hacer crecer el negocio. Creo que empezaré con los $200.000.000, así la tasa esté más alta. "
                         },
                         {
                             desc: "¡Me aprobaron el crédito! Sin embargo, tengo un problema. Se me dañó mi carro y no tenía seguro. Necesito comprar uno nuevo para poderme transportar entre ciudades. ¿Podría usar parte del crédito para eso? Las tasas están más bajas frente a las que me ofrecen por comprar un vehículo como persona natural."

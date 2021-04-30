@@ -8,7 +8,11 @@ const HistoryGloria = {
     answer: {
         pages: [
             {
-                desc: "Gloria por teléfono: ¡Hola! Tus consejos han sido maravillosos. Gracias a ti ahora estoy más organizada y tengo muy claros los números de mis locales. Creo que podría solicitar un crédito por primera vez.",
+                desc: [
+                    "¡Hola!",
+                    "    ‎",
+                    "Tus consejos han sido maravillosos. Gracias a ti ahora estoy más organizada y tengo muy claros los números de mis locales. Creo que podría solicitar un crédito por primera vez.",
+                ],
                 question: "¿Debería hacerlo?"
             }
         ],
@@ -36,21 +40,21 @@ const HistoryGloria = {
                         desc: [
                             'Al banco le gustó el plan de crecimiento que les expuse y me están ofreciendo diferentes opciones de crédito. ¿Cuál debería escoger? ',
                             'El plan que expuse, basado en los históricos y en lo aprendido en el curso, fue el siguiente: ',
-                            '- Alquiler, adecuación e inventario de un nuevo local por $ 60.000.000 COP',
-                            '- Ventas estimadas mensuales después del tercer mes: $ 20.000.000 COP',
-                            '- Costos totales: $ 15.000.000 COP'
+                            '- Alquiler, adecuación e inventario de un nuevo local por $60.000.000',
+                            '- Ventas estimadas mensuales después del tercer mes: $20.000.000',
+                            '- Costos totales: $15.000.000'
                         ]
                     },
                     {
                         desc: [
-                            "Préstamo de $ 120.000.000 COP",
+                            "Préstamo de $120.000.000",
                             '- Tasa 1,8 % mensual',
                             '- Tiempo 24 meses'
                         ]
                     },
                     {
                         desc: [
-                            "Préstamo de $ 100.000.000 COP",
+                            "Préstamo de $100.000.000",
                             '- Tasa 2,2 % mensual',
                             '- Tiempo 24 meses',
                             '- Tres meses de periodo de gracia '
@@ -58,7 +62,7 @@ const HistoryGloria = {
                     },
                     {
                         desc: [
-                            "Préstamo de $ 60.000.000",
+                            "Préstamo de $60.000.000",
                             "- Tasa 2 %",
                             "- Tiempo 24 meses",
                             "- Tres meses de gracia"
@@ -76,11 +80,11 @@ const HistoryGloria = {
             {
                 id: '1.1',
                 type: "mala",
-                desc: 'Definitivamente es mejor que aseguremos los $ 120.000.000 COP. Tiene una tasa baja y podemos utilizar ese dinero si se presenta una oportunidad en el camino.',
+                desc: 'Definitivamente es mejor que aseguremos los $120.000.000. Tiene una tasa baja y podemos utilizar ese dinero si se presenta una oportunidad en el camino.',
                 answer: {
                     pages: [
                         {
-                            desc: "¿Estás seguro? Creo que endeudarme en el doble de lo que necesito es bastante. Creo que me iré con los $ 60.000.000 COP."
+                            desc: "¿Estás seguro? Creo que endeudarme en el doble de lo que necesito es bastante. Creo que me iré con los $60.000.000."
                         },
                         {
                             desc: [
@@ -209,11 +213,11 @@ const HistoryGloria = {
             {
                 id: '1.2',
                 type: "neutral",
-                desc: 'Creo que esos $ 100.000.000 COP son suficientes, y ese periodo de gracia ayudaría para que la clientela crezca y se mantenga en el nuevo local. ',
+                desc: 'Creo que esos $100.000.000 son suficientes, y ese periodo de gracia ayudaría para que la clientela crezca y se mantenga en el nuevo local. ',
                 answer: {
                     pages: [
                         {
-                            desc: "Creo que iniciaré con los $60.000.000 y, si necesito más, pido los otros $ 40.000.000 COP."
+                            desc: "Creo que iniciaré con los $60.000.000 y, si necesito más, pido los otros $40.000.000."
                         },
                         {
                             desc: [
@@ -234,7 +238,7 @@ const HistoryGloria = {
             {
                 id: '1.3',
                 type: "buena",
-                desc: 'Si tu plan es de $ 60.000.000 COP, deberíamos mantenerlo.',
+                desc: 'Si tu plan es de $60.000.000, deberíamos mantenerlo.',
                 answer: {
                     pages: [
                         {
@@ -272,21 +276,21 @@ const HistoryGloria = {
                         desc: [
                             'Al banco le gustó el plan de crecimiento que les expuse y me están ofreciendo diferentes opciones de crédito. ¿Cuál debería escoger? ',
                             'El plan que expuse, basado en los históricos y en lo aprendido en el curso, fue el siguiente: ',
-                            '- Alquiler, adecuación e inventario de un nuevo local por $ 60.000.000 COP',
-                            '- Ventas estimadas mensuales después del tercer mes: $ 20.000.000 COP',
-                            '- Costos totales: $ 15.000.000 COP'
+                            '- Alquiler, adecuación e inventario de un nuevo local por $60.000.000',
+                            '- Ventas estimadas mensuales después del tercer mes: $20.000.000',
+                            '- Costos totales: $15.000.000'
                         ]
                     },
                     {
                         desc: [
-                            "Préstamo de $ 120.000.000 COP",
+                            "Préstamo de $120.000.000",
                             '- Tasa 1,8 % mensual',
                             '- Tiempo 24 meses'
                         ]
                     },
                     {
                         desc: [
-                            "Préstamo de $ 100.000.000 COP",
+                            "Préstamo de $100.000.000",
                             '- Tasa 2,2 % mensual',
                             '- Tiempo 24 meses',
                             '- Tres meses de periodo de gracia '
@@ -294,7 +298,7 @@ const HistoryGloria = {
                     },
                     {
                         desc: [
-                            "Préstamo de $ 60.000.000",
+                            "Préstamo de $60.000.000",
                             "- Tasa 2 %",
                             "- Tiempo 24 meses",
                             "- Tres meses de gracia"
