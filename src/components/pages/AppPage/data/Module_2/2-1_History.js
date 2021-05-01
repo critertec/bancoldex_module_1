@@ -252,7 +252,7 @@ const HistoryJose = {
                             desc: "Fui al banco y decidí abrir una cuenta de ahorros. Me asesoraron y me informaron que es una buena opción para crear historial financiero, y quizás en un futuro me sea útil para pedir un préstamo para el negocio. La ventaja de la cuenta de ahorros es que en cualquier momento puedo retirar el dinero a través de un cajero, puedo hacer compras con la tarjeta debito o incluso puedo hacer transferencias a través de internet.  Eso sí, la clave es utilizar ese dinero únicamente para los gastos que realmente requiera el negocio. "
                         },
                         {
-                            desc: "Fui al banco y ya abrí la cuenta. Pero antes de irme, me recomendaron tener un seguro para mi negocio y no sé cuál elegir."
+                            desc: "Antes de irme, me recomendaron tener un seguro para mi negocio y no sé cuál elegir."
                         },
                         {
                             table: {
@@ -327,20 +327,20 @@ const HistoryJose = {
 
                         columns: [
                             { key: 'description', label: 'Cobertura' },
-                            { key: 'value', label: 'Valor' }
+                            { key: 'value', label: 'Valor Anual' }
                         ],
                         values: [
                             {
                                description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
-                               value: '$800.000'
+                               value: '$500.000'
                             },
                             {
                                 description: 'Cobertura básica + cobertura adicional de robo.',
-                                value: '$1.000.000'
+                                value: '$700.000'
                             },
                             {
                                 description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
-                                value: '$1.100.000'
+                                value: '$950.000'
                             },
                            
                                  ],
@@ -424,10 +424,16 @@ const HistoryJose = {
             answer: {
                 pages: [
                     {
-                        desc: "Fui al banco y decidí abrir una cuenta de ahorros. Me asesoraron y me informaron que es una buena opción para crear historial financiero, y quizás en un futuro me sea útil para pedir un préstamo para el negocio. La ventaja de la cuenta de ahorros es que en cualquier momento puedo retirar el dinero a través de un cajero, puedo hacer compras con la tarjeta debito o incluso puedo hacer transferencias a través de internet. Eso sí, la clave es utilizar ese dinero únicamente para los gastos que realmente requiera el negocio."
+                        desc: [
+                                "Fui al banco y decidí abrir una cuenta de ahorros.",
+                                "    ‎",
+                                "Me asesoraron y me informaron que es una buena opción para crear historial financiero, y quizás en un futuro me sea útil para pedir un préstamo para el negocio.",
+                                "    ‎",
+                                "La ventaja de la cuenta de ahorros es que en cualquier momento puedo retirar el dinero a través de un cajero, puedo hacer compras con la tarjeta debito o incluso puedo hacer transferencias a través de internet."
+                        ],
                     },
                     {
-                        desc: "Fui al banco y ya abrí la cuenta. Pero antes de irme, me recomendaron tener un seguro para mi negocio y no sé cuál elegir."
+                        desc: "Antes de irme, me recomendaron tener un seguro para mi negocio y no sé cuál elegir."
                     },
                     {
                         table: {
@@ -438,20 +444,20 @@ const HistoryJose = {
 
                             columns: [
                                 { key: 'description', label: 'Cobertura' },
-                                { key: 'value', label: 'Valor' }
+                                { key: 'value', label: 'Valor Anual' }
                             ],
                             values: [
                                 {
                                    description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
-                                   value: '$800.000'
+                                   value: '$500.000'
                                 },
                                 {
                                     description: 'Cobertura básica + cobertura adicional de robo.',
-                                    value: '$1.000.000'
+                                    value: '$700.000'
                                 },
                                 {
                                     description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
-                                    value: '$1.100.000'
+                                    value: '$950.000'
                                 },
                                
                                      ],
@@ -510,14 +516,44 @@ const HistoryJose = {
                                 ],
                             },
                             {
-                                desc: "¡Me siento genial! Me siento mucho más tranquilo con mis ahorros en el CDT, seguros y creciendo. Pero, antes de irme del banco, me ofrecieron unos seguros para el negocio y no sé cuál debería elegir."
+                                desc: [
+                                    "¡Me siento genial!",
+                                    "     ‎",
+                                    "Estoy tranquilo con mis ahorros en el CDT, seguros y creciendo.",
+                                    "     ‎",
+                                    "Pero, antes de irme del banco, me ofrecieron unos seguros para el negocio y no sé cuál debería elegir. "
+                                ],
                             },
                             {
-                                desc: [
-                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $800.000",
-                                    "Cobertura básica + cobertura adicional de robo. Valor: $1.000.000",
-                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $1.100.000"
-                                ]
+                                table: {
+                                    title: [
+                                            'Estas fueron las opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'Cobertura' },
+                                        { key: 'value', label: 'Valor Anual' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
+                                           value: '$500.000'
+                                        },
+                                        {
+                                            description: 'Cobertura básica + cobertura adicional de robo.',
+                                            value: '$700.000'
+                                        },
+                                        {
+                                            description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
+                                            value: '$950.000'
+                                        },
+                                       
+                                             ],
+                                }
+                                    
+                             
+                                        
                             }
                         ],
                         options: [
@@ -548,14 +584,44 @@ const HistoryJose = {
                                 ],
                             },
                             {
-                                desc: "¡Me siento genial! Me siento mucho más tranquilo con mis ahorros en el CDT, seguros y creciendo. Pero, antes de irme del banco, me ofrecieron unos seguros para el negocio y no sé cuál debería elegir."
+                                desc: [
+                                    "¡Me siento genial!",
+                                    "     ‎",
+                                    "Estoy tranquilo con mis ahorros en el CDT, seguros y creciendo.",
+                                    "     ‎",
+                                    "Pero, antes de irme del banco, me ofrecieron unos seguros para el negocio y no sé cuál debería elegir. "
+                                ],
                             },
                             {
-                                desc: [
-                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $800.000",
-                                    "Cobertura básica + cobertura adicional de robo. Valor: $1.000.000",
-                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $1.100.000"
-                                ]
+                                table: {
+                                    title: [
+                                            'Estas fueron las opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'Cobertura' },
+                                        { key: 'value', label: 'Valor Anual' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
+                                           value: '$500.000'
+                                        },
+                                        {
+                                            description: 'Cobertura básica + cobertura adicional de robo.',
+                                            value: '$700.000'
+                                        },
+                                        {
+                                            description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
+                                            value: '$950.000'
+                                        },
+                                       
+                                             ],
+                                }
+                                    
+                             
+                                        
                             }
                         ],
                         options: [
@@ -575,17 +641,47 @@ const HistoryJose = {
                     answer: {
                         pages: [
                             {
-                                desc: "¡Perfecto! Estaba pensando en el mismo. Puedo ahorrar y dentro de 6 meses, que necesite el dinero, lo saco. "
-                            },
-                            {
-                                desc: "¡Me siento genial! Me siento mucho más tranquilo con mis ahorros en el CDT, seguros y creciendo. Pero, antes de irme del banco, me ofrecieron unos seguros para el negocio y no sé cuál debería elegir."
+                                desc: "¡Perfecto! Estaba pensando en eso mismo. Puedo ahorrar y dentro de 6 meses, que necesite el dinero, lo saco. "
                             },
                             {
                                 desc: [
-                                    "Cobertura básica: Incendios o rayos, Explosión, Inundación. Valor: $800.000",
-                                    "Cobertura básica + cobertura adicional de robo. Valor: $1.000.000",
-                                    "Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán). Valor: $1.100.000"
-                                ]
+                                    "¡Me siento genial!",
+                                    "     ‎",
+                                    "Estoy tranquilo con mis ahorros en el CDT, seguros y creciendo.",
+                                    "     ‎",
+                                    "Pero, antes de irme del banco, me ofrecieron unos seguros para el negocio y no sé cuál debería elegir. "
+                                ],
+                            },
+                            {
+                                table: {
+                                    title: [
+                                            'Estas fueron las opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'Cobertura' },
+                                        { key: 'value', label: 'Valor Anual' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: "Cobertura básica: Incendios o rayos, explosión, inundación.",
+                                           value: '$500.000'
+                                        },
+                                        {
+                                            description: 'Cobertura básica + cobertura adicional de robo.',
+                                            value: '$700.000'
+                                        },
+                                        {
+                                            description: 'Cobertura básica + cobertura robo + Cobertura desastres naturales (tsunami, volcán)',
+                                            value: '$950.000'
+                                        },
+                                       
+                                             ],
+                                }
+                                    
+                             
+                                        
                             }
                         ],
                         options: [
