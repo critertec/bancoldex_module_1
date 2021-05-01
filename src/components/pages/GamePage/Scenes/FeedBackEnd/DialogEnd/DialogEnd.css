@@ -55,7 +55,6 @@
 
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
     font-size: calc(.8rem + 1vw);
 }
 
