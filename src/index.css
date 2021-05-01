@@ -33,11 +33,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'AvenirNextLtPro';
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-::-webkit-scrollbar-track {
+* ::-webkit-scrollbar {
   display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .center-abs {
