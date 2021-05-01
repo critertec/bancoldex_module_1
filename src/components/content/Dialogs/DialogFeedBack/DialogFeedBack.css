@@ -56,8 +56,7 @@
     font-weight: bold;
     line-height: 1.2;
     color: white;
-    overflow-y: auto;
-
+    overflow-y: hidden;
 }
 
 .dialogFeedBack-footer {
