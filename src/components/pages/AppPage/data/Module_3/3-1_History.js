@@ -284,7 +284,7 @@ const HistoryDonAlfonso = {
                         id: '1.1.3',
                         type: "mala",
                         desc: "¡No puede dejarse colgar, Don Alfonso! Llame a otro banco y pida un crédito, así podrá quedar al día y cuando vuelvan a estar bien las ventas arregla ambos créditos. ",
-                        feedback: "PAgar créditos con créditos no se recomienda a menos que se haga como compra de cartera con condiciones mejores al crédito original, en tiempo o en tasa de interés según la necesidad puntual.",
+                        feedback: "Pagar créditos con créditos no se recomienda a menos que se haga como compra de cartera con condiciones mejores al crédito original, en tiempo o en tasa de interés según la necesidad puntual.",
                         answer: {
                             pages: [
                                 {
