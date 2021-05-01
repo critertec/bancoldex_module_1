@@ -16,8 +16,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;
-
 }
 
 .dialogDesc-boxText {
@@ -29,6 +27,7 @@
     font-weight: 300;
     font-size: calc(.7rem + 1vw);
     font-family: 'AvenirNextLtProLight';
+    overflow: auto;
 }
 
 .dialogDesc-footer {
