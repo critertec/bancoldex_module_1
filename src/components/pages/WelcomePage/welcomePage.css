@@ -58,8 +58,8 @@
 .welcome-footer {
     position: absolute;
     z-index: 1;
-    bottom: 0;
-    right: 25px;
+    bottom: 5px;
+    right: 15px;
 
     display: flex;
     color: #eee;
