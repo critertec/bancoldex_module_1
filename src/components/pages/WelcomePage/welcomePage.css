@@ -59,12 +59,15 @@
     position: absolute;
     z-index: 1;
     bottom: 0;
-    width: 100%;
+    right: 25px;
 
     display: flex;
-    justify-content: center;
     color: #eee;
     font-family: "AvenirNextLtProLight";
+}
+.welcome-footer a {
+    text-decoration: none;
+    color: white;
 }
 
 

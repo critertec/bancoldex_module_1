@@ -16,10 +16,10 @@ export default (props) => {
             </div>
                 <div className="welcome-footer">
                     <div className='welcome-footer-text'>
-                        Music: {' '} 
+                        Música por {' '} 
                         <a href="https://www.bensound.com/"         styles={{ cursor: 'pointer'}}
                         >
-                            https://www.bensound.com/
+                            Bensound.com
                         </a> 
                     </div>
                 </div>
