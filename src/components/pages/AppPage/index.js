@@ -77,7 +77,6 @@ function App({}) {
 
   const nextScene = () => {
 
-    console.log('nextScene', {scene})
     sound('btn');
     switch(scene){
       case "welcome": {
@@ -111,7 +110,6 @@ function App({}) {
   }
 
   const selectStory = (history) => {
-    // console.log('selected', history)
     sound('btn');
 
     setCurrentStory(history);
@@ -133,13 +131,13 @@ function App({}) {
     // Esta funcion se ejecuta cuando no hay options
     let option = optionSelected || currentOption; 
 
-    console.log('newQuestion', {
+    // console.log('newQuestion', {
 
-      option,
-      currentQuestion,
-      currentOption,
-      scene
-    })
+    //   option,
+    //   currentQuestion,
+    //   currentOption,
+    //   scene
+    // })
 
     switch (!withScene ? scene: withScene) {
       case 'game-options': {
@@ -154,10 +152,9 @@ function App({}) {
         if (newAnswer?.end){
           setCurrentQuestion(newAnswer);
           setScene('game-feedbackEnd');
-
+          endStory();
           return;
         }
-        console.log('gameOptions', newAnswer)
         
         setCurrentQuestion(newAnswer)
         setScene('game-speak')
@@ -165,8 +162,6 @@ function App({}) {
       }; break;
 
       case 'game-feedback': {
-        console.log('game-feedback', option)
-        // console.log('game-feed', currentOption)
         let newAnswer = option.answer; 
 
         if (newAnswer.options){
@@ -232,8 +227,8 @@ function App({}) {
   }
 
   const endStory = () => {
-    setScene('game-feedbackEnd');
-    setState({
+    
+    let newState = {
       ...state, 
       questionsAsked: state.questionsAsked + 1,
       stories: state.stories.map(story => story.id !== currentStory.id ?
@@ -242,9 +237,12 @@ function App({}) {
         {
           ...story,
           score: calcScore()
-        }  
-        )
-      })
+        })
+    }
+    setState(newState)
+    setScene('game-feedbackEnd');
+
+    // console.log("Final Pts", newState)
   }
 
   const incrementQuestion = () => {
@@ -263,7 +261,6 @@ function App({}) {
     let answer = question || currentQuestion;
     
     if (!answer.options) return 'not Option, format';
-    // console.log('formatQuestion', answer)
 
     let newAnswer = {
       ...answer,
@@ -280,7 +277,6 @@ function App({}) {
     //   alert("No se encontro algun option")
     // }
 
-    console.log('newAnswer', newAnswer)
     incrementQuestion();
     setCurrentQuestion(newAnswer);
 
@@ -292,23 +288,21 @@ function App({}) {
   }
 
   const selectOption = ( { option } ) => {
-    console.log('selectOption', option)
     setCurrentOption(option);
 
     // Hacer operacione Puntaje
     switch(option.type){
-      case 'buena':
+      case 'buena': {
         sound('good');
         setCurrentPuntage(currentPuntage + 3);
-      break;
-      case 'neutral':
+      }; break;
+      case 'neutral': {
         sound('neutral');
         setCurrentPuntage(currentPuntage + 2);
-      break;
-      case 'mala':
+      }; break;
+      case 'mala': {
         sound('bad');
-        // setCurrentPuntage(currentPuntage + 2);
-      break;
+      }; break;
     }
     // Dar feedback
     if (!option.feedback){
@@ -362,7 +356,6 @@ function App({}) {
 
             currentOption={currentOption}
             newQuestion={()=> {
-              console.log('gameScene newQuestion')
               // newQuestion
               newQuestion({
                 optionSelected: null,

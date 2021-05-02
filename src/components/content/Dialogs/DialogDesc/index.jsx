@@ -42,8 +42,8 @@ const DialogDesc = ({
         return (
             <div className="dialogDesc-list">
                 <ul>
-                    { list.map( item => (
-                        <li>
+                    { list.map( (item, i) => (
+                        <li key={i}>
                             { item }
                         </li>
                     ))}
@@ -68,7 +68,7 @@ const DialogDesc = ({
                     <thead>
                         <tr>
                             { columns.map( column => (
-                                <th>
+                                <th key={column.label}>
                                     { column.label }
                                 </th>
                             )) }
@@ -126,9 +126,9 @@ const DialogDesc = ({
         )
     }
 
-    useEffect(()=> {
-        console.log('dialogDesc', currentQuestion)
-    }, [])
+    // useEffect(()=> {
+    //     console.log('dialogDesc', currentQuestion)
+    // }, [])
 
     return (
     <>

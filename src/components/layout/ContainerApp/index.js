@@ -17,7 +17,7 @@ const ContainerApp = (props) => {
     });
 
     useEffect(()=>{
-        console.log('soundBgOptions', soundBgOptions);
+        // console.log('soundBgOptions', soundBgOptions);
         if (!stateSound){
           soundBgOptions.stop();
           return;
