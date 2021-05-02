@@ -50,7 +50,13 @@ const HistoryDonAlfonso = {
                 id: "1.1",
                 type: "neutral",
                 desc: "Primero lo primero. Pague todos los gastos y costos de la empresa y los personales, y si le llega a sobrar algo de plata, guárdela en algún lugar seguro.",
-                feedback: "Si bien gastar menos de lo que gana es el hábito que debemos cuidar, el ahorro es más efectivo cuando es intencionado. Es mejor definir bien los presupuestos mensuales y destinar unos valores mínimos de ahorro, y no ahorrar solo lo que sobra",
+                feedback: [
+                            "¡Bien!",
+                            "    ‎",
+                            "Gastar menos de lo que gana es el hábito que debemos cuidar, el ahorro es más efectivo cuando es intencionado.",
+                            "    ‎",
+                            "Es mejor definir bien los presupuestos mensuales y destinar unos valores mínimos de ahorro, y no ahorrar solo lo que sobra",
+                        ],
                 answer: {
                     pages: [
                         {
@@ -65,11 +71,17 @@ const HistoryDonAlfonso = {
                 id: "1.2",
                 type: "buena",
                 desc: "Para poder abrir el mega taller es importante definir una meta clara de ahorro mensual basado en sus ingresos y en los costos que sean 100% necesarios para la operación.",
-                feedback: "Organizarse financieramente incluye ser capaz de definir los valores de ahorro antes de gastar el dinero en otras cosas. Muchas personas lo hacen al revés y primero gastan todo lo que pueden y si sobra algo lo ahorran.",
-                answer: {
+                feedback: [
+                            "¡Muy bien!",
+                            "    ‎",
+                            "Organizarse financieramente incluye ser capaz de definir los valores de ahorro antes de gastar el dinero en otras cosas.",
+                            "    ‎",
+                            "Muchas personas lo hacen al revés y primero gastan todo lo que pueden y si sobra algo lo ahorran.",
+                        ],
+              answer: {
                     pages: [
                         {
-                            desc: "¡Claro! Siempre que me proponía ahorrar con lo que me sobraba del mes, nunca sobraba nada. Voy a empezar a separar el ahorro mensual de forma sagrado",
+                            desc: "¡Claro! Siempre que me proponía ahorrar con lo que me sobraba del mes, nunca sobraba nada. Voy a empezar a separar el ahorro mensual de forma sagrada",
                             question: "¿Dónde debería guardarlo?"
                         }
                     ],
@@ -387,7 +399,13 @@ const HistoryDonAlfonso = {
             id: "2",
             type: "buena",
             desc: "Para poder abrir el mega taller es importante definir una meta clara de ahorro mensual basado en sus ingresos y en los costos que sean 100% necesarios para la operación.",
-            feedback: "Organizarse financieramente incluye ser capaz de definir los valores de ahorro antes de gastar el dinero en otras cosas. Muchas personas lo hacen al revés y primero gastan todo lo que pueden y si sobra algo lo ahorran.",
+            feedback: [
+                "¡Muy bien!",
+                "    ‎",
+                "Organizarse financieramente incluye ser capaz de definir los valores de ahorro antes de gastar el dinero en otras cosas.",
+                "    ‎",
+                "Muchas personas lo hacen al revés y primero gastan todo lo que pueden y si sobra algo lo ahorran.",
+            ],
             answer: {
                 pages: [
                     {
@@ -407,7 +425,11 @@ const HistoryDonAlfonso = {
             id: "3",
             type: "neutral",
             desc: "Primero lo primero. Pague todos los gastos y costos de la empresa y los personales, y si le llega a sobrar algo de plata, guárdela en algún lugar seguro. ",
-            feedback: "Si bien gastar menos de lo que gana es el hábito que debemos cuidar, el ahorro es más efectivo cuando es intencionado. Es mejor definir bien los presupuestos mensuales y destinar unos valores mínimos de ahorro, y no ahorrar solo lo que sobra",
+            feedback: [
+                        "Gastar menos de lo que gana es el hábito que debemos cuidar, el ahorro es más efectivo cuando es intencionado.",
+                        "    ‎",
+                        "Es mejor definir bien los presupuestos mensuales y destinar unos valores mínimos de ahorro, y no ahorrar solo lo que sobra",
+            ],
             answer: {
                 pages: [
                     {

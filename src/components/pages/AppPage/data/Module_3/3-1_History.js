@@ -47,7 +47,7 @@ const HistoryDonAlfonso = {
                 id: "1.1",
                 type: "buena",
                 desc: "Si tiene un plan de expansión y cree que los flujos futuros dan para pagar las cuotas, podría aprovechar el crédito. Tenga cuidado de no excederse. ",
-                feedback: "Apalancar proyectos que incrementen la facturación o la rentabilidad del negocio es una buena opción siempre y cuendo los excedentes puedan pagar las cuotas con los intereses.",
+                feedback: "Apalancar proyectos que incrementen la facturación o la rentabilidad del negocio es una buena opción siempre y cuando los excedentes puedan pagar las cuotas con los intereses.",
                 answer: {
                     pages: [
                         {

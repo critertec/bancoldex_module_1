@@ -208,7 +208,7 @@ const HistoryJose = {
                     feedback: [
                             "¡Ten presente!",
                             "    ‎",
-                            "Antes de adquirir un seguro se debe analizar los riesgos a los cuales se está expuesto y la capacidad de pago. Además se deben comparar opciones para comprar el mejor producto al menos costo.",
+                            "Antes de adquirir un seguro se deben analizar los riesgos a los cuales se está expuesto y la capacidad de pago. Además se deben comparar opciones para comprar el mejor producto al menos costo.",
                             ],
                     answer: {
                         pages: [
