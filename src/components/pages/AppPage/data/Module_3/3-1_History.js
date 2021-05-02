@@ -8,7 +8,13 @@ const HistoryDonAlfonso = {
     answer: {
         pages: [
             {
-                desc: "Una vez más yo. Lamento incomodarlo tanto, pero sus consejos en el pasado me han ayudado para estar donde estoy hoy en día. Imagínese que, después de haber ahorrado y de tener organizado mis ingresos y gastos, el banco me llamó y me ofreció un crédito para usarlo como quiera en el tallercito.",
+                desc: [
+                        "¡Muchas gracias por haberme ayudado tanto",
+                        "    ‎",
+                        "Sus consejos en el pasado me han ayudado para estar donde estoy hoy en día.",
+                        "    ‎",
+                        "Imagínese que, después de haber ahorrado y de tener organizado mis ingresos y gastos, el banco me llamó y me ofreció un crédito para usarlo como quiera en el taller.",
+                ],
                 question: "¿Debería aceptarlo?"
             }
         ],
@@ -27,13 +33,26 @@ const HistoryDonAlfonso = {
             answer: {
                 pages: [
                     {
-                        desc: "Si, tengo dos opciones para utilizar ese dinero. ¿Cuál cree que debería ser el mejor uso?"
+                        desc: "Si, tengo dos opciones para utilizar ese dinero.",
+                        question: "¿Cuál cree que debería ser el mejor uso?",
                     },
                     {
-                        desc: "He alquilado un nuevo local y tengo tanta clientela que podría comprar otra máquina para atenderlos más rápido y a más personas. La máquina y sus elementos adicionales me valen $70.000.000, pero estoy seguro que podría pagarlo rápidamente si las ventas siguen como van."
+                        desc: [
+                                "Opción 1:",
+                                "    ‎",
+                                "En el nuevo taller tengo tanta clientela que podría comprar otra máquina para atenderlos más rápido y a más personas.",
+                                "    ‎",
+                                "La máquina y sus elementos adicionales cuestan $70.000.000, pero estoy seguro que podría pagarlo rápidamente si las ventas siguen como van."
+                        ],
                     },
                     {
-                        desc: "Me dicen que la pintura del local viejo está desgastada. Entonces quiero aprovechar para volver a pintar todo el local, remodelar las oficinas para que sientan más modernas, igual es donde paso la mayor parte del día y debería sentirme a gusto. ¿no? Si estoy a gusto en mi trabajo, podré ser más productivo."
+                        desc: [
+                            "Opción 2:",
+                            "    ‎",
+                            "Me dicen que la pintura del primer taller está desgastada.",
+                            "    ‎",
+                            "Entonces quiero aprovechar para volver a pintar todo el taller, remodelar las oficinas para que se sientan más modernas, igual es donde paso la mayor parte del día y debería sentirme a gusto. ¿No?",
+                        ],
                     }
                 ],
                 options: [
@@ -56,8 +75,12 @@ const HistoryDonAlfonso = {
                         },
                         {
                             desc: [
-                                "(Unos meses después):",
-                                "Por telefono: ¿Hola? Otra vez yo, Alfonso del taller. Lamento molestar pero me encuentro en un problema y no se como solucionarno. El flujo de clientes ha bajado un poco por las vacaciones, y no contaba con eso, y ahora no voy a poder pagar la próxima cuota del préstamo que pedí."
+                                "Unos meses después...",
+                                "    ‎",
+                                "Lamento molestar pero me encuentro en un problema y no se como solucionarno.",
+                                "    ‎",
+                                "El flujo de clientes ha bajado un poco por las vacaciones, y no contaba con eso, y ahora no voy a poder pagar la próxima cuota del préstamo que pedí.",
+                                "    ‎",
                             ],
                             question: "¿Qué debería hacer?"
                         }
@@ -73,7 +96,7 @@ const HistoryDonAlfonso = {
                     {
                         id: '1.1.1',
                         type: "neutral",
-                        desc: "Usted dice que esta bajada de ventas es temporal. Con que deba una cuota y se ponga al día en la siguiente no pasa nada. A veces ni cuenta se dan, lo importante es no quedar en mora en dos cuotas. Así que métale ganas y pague ambas cuotas cuanto las ventas mejoren.",
+                        desc: "Si la bajada de ventas es temporal, puede deber una cuota y ponerse al día en la siguiente. No pasa nada. A veces ni cuenta se dan, lo importante es no quedar en mora en dos cuotas.",
                         feedback: "Los negocios son variables y puede que haya periodos malos. Es importante siempre hablar de forma proactiva con las entidades financieras y exponer la situación para encontrar las mejores opciones que no afecten el historial crediticio.",
                         answer: {
                             pages: [
@@ -84,19 +107,33 @@ const HistoryDonAlfonso = {
                                 {
                                     desc: [
                                         "Opción 1:",
-                                        "Ampliamos el tiempo del crédito de 24 a 60 meses. Los intereses aumentan del 1,5 % al 2,2 %, pero la cuota mensual disminuye. Con esto podría contar con los excedentes de ventas futuras para más inversiones."
+                                    ],
+                                    list: [
+                                        "Ampliamos el tiempo del crédito de 24 a 60 meses.",
+                                        "Los intereses aumentan del 1,5 % al 2,2 %, pero la cuota mensual disminuye.",
+                                        "Con esto podría contar con los excedentes de ventas futuras para más inversiones."
                                     ]
                                 },
                                 {
                                     desc: [
                                         "Opción 2: ",
-                                        " Me dan dos meses de periodo de gracia. Después del segundo mes, debo volver a pagar las cuotas regulares  y los intereses de estos dos meses de gracia. En dos meses ya habrá acabado el periodo de vacaciones y las ventas deberían subir otra vez."
+                                        ],
+
+                                       list: [
+                                           "Me dan dos meses de periodo de gracia.",
+                                      
+                                           "Después del segundo mes, debo volver a pagar las cuotas regulares  y los intereses de estos dos meses de gracia.",
+                                          
+                                           "En dos meses ya habrá acabado el periodo de vacaciones y las ventas deberían subir otra vez."
                                     ]
                                 },
                                 {
                                     desc: [
                                         "Opción 3:",
-                                        "Si incremento la tasa de intereses del 1,5 % al 1,8 % mensual me ofrecen también un periodo de gracia de un año pagando solo intereses, sin abono a capital. Sin embargo, debo dejar como garantía mi taller."
+                                    ],
+                                      list: [
+                                            "Subir la tasa de intereses del 1,5 % al 1,8 % mensual con un periodo de gracia de un año pagando solo intereses, sin abono a capital.",
+                                            "Debo dejar como garantía mi taller."
                                     ]
                                 }
                             ],
@@ -112,7 +149,7 @@ const HistoryDonAlfonso = {
                             id: "1.1.1.1",
                             type: "neutral",
                             desc: "La opción 1 parece una buena alternativa. Tener un crédito a largo plazo le permite tener un flujo de caja más saludable capaz de afrontar los momentos de ventas bajas. Igual, si tiene los excedentes necesarios, puede hacer abonos al capital. ",
-                            feedback: "La reestructuración de los créditos deben tener en cuenta el tiempo y la tasa de interés con base en los flujos de efectivo que genere el negocio. Generalmente se puede pedir el plazo máximo y se podrían hacer abonos a capital cuando haya disponibilidad.",
+                            feedback: "Si el problema es transitorio y se explica por la época de vacaciones, no sería necesario solicitar un plazo de gracia de un año si además están aumentando la tasa de interés.",
                             answer: {
                                 pages: [
                                     {
@@ -120,7 +157,8 @@ const HistoryDonAlfonso = {
                                     },
                                     {
                                         desc: [
-                                            "Unos meses después: ",
+                                            "Unos meses después...",
+                                            "    ‎",
                                             "Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
                                         ],
                                         question: "¿Qué podría hacer con esos excedentes?"
@@ -142,12 +180,18 @@ const HistoryDonAlfonso = {
                                 answer: {
                                     pages: [
                                         {
-                                            desc: "Creo que prefiero pagar los créditos más rápido. A veces no puedo dormir pensando en ellos.",
-                                            question: "¿Qué más tranquilidad que no tener deudas?"
+                                            desc: "Voy a dejar el taller muy bonito con la nueva pintura que compré. Además también quiero viajar con toda mi familia.",
+                                            
                                         }
                                     ],
                                     answer: {
-                                        feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
+                                        feedback: [
+                                                    "Todo iba muy bien hasta que me dio por gastar mis utilidades en pequeños ajustes para mi taller.",
+                                                    "    ‎",
+                                                    "Si hubiera pagado más rápido el crédito, ya tendría dinero disponible para hacerle algo más a mi negocio que pintarle las paredes.",
+                                                    "    ‎",
+                                                    "No puedo hacerle nada más porque debo  pagar mis obligaciones.",
+                                                ],
                                         end: true
                                     }
                                 }
@@ -165,7 +209,13 @@ const HistoryDonAlfonso = {
                                         }
                                     ],
                                     answer: {
-                                        feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
+                                        feedback: [
+                                            "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable.",
+                                            "    ‎",
+                                            "Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños.",
+                                            "    ‎",
+                                            "No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
+                                        ],
                                         end: true
                                     }
                                 }
@@ -183,7 +233,10 @@ const HistoryDonAlfonso = {
                                         }
                                     ],
                                     answer: {
-                                        feedback: "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable. Tengo una buena relación con los bancos, y entiendo cuándo y cómo utilizar los créditos para alcanzar más rápido mis sueños. No habría podido lograrlo sin su ayuda. ¡Muchas gracias!",
+                                        feedback: [
+                                                    "Ha sido un largo recorrido desde que iniciamos con mi primer taller y, gracias a su ayuda, mi empresa está más estable.",
+                                                    "Pero estoy perdiendo oportunidades. Creo que tengo que mejorar mis hábitos a la hora de escoger mis créditos para sacra provecho del sistema financiero.",
+                                                ],
                                         end: true
                                     }
                                 }
@@ -191,18 +244,30 @@ const HistoryDonAlfonso = {
                     // 1.1.1.2
                         {
                             id: "1.1.1.2",
-                            type: "neutral",
-                            desc: "Si usted cree que las ventas se recuperarán después de las vacaciones, la opción 2 parece una gran oportunidad. Así no incrementa los costos financieros sin necesidad. ",
-                            feedback: "La reestructuración de los créditos deben tener en cuenta el tiempo y la tasa de interés con base en los flujos de efectivo que genere el negocio. Generalmente se puede pedir el plazo máximo y se podrían hacer abonos a capital cuando haya disponibilidad.",
+                            type: "buena",
+                            desc: [
+                                    "Si usted cree que las ventas se recuperarán después de las vacaciones, la opción 2 es la más recomendable. Así no incrementa los costos financieros sin necesidad.",
+                            ],
+                            feedback: [
+                                "¡Muy bien!",
+                                "    ‎",
+                                "Parece que las condiciones del crédito están cambiando de acuerdo con la situación que se esta generando.",
+                        ],
                             answer: {
                                 pages: [
                                     {
-                                        desc: "Estoy seguro que las ventas volverán a subir. Llevo varios años y siempre pasa lo mismo. Debí haber caido en cuenta cuando hice la proyección de pago. Pero ahora con la nueva maquinaria no tendré problema."
+                                        desc: [
+                                                "Estoy seguro que las ventas volverán a subir.",
+                                                "    ‎",
+                                                "Llevo varios años y siempre pasa lo mismo. Debí haber caido en cuenta cuando hice la proyección de pago.",
+                                                "    ‎",
+                                                "Pero ahora con la nueva maquinaria no tendré problema."
+                                        ],
                                     },
                                     {
                                         desc: [
-                                            "Unos meses después: ",
-                                            "    ‎",
+                                            "Unos meses después...",
+                                             "    ‎",
                                             "Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
                                         ],
                                         question: "¿Qué podría hacer con esos excedentes?"
@@ -224,11 +289,18 @@ const HistoryDonAlfonso = {
                             answer: {
                                 pages: [
                                     {
-                                        desc: "Es arriesgado, pero tengo fe en mi negocio. Este año de gracia me permitirá estar tranquilo ahorrando para nuevas oportunidades. ¡Gracias!"
+                                        desc: [
+                                                "Es arriesgado, pero tengo fe en mi negocio.",
+                                                "    ‎",
+                                                "Este año de gracia me permitirá estar tranquilo ahorrando para nuevas oportunidades.",
+                                                "    ‎",
+                                                "¡Gracias!"
+                                        ],
                                     },
                                     {
                                         desc: [
-                                            "Unos meses después: ",
+                                            "Unos meses después...",
+                                             "    ‎",
                                             "Las ventas empezaron a crecer y ahora los excedentes me alcanzan y me sobran para pagar las cuotas que terminé negociando con el banco."
                                         ],
                                         question: "¿Qué podría hacer con esos excedentes?"
@@ -245,7 +317,7 @@ const HistoryDonAlfonso = {
                     {
                         id: '1.1.2',
                         type: "buena",
-                        desc: "No hay que alarmarse. A veces los pronósticos fallan. Lo mejor que podría hacer es llamar al banco y explicar la situación. Contarles que es un tema temporal y que usted se pondrá al día pero que no quiere quedar reportado por un pequeño traspiés. Renegocie las condiciones. ",
+                        desc: "A veces los pronósticos fallan. Llame al banco y explique la situación. Cuénteles que es un tema temporal y que usted se pondrá al día pero que no quiere quedar reportado por un pequeño traspiés. Renegocie las condiciones. ",
                         feedback: "Los negocios son variables y puede que haya periodos malos. Es importante siempre hablar de forma proactiva con las entidades financieras y exponer la situación para encontrar las mejores opciones que no afecten el historial crediticio.",
                         answer: {
                             pages: [
@@ -256,19 +328,35 @@ const HistoryDonAlfonso = {
                                 {
                                     desc: [
                                         "Opción 1:",
-                                        "Ampliamos el tiempo del crédito de 24 a 60 meses. Los intereses aumentan del 1,5 % al 2,2 %, pero la cuota mensual disminuye. Con esto podría contar con los excedentes de ventas futuras para más inversiones."
+                                    ],
+                                    list: [
+                                        "Ampliamos el tiempo del crédito de 24 a 60 meses.",
+                                        
+                                        "Los intereses aumentan del 1,5 % al 2,2 %, pero la cuota mensual disminuye.",
+                                        
+                                        "Con esto podría contar con los excedentes de ventas futuras para más inversiones."
                                     ]
                                 },
                                 {
                                     desc: [
                                         "Opción 2: ",
-                                        " Me dan dos meses de periodo de gracia. Después del segundo mes, debo volver a pagar las cuotas regulares  y los intereses de estos dos meses de gracia. En dos meses ya habrá acabado el periodo de vacaciones y las ventas deberían subir otra vez."
+                                        ],
+
+                                       list: [
+                                           "Me dan dos meses de periodo de gracia.",
+                                        
+                                           "Después del segundo mes, debo volver a pagar las cuotas regulares  y los intereses de estos dos meses de gracia.",
+                                        
+                                           "En dos meses ya habrá acabado el periodo de vacaciones y las ventas deberían subir otra vez."
                                     ]
                                 },
                                 {
                                     desc: [
                                         "Opción 3:",
-                                        "Si incremento la tasa de intereses del 1,5 % al 1,8 % mensual me ofrecen también un periodo de gracia de un año pagando solo intereses, sin abono a capital. Sin embargo, debo dejar como garantía mi taller."
+                                    ],
+                                      list: [
+                                            "Subir la tasa de intereses del 1,5 % al 1,8 % mensual con un periodo de gracia de un año pagando solo intereses, sin abono a capital.",
+                                            "Debo dejar como garantía mi taller."
                                     ]
                                 }
                             ],
@@ -307,8 +395,12 @@ const HistoryDonAlfonso = {
                         },
                         {
                             desc: [
-                                "(Unos meses después):",
-                                "Por telefono: ¿Hola? Otra vez yo, Alfonso del taller. Lamento molestar pero me encuentro en un problema y no se como solucionarno. El flujo de clientes ha bajado un poco por las vacaciones, y no contaba con eso, y ahora no voy a poder pagar la próxima cuota del préstamo que pedí."
+                                "Unos meses después...",
+                                "    ‎",
+                                "Lamento molestar pero me encuentro en un problema y no se como solucionarno.",
+                                "    ‎",
+                                "El flujo de clientes ha bajado un poco por las vacaciones, y no contaba con eso, y ahora no voy a poder pagar la próxima cuota del préstamo que pedí.",
+                                "    ‎",
                             ],
                             question: "¿Qué debería hacer?"
                         }
@@ -335,7 +427,13 @@ const HistoryDonAlfonso = {
                     question: "¿En cuál cree que debería enfocarme?"
                 },
                 {
-                    desc: "He alquilado un nuevo local y tengo tanta clientela que podría comprar otra máquina para atenderlos más rápido y a más personas. La máquina y sus elementos adicionales me valen $70.000.000, pero estoy seguro que podría pagarlo rápidamente si las ventas siguen como van."
+                    desc: [
+                        "Opción 1:",
+                        "    ‎",
+                        "En el nuevo taller tengo tanta clientela que podría comprar otra máquina para atenderlos más rápido y a más personas.",
+                        "    ‎",
+                        "La máquina y sus elementos adicionales cuestan $70.000.000, pero estoy seguro que podría pagarlo rápidamente si las ventas siguen como van."
+                         ],
                 },
                 {
                     desc: "Me dicen que la pintura del local viejo está desgastada. Entonces quiero aprovechar para volver a pintar todo el local, remodelar las oficinas para que sientan más modernas, igual es donde paso la mayor parte del día y debería sentirme a gusto. ¿no? Si estoy a gusto en mi trabajo, podré ser más productivo."
