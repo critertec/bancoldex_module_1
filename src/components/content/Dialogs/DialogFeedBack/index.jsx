@@ -1,6 +1,7 @@
 import classnames from 'classnames'
 import "./DialogFeedBack.css"
 import Button from '../../button/index'
+import GIRL_MOBILE from '../../../../assets/PERSONAJES/GIRL_MOBILE.svg'
 
 const DiaglogFeedBack = ({
     side,
@@ -32,7 +33,7 @@ const DiaglogFeedBack = ({
 
                         <div className="avatar-mobile-container">
                             <div className="avatar-mobile">
-                                <Personage />
+                                <img src={GIRL_MOBILE} alt="" />
                             </div>
                         </div>
 
