@@ -28,6 +28,7 @@ const HistoryJose = {
             id: '1',
             type: "buena",
             desc: "En los negocios siempre hay que tener las cuentas claras para no correr riesgos innecesarios. Si tu situación actual tu permite agregar un préstamo adicional y pagarlo más fácilmente con ingresos futuros, podrías tomar esa opción. Apalancarse con un crédito bien negociado es una oportunidad para adelantar el crecimiento unos años. ",
+            feedback: [ "Feedback" ],
             answer: {
                 pages: [
                     {
@@ -70,6 +71,7 @@ const HistoryJose = {
                 id: "1.1",
                 type: "neutral",
                 desc: "Con 100 millones, que puedes ir pagando y volviendo a disponer de ese dinero, podríamos trabajar.",
+                feedback: [ "Feedback" ],
                 answer: {
                     pages: [
                         {
@@ -91,6 +93,7 @@ const HistoryJose = {
                         id: "1.1.1",
                         type: "neutral",
                         desc: "¡No! Si pidió plata pensando en un plan de expansión del negocio, no es bueno desordenar las cuentas porque puede afectar el plan.",
+                        feedback: [ "Feedback" ],
                         answer: {
                             pages: [
                                 {
@@ -117,6 +120,7 @@ const HistoryJose = {
                             id: "1.1.1.1",
                             type: "mala",
                             desc: "¡Siga creciendo sin parar! Si le fue bien la primera vez, endéudese un poco más y abra otra ciudad.",
+                            feedback: [ "Feedback" ],
                             answer: {
                                 pages: [
                                     {
@@ -131,6 +135,7 @@ const HistoryJose = {
                             id: "1.1.1.2",
                             type: "neutral",
                             desc: "¡No! Más de una inversión al año es una exageración. Puede perderlo todo. ",
+                            feedback: [ "Feedback" ],
                             answer: {
                                 pages: [
                                     {
@@ -144,6 +149,7 @@ const HistoryJose = {
                             id: "1.1.1.3",
                             type: "buena",
                             desc: "Depende. Analice el flujo de caja actual basándose en los peores meses, y luego haga una proyección de las cuotas que tendría que pagar con un nuevo crédito. Si cree que puede pagar ambas cuotas sin problema, puede ser una buena opción. Si no, pague rápido el préstamo inicial. ",
+                            feedback: [ "Feedback" ],
                             answer: {
                                 pages: [
                                     {
@@ -158,6 +164,7 @@ const HistoryJose = {
                         id: "1.1.2",
                         type: "neutral",
                         desc: "Podría llamar al banco y pedir un incremento del préstamo o un nuevo préstamo con tasa preferencial, ya que el carro es un activo productivo necesario para la operación y ventas.",
+                        feedback: [ "Feedback" ],
                         answer: {
                             pages: [
                                 {
@@ -176,6 +183,7 @@ const HistoryJose = {
                         id: "1.1.3",
                         type: "neutral",
                         desc: "Si necesita comprar un carro a crédito, lo mejor es que lo haga como persona natural y no confunda las cuentas de la compañía con las personales, así la tasa sea un poco más alta.",
+                        feedback: [ "Feedback" ],
                         answer: {
                             pages: [
                                 {
@@ -194,6 +202,7 @@ const HistoryJose = {
                 id: "1.2",
                 type: "neutral",
                 desc: "Pidamos de una vez los 200 millones, que fijo en 5 años se paga.",
+                feedback: [ "Feedback" ],
                 answer: {
                     pages: [
                         {
@@ -215,6 +224,7 @@ const HistoryJose = {
                 id: "1.3",
                 type: "neutral",
                 desc: "¡$400.000.000 al 1% es una oportunidad que no podemos desaprovechar!",
+                feedback: [ "Feedback" ],
                 answer: {
                     pages: [
                         {
@@ -236,6 +246,7 @@ const HistoryJose = {
             id: '2',
             type: "neutral",
             desc: "Tienes razón en estar preocupado. Si el negocio actual está dando excedentes de efectivo, podrías ir guardándolos y, cuando tengas los $200.000.000, puede invertir en la fase 1. Así te ahorras los intereses.",
+            feedback: [ "Feedback" ],
             answer: {
                 pages: [
                     {
@@ -250,6 +261,7 @@ const HistoryJose = {
             id: '3',
             type: "mala",
             desc: "Endeudarse en esa cantidad de dinero puede ser perjudicial para su tranquilidad mental. Si como vives estás bien, ¿por qué quisieras meterte en estos problemas? Sugiero que sigas trabajando como lo has hecho últimamente. ",
+            feedback: [ "Feedback" ],
             answer: {
                 pages: [
                     {
