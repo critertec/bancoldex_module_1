@@ -320,6 +320,7 @@ function App({}) {
   }
 
   const onReturn = () => {
+    setCurrentPuntage(0)
     selectStory(currentStory)
   }
 
