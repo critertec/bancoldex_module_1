@@ -140,7 +140,7 @@ const HistoryDonAlfonso = {
                             options: [
                                 { option: "A", id: "1.1.1.1" },
                                 { option: "B", id: "1.1.1.2" },
-                                { option: "B", id: "1.1.1.3" }
+                                { option: "C", id: "1.1.1.3" }
                             ]
                         },
                     },
