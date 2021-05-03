@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bancoldex_module_1/static/css/main.4cb3c1f5.chunk.css",
-    "main.js": "/bancoldex_module_1/static/js/main.1c7b7a13.chunk.js",
-    "main.js.map": "/bancoldex_module_1/static/js/main.1c7b7a13.chunk.js.map",
+    "main.js": "/bancoldex_module_1/static/js/main.589d7243.chunk.js",
+    "main.js.map": "/bancoldex_module_1/static/js/main.589d7243.chunk.js.map",
     "runtime-main.js": "/bancoldex_module_1/static/js/runtime-main.51e33e0a.js",
     "runtime-main.js.map": "/bancoldex_module_1/static/js/runtime-main.51e33e0a.js.map",
     "static/js/2.b0f1d843.chunk.js": "/bancoldex_module_1/static/js/2.b0f1d843.chunk.js",
@@ -40,6 +40,7 @@
     "static/media/ETC_Sfx_Puntaje_01.1f06d5e7.mp3": "/bancoldex_module_1/static/media/ETC_Sfx_Puntaje_01.1f06d5e7.mp3",
     "static/media/ETC_Sfx_Swipe_01.ab886a7a.mp3": "/bancoldex_module_1/static/media/ETC_Sfx_Swipe_01.ab886a7a.mp3",
     "static/media/GIRL_INTRO.082fe85c.svg": "/bancoldex_module_1/static/media/GIRL_INTRO.082fe85c.svg",
+    "static/media/GIRL_MOBILE.cb3cb8df.svg": "/bancoldex_module_1/static/media/GIRL_MOBILE.cb3cb8df.svg",
     "static/media/GLORIA.242cfeb4.svg": "/bancoldex_module_1/static/media/GLORIA.242cfeb4.svg",
     "static/media/GLORIA_OKAY.ad9ce3b6.svg": "/bancoldex_module_1/static/media/GLORIA_OKAY.ad9ce3b6.svg",
     "static/media/GLORIA_THINKING.93beafbe.svg": "/bancoldex_module_1/static/media/GLORIA_THINKING.93beafbe.svg",
@@ -80,6 +81,6 @@
     "static/js/runtime-main.51e33e0a.js",
     "static/js/2.b0f1d843.chunk.js",
     "static/css/main.4cb3c1f5.chunk.css",
-    "static/js/main.1c7b7a13.chunk.js"
+    "static/js/main.589d7243.chunk.js"
   ]
 }
