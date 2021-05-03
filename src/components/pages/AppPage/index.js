@@ -151,7 +151,6 @@ function App({}) {
 
         if (newAnswer?.end){
           setCurrentQuestion(newAnswer);
-          setScene('game-feedbackEnd');
           endStory();
           return;
         }
@@ -227,7 +226,7 @@ function App({}) {
   }
 
   const endStory = () => {
-    
+    let newScoreStory = calcScore();
     let newState = {
       ...state, 
       questionsAsked: state.questionsAsked + 1,
@@ -236,13 +235,14 @@ function App({}) {
         :
         {
           ...story,
-          score: calcScore()
+          score: newScoreStory
         })
     }
     setState(newState)
+    setCurrentPuntage(newScoreStory);
     setScene('game-feedbackEnd');
 
-    // console.log("Final Pts", newState)
+    console.log("Final Pts", newState)
   }
 
   const incrementQuestion = () => {
