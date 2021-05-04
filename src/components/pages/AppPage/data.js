@@ -1,5 +1,5 @@
 // Modules
-import data from './data/Module_3/index'
+import data from './data/Module_1/index'
 
 const InfoModalHelp = [ 
     "Prueba tus conocimientos ayudando a otras personas a alcanzar sus sueños",

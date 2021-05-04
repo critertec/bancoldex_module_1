@@ -9,22 +9,35 @@ const HistoryJose = {
         pages: [
             {
                 desc: [
-                    "¡Hola! Mi nombre es José.",
+                    "¡Hola!",
+                    "     ‎",
+                    "Mi nombre es José.",
                     "     ‎",
                     " ",
-                    "He seguido el curso de Educación Financiera y estoy listo para aplicar los aprendizajes al mundo real.",
+                    "He seguido el curso de Educación Financiera para MiPymes y estoy listo para aplicar los aprendizajes al mundo real.",
                     "     ‎",
                      ],  
                 question: [
                         "¿Podrías ayudarme a resolver unas preguntas para poder ganarme una licitación?",
                         ],
 
-            }
-        ],
-        options: [ 
-            { option: "A", id: '1'},
-        ]
-    },
+            },
+            {
+                   desc: [
+                    "Te cuento: me invitaron a participar en una licitación para un gran hospital, para producir 1.000 uniformes marcados y elaborados con material antifluidos.",
+                "Pero, ¡no sé cuánto cobrar!",
+                "     ‎",
+            ],
+            question: "¿Qué debería hacer?"
+        }
+    ],
+    options: [
+        { option: "A", id: "1.1"},
+        { option: "B", id: "1.2"},
+        { option: "C", id: "1.3"}
+    ],
+    
+},
     listOptions: [
 // 1
         {
@@ -388,7 +401,6 @@ const HistoryJose = {
             }
         },
     ]
-
-};
+}
 
 export default HistoryJose;

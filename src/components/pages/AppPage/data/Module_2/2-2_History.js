@@ -180,7 +180,13 @@ const HistoryGloria = {
                 id: "1.2",
                 type: "buena",
                 desc: "Puedes abrir una cuenta de ahorros exclusiva para los excedentes del negocio. Así sabrás cuánta plata está generando tu empresa y estás tranquila de tener el dinero en un lugar seguro. ",
-                feedback: "Separar las cuentas de los gastos recurrentes y la de los ahorros te permitirá saber cuanto está generando tu empresa y verás crecer los ahorros.",
+                feedback: [
+                        "¡Muy bien!",
+                        "    ‎",
+                        "Con una cuenta para depositar tus ganancias podrás saber cuánto estas ganando con tu negocio."
+                        ],
+
+
                 answer: {
                     personageAction: "ok",
                     pages: [
