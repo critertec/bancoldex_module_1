@@ -21,9 +21,12 @@ import SoundPts from '../../../assets/SOUNDS/ETC_Sfx_Puntaje_01.mp3'
 import ModalHomeConfirm from '../../content/Modals/HomeConfirm/index'
 import ModalHelp from '../../content/Modals/Help/index'
 
+import { withScorm } from 'react-scorm-provider';
+// import Scorm from '../../../scorm/Scorm'
+
 import "./App.css"
 
-function App({}) {
+function App({ Scorm }) {
   const [state, setState] = useState({
     questionsAsked: 0,
     stories: []
@@ -215,7 +218,6 @@ function App({}) {
           return;
         }
 
-
         // newAnswer speak
         setScene('game-speak')
       };break;
@@ -225,8 +227,40 @@ function App({}) {
 
   }
 
+  // API LMS
+
+  const storeLMS = async(newState) => {
+    // Calcular las estrellas
+    const stars = newState.stories.reduce((acc, val) =>  (acc + val.star), 0)
+    console.log('Calculo de Estrellas', {
+      stars
+    })
+
+    // Data To Store
+    const newStore = newState.stories.reduce((acc, val)=>({
+      ...acc,
+      [val.id]: {
+        score: val.score,
+        star: val.star
+      }
+    }), {})
+
+    console.log('newStore', newStore)
+
+    // Actualizar el score
+    Scorm.updateScore(stars);
+
+    // Actualizar el store
+    Scorm.setStore(newStore);
+    Scorm.finish();
+  }
+
   const endStory = () => {
+    // Nuevos Calculos
     let newScoreStory = calcScore();
+
+    // Modificar el estado
+
     let newState = {
       ...state, 
       questionsAsked: state.questionsAsked + 1,
@@ -235,15 +269,43 @@ function App({}) {
         :
         {
           ...story,
-          score: newScoreStory
+          score: newScoreStory,
+          star: scoreToStar(story, newScoreStory)
         })
     }
+
+    // Actualizar store
+    storeLMS(newState);
+    
     setState(newState)
     setCurrentPuntage(newScoreStory);
     setScene('game-feedbackEnd');
 
     console.log("Final Pts", newState)
   }
+
+  const scoreToStar = (story, pts) => {
+    let porcentage = 100 / Number(story.ptsMax / pts)
+    let newScore = (Number(porcentage.toFixed(2)))
+    let star = 0;
+
+    if (newScore === 0){
+      star = 0;
+    } else if (newScore < 50){
+      star = 1;
+      
+    }else if (newScore < 75){
+      star = 2;
+    }else {
+      star = 3;
+    }
+    
+    // Guardo el Calculo en LMS
+    // props.sco.setSuspend_data(`story_${story.id}.score`, pts)
+    // props.sco.setSuspend_data(`story_${story.id}.star`, star)
+
+    return star;
+  } 
 
   const incrementQuestion = () => {
     setState({
@@ -381,25 +443,48 @@ function App({}) {
     }
   }
 
+
   const init = async() => {
-     
     // Almacenar Data
     console.log(stories)
+
+    let store = Scorm.getStore() ?? [];
+
+    let newState = {
+      ...state,
+
+      stories: stories.map( story => {
+        let item = store[story.id];
+        let score = item?.score;
+        let star = item?.star;
+
+        console.log(`item ${store.id} `, item)
+
+        return {
+          ...story,
+          score: score ? score : 0,
+          star: star ? star : 0
+        }
+      })
+    }
     
     setScene('welcome');
-    setState({
-      ...state,
-      stories: stories.map( story => ({
-        ...story,
-        score: 0
-      }))
-      
-    })
+    setState(newState)
+  }
+
+  const getName = () => {
+    const name = Scorm.getLearnerName()
+    console.log(name)
   }
 
   useEffect(()=>{
     init();
+    getName();
   }, []);
+
+  // useEffect(()=>{
+  //   console.log('Props SCO', props.sco)
+  // }, [props.sco])
 
   return (
     <Layout
@@ -451,4 +536,4 @@ function App({}) {
   );
 }
 
-export default App;
+export default  withScorm()(App);
